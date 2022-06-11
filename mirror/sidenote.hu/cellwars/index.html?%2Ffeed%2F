@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+
+  <title>Cell Wars's Feed</title>
+  <subtitle>A cellular automata game</subtitle>
+  <link href="http://sidenote.hu/cellwars/feed//" hreflang="en" rel="self" type="application/atom+xml"/>
+  <link href="http://sidenote.hu/cellwars/" hreflang="en" rel="alternate" type="text/html"/>
+  
+  <updated>2013-02-07T03:50:17+11:00</updated>
+  <generator uri="http://staceyapp.com/" version="2.3.0">Stacey</generator>
+
+  <author>
+    <name>Cell Wars</name>
+    <uri>http://sidenote.hu/cellwars</uri>
+  </author>
+
+  <id>tag:sidenote.hu,2013:/feed/</id>
+  <rights>©2013 Cell Wars</rights>
+    <entry>
+   <title>Contents</title>
+   <id>tag:sidenote.hu,2013:/pagez/</id>
+   <updated>2012-08-01T05:02:01+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://sidenote.hu/cellwars/pagez/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+      </div>
+   </content>
+</entry>
+    <entry>
+   <title>News</title>
+   <id>tag:sidenote.hu,2013:/pagez/news/</id>
+   <updated>2012-09-11T19:30:16+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://sidenote.hu/cellwars/pagez/news/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Download</title>
+   <id>tag:sidenote.hu,2013:/pagez/download/</id>
+   <updated>2013-02-07T03:50:17+11:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://sidenote.hu/cellwars/pagez/download/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Documentation</title>
+   <id>tag:sidenote.hu,2013:/pagez/documentation/</id>
+   <updated>2012-09-11T19:59:27+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://sidenote.hu/cellwars/pagez/documentation/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Screenshots</title>
+   <id>tag:sidenote.hu,2013:/pagez/screenshots/</id>
+   <updated>2012-08-29T21:38:32+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://sidenote.hu/cellwars/pagez/screenshots/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.pagez/50.screenshots/3.cw.png" alt="Cw."/>
+  <img src="./content/1.pagez/50.screenshots/2.cw.png" alt="Cw."/>
+  <img src="./content/1.pagez/50.screenshots/1.cw.png" alt="Cw."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Videos</title>
+   <id>tag:sidenote.hu,2013:/pagez/videos/</id>
+   <updated>2012-08-29T21:07:52+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://sidenote.hu/cellwars/pagez/videos/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Contact</title>
+   <id>tag:sidenote.hu,2013:/pagez/contact/</id>
+   <updated>2013-02-06T21:30:38+11:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://sidenote.hu/cellwars/pagez/contact/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+
+
+
+</feed>
+<!-- Stacey(2.3.0): 4e0fd662289295b6dbee3d9018cb2cbe -->
+<!-- Cached. -->

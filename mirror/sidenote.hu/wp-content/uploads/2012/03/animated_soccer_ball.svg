@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="110"
+   height="110"
+   viewBox="-105 -105 154 154"
+   id="svg2">
+  <metadata
+     id="metadata66">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <clipPath
+       id="ball">
+      <circle
+         cx="0"
+         cy="0"
+         r="100"
+         id="circle7"
+         style="stroke-width:0" />
+    </clipPath>
+    <radialGradient
+       cx="0.40000001"
+       cy="0.30000001"
+       r="0.80000001"
+       id="shadow1">
+      <stop
+         id="stop10"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop12"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0.40000001" />
+      <stop
+         id="stop14"
+         style="stop-color:#eeeeee;stop-opacity:1"
+         offset="0.80000001" />
+    </radialGradient>
+    <radialGradient
+       cx="0.5"
+       cy="0.5"
+       r="0.5"
+       id="shadow2">
+      <stop
+         id="stop17"
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="0" />
+      <stop
+         id="stop19"
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="0.80000001" />
+      <stop
+         id="stop21"
+         style="stop-color:#000000;stop-opacity:0.30000001"
+         offset="0.99000001" />
+      <stop
+         id="stop23"
+         style="stop-color:#000000;stop-opacity:1"
+         offset="1" />
+    </radialGradient>
+    <g
+       clip-path="url(#ball)"
+       id="black_stuff"
+       style="stroke-linejoin:round">
+      <g
+         id="g26"
+         style="fill:#000000">
+        <path
+           d="m 6,-32 q 20,4 40,13 11,-16 18,-28 -14,-21 -27,-29 -20,1 -36,8 3,17 5,36"
+           id="path28" />
+        <path
+           d="m -26,-2 q -19,-6 -36,-9 -12,16 -14,33 7,18 26,32 18,-7 33,-15 -6,-24 -9,-41"
+           id="path30" />
+        <path
+           d="m -95,22 q -7,-10 -7,-30 v 88 h 17 Q -95,45 -95,22"
+           id="path32" />
+        <path
+           d="M 55,24 Q 41,41 24,52 28,65 31,79 55,78 68,67 78,50 80,35 65,28 55,24"
+           id="path34" />
+        <path
+           d="M 0,120 -3,95 q -22,-2 -39,-13 -8,2 -18,-1"
+           id="path36" />
+        <path
+           d="m -90,-48 q 10,-4 22,-1 16,-22 33,-28 0,-23 -5,-23 h -60"
+           id="path38" />
+        <path
+           d="m 100,-55 -13,18 q 11,27 10,42 l 3,1"
+           id="path40" />
+      </g>
+      <g
+         id="g42"
+         style="fill:none">
+        <path
+           d="m 6,-32 q -24,20 -32,30 m 72,-17 q 8,24 9,43 m 9,-71 q 13,3 23,10 M 37,-76 q 2,-14 -1,-24 M 1,-68 q -14,-9 -36,-9 m -27,66 q -5,-14 -6,-38 m -8,71 q -9,2 -19,0 m 45,32 q 1,16 8,28 m 25,-43 q 17,9 41,13 m 7,27 Q 20,92 -3,95 M 68,67 80,80 M 80,35 Q 90,25 97,5"
+           id="path44" />
+      </g>
+    </g>
+    <radialGradient
+       cx="-19.999998"
+       cy="-39.999996"
+       r="160"
+       fx="-19.999998"
+       fy="-39.999996"
+       id="radialGradient3069"
+       xlink:href="#shadow1"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       cx="0"
+       cy="0"
+       r="100"
+       fx="0"
+       fy="0"
+       id="radialGradient3071"
+       xlink:href="#shadow2"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     transform="matrix(0.77,0,0,0.77,-28,-28)"
+     id="g3058">
+    <circle
+       cx="0"
+       cy="0"
+       r="100"
+       id="circle46"
+       style="fill:#ffffff;stroke:none" />
+    <circle
+       cx="0"
+       cy="0"
+       r="100"
+       id="circle48"
+       style="fill:url(#radialGradient3069);stroke:none" />
+    <g
+       id="g50">
+      <animateTransform
+         id="animateTransform52"
+         repeatCount="indefinite"
+         dur="3s"
+         begin="0s"
+         to="360"
+         from="0"
+         type="rotate"
+         attributeType="XML"
+         attributeName="transform" />
+      <use
+         id="use54"
+         style="stroke:#eeeeee;stroke-width:7"
+         x="0"
+         y="0"
+         width="210"
+         height="210"
+         xlink:href="#black_stuff" />
+      <use
+         id="use56"
+         style="stroke:#dddddd;stroke-width:4"
+         x="0"
+         y="0"
+         width="210"
+         height="210"
+         xlink:href="#black_stuff" />
+      <use
+         id="use58"
+         style="stroke:#999999;stroke-width:2"
+         x="0"
+         y="0"
+         width="210"
+         height="210"
+         xlink:href="#black_stuff" />
+      <use
+         id="use60"
+         style="stroke:#000000;stroke-width:1"
+         x="0"
+         y="0"
+         width="210"
+         height="210"
+         xlink:href="#black_stuff" />
+    </g>
+    <circle
+       cx="0"
+       cy="0"
+       r="100"
+       id="circle62"
+       style="fill:url(#radialGradient3071);stroke:none" />
+  </g>
+</svg>

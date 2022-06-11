@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+
+  <title>#!/bin/bash's Portfolio Feed</title>
+  <subtitle>Shell scripts</subtitle>
+  <link href="http://bash.sidenote.hu/feed//" hreflang="en" rel="self" type="application/atom+xml"/>
+  <link href="http://bash.sidenote.hu/" hreflang="en" rel="alternate" type="text/html"/>
+  
+  <updated>2013-05-27T19:18:57+10:00</updated>
+  <generator uri="http://staceyapp.com/" version="2.3.0">Stacey</generator>
+
+  <author>
+    <name>#!/bin/bash</name>
+    <uri>http://bash.sidenote.hu</uri>
+  </author>
+
+  <id>tag:bash.sidenote.hu,2013:/feed/</id>
+  <rights>©2013 #!/bin/bash</rights>
+    <entry>
+   <title>#!/bin/bash</title>
+   <id>tag:bash.sidenote.hu,2013:/pagez/</id>
+   <updated>2013-02-06T20:51:33+11:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/pagez/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+      </div>
+   </content>
+</entry>
+    <entry>
+   <title>News</title>
+   <id>tag:bash.sidenote.hu,2013:/pagez/news/</id>
+   <updated>2013-05-27T19:02:37+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/pagez/news/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Licensing</title>
+   <id>tag:bash.sidenote.hu,2013:/pagez/licensing/</id>
+   <updated>2013-04-09T20:08:19+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/pagez/licensing/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Contact</title>
+   <id>tag:bash.sidenote.hu,2013:/pagez/contact/</id>
+   <updated>2013-02-06T21:29:04+11:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/pagez/contact/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+
+  <entry>
+   <title>Shell scripts</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/</id>
+   <updated>2013-02-19T18:54:53+11:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          
+      </div>
+   </content>
+</entry>
+    <entry>
+   <title>ASCII maze</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/ascii-maze/</id>
+   <updated>2013-02-26T20:26:37+11:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/ascii-maze/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.projects/97.ascii-maze/5.ascii-maze.png" alt="Ascii maze."/>
+  <img src="./content/1.projects/97.ascii-maze/4.ascii-maze.png" alt="Ascii maze."/>
+  <img src="./content/1.projects/97.ascii-maze/3.ascii-maze.png" alt="Ascii maze."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Bash Gorillas (bash-gorillas)</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/bash-gorillas/</id>
+   <updated>2013-05-27T19:07:22+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/bash-gorillas/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.projects/94.bash-gorillas/3.bash-gorillas.png" alt="Bash gorillas."/>
+  <img src="./content/1.projects/94.bash-gorillas/2.bash-gorillas.png" alt="Bash gorillas."/>
+  <img src="./content/1.projects/94.bash-gorillas/1.bash-gorillas.png" alt="Bash gorillas."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Debian font package previewer</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/debian-font-package-previewer/</id>
+   <updated>2013-03-11T20:10:20+11:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/debian-font-package-previewer/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.projects/80.debian-font-package-previewer/5.debian-font-package-reviewer.png" alt="Debian font package reviewer."/>
+  <img src="./content/1.projects/80.debian-font-package-previewer/4.debian-font-package-previewer.png" alt="Debian font package previewer."/>
+  <img src="./content/1.projects/80.debian-font-package-previewer/3.debian-font-package-previewer.png" alt="Debian font package previewer."/>
+  <img src="./content/1.projects/80.debian-font-package-previewer/2.debian-font-package-previewer.png" alt="Debian font package previewer."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Game of Life (bash-life)</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/bash-life/</id>
+   <updated>2013-05-27T19:06:05+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/bash-life/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.projects/76.bash-life/3.bash-life.gif" alt="Bash life."/>
+  <img src="./content/1.projects/76.bash-life/2.bash-life.png" alt="Bash life."/>
+  <img src="./content/1.projects/76.bash-life/1.bash-life.png" alt="Bash life."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Logarithmic spiral</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/logarithmic-spiral/</id>
+   <updated>2013-04-30T17:45:09+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/logarithmic-spiral/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.projects/51.logarithmic-spiral/5.logarithmic-spiral.gif" alt="Logarithmic spiral."/>
+  <img src="./content/1.projects/51.logarithmic-spiral/4.logarithmic-spiral.png" alt="Logarithmic spiral."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Mandelbrot set</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/mandelbrot-set/</id>
+   <updated>2013-04-30T17:44:49+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/mandelbrot-set/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.projects/47.mandelbrot-set/7.mandelbrot-set.png" alt="Mandelbrot set."/>
+  <img src="./content/1.projects/47.mandelbrot-set/6.mandelbrot-set.png" alt="Mandelbrot set."/>
+  <img src="./content/1.projects/47.mandelbrot-set/5.mandelbrot-set.png" alt="Mandelbrot set."/>
+  <img src="./content/1.projects/47.mandelbrot-set/4.mandelbrot-set.png" alt="Mandelbrot set."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+  <entry>
+   <title>Weather report (bash-weather)</title>
+   <id>tag:bash.sidenote.hu,2013:/projects/bash-weather/</id>
+   <updated>2013-05-27T19:18:57+10:00</updated>
+   <summary>@page_description</summary>
+   <link rel="alternate" type="text/html" href="http://bash.sidenote.hu/projects/bash-weather/" />
+   <content type="xhtml" xml:lang="en">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+            <img src="./content/1.projects/6.bash-weather/3.bash-weather.png" alt="Bash weather."/>
+  <img src="./content/1.projects/6.bash-weather/2.bash-weather.png" alt="Bash weather."/>
+  <img src="./content/1.projects/6.bash-weather/1.bash-weather.png" alt="Bash weather."/>
+
+          
+            
+
+          
+      </div>
+   </content>
+</entry>
+  
+
+
+
+</feed>
+<!-- Stacey(2.3.0): 11013d4107e6be7ca592d7fb2266d689 -->
+<!-- Cached. -->

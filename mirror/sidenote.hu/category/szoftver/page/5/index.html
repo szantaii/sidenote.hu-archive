@@ -1,0 +1,1053 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="hu">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>
+            szoftver / sidenote | Oldal 5        </title>
+        <meta http-equiv="Content-language" content="hu" />
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="shortcut icon" href="../../../../wp-content/themes/sidenoteminimal/images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" media="all" href="../../../../wp-content/themes/sidenoteminimal/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="../../../../wp-content/themes/sidenoteminimal/pagenavi-css.css" />
+        <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="http://sidenote.hu/wp-content/themes/sidenoteminimal/ie.css" /><![endif]-->
+        <link rel="pingback" href="http://sidenote.hu/xmlrpc.php" />
+        <link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html"/>
+        <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../../../../feed/atom/index.html" />
+		<link href="https://plus.google.com/sidenote/" rel="publisher" />
+                <link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; hírcsatorna" href="../../../../feed/rss/index.html" />
+<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; hozzászólás hírcsatorna" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; szoftver kategória hírcsatorna" href="../../feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/sidenote.hu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.15"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='codecolorer-css'  href='../../../../wp-content/plugins/codecolorer/codecolorer.css%3Fver=0.9.11.css' type='text/css' media='screen' />
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/sidenoteminimal/js/jquery.lazyload.mini.js%3Fver=4.8.15'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/sidenoteminimal/js/script.js%3Fver=4.8.15'></script>
+<link rel='https://api.w.org/' href='../../../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sidenote.hu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.15" />
+<script type="text/javascript" src="../../../../wp-content/plugins/si-captcha-for-wordpress/captcha/si_captcha.js%3Fver=1654938228"></script>
+<!-- begin SI CAPTCHA Anti-Spam - login/register form style -->
+<style type="text/css">
+.si_captcha_small { width:175px; height:45px; padding-top:10px; padding-bottom:10px; }
+.si_captcha_large { width:250px; height:60px; padding-top:10px; padding-bottom:10px; }
+img#si_image_com { border-style:none; margin:0; padding-right:5px; float:left; }
+img#si_image_reg { border-style:none; margin:0; padding-right:5px; float:left; }
+img#si_image_log { border-style:none; margin:0; padding-right:5px; float:left; }
+img#si_image_side_login { border-style:none; margin:0; padding-right:5px; float:left; }
+img#si_image_checkout { border-style:none; margin:0; padding-right:5px; float:left; }
+img#si_image_jetpack { border-style:none; margin:0; padding-right:5px; float:left; }
+img#si_image_bbpress_topic { border-style:none; margin:0; padding-right:5px; float:left; }
+.si_captcha_refresh { border-style:none; margin:0; vertical-align:bottom; }
+div#si_captcha_input { display:block; padding-top:15px; padding-bottom:5px; }
+label#si_captcha_code_label { margin:0; }
+input#si_captcha_code_input { width:65px; }
+p#si_captcha_code_p { clear: left; padding-top:10px; }
+.si-captcha-jetpack-error { color:#DC3232; }
+</style>
+<!-- end SI CAPTCHA Anti-Spam - login/register form style -->
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-6197576-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+		</script>
+		<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+		{lang: 'hu'}
+		</script>
+	</head>
+	<body>
+        <div class="wrapper">
+            <div class="header clear">
+                <div class="logo">
+                	<a title="http://sidenote.hu/" href="../../../../index.html">http://sidenote.hu/</a>
+                </div>
+                                <h1><a title="sidenote" href="../../../../index.html">sidenote</a></h1>
+
+                <div class="menu"><ul id="menu-header" class="menu"><li id="menu-item-4317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4317"><a title="Címlap" href="../../../../index.html">Címlap</a></li>
+<li id="menu-item-7810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7810"><a title="Projektek" href="../../../../index.html%3Fp=7396.html">Projektek</a></li>
+<li id="menu-item-4319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4319"><a title="Rólunk" href="../../../../index.html%3Fp=1345.html">Rólunk</a></li>
+<li id="menu-item-4318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4318"><a title="Archívum" href="../../../../index.html%3Fp=284.html">Archívum</a></li>
+</ul></div>
+                <div class="search">
+    <form method="get" id="searchform" action="../../../../index.html">
+        <fieldset>
+            <input name="s" type="text" onfocus="if(this.value=='Keresés') this.value='';" onblur="if(this.value=='') this.value='Keresés';" value="Keresés" />
+            <button type="submit"></button>
+        </fieldset>
+    </form>
+</div>
+                
+            </div>
+            <div class="middle clear">
+
+<div id="content">
+
+    <div class="archive_title clear">
+        <div class="archive_title_meta">Archívum</div>
+
+                        <div class="archive_title_name">A(z) &bdquo;szoftver&rdquo; kategória bejegyzései</div>
+        
+    </div>
+
+        
+        <div class="clear post-6908 post type-post status-publish format-standard hentry category-jatek category-szoftver tag-termeszet" id="post_6908">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6908.html" title="Dear Esther" rel="bookmark">Dear Esther</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2012. február 26. 17:52</div>
+                    <div class="post_categories"><a href="../../../jatek/index.html" rel="category tag">játék</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <blockquote>
+<p>Dear Esther is a ghost story, told using first-person gaming technologies. Rather than traditional game-play the focus here is on exploration, uncovering the mystery of the island, of who you are and why you are here. Fragments of story are randomly uncovered when exploring the various locations of the island, making every each journey a unique experience. Dear Esther features a stunning, specially commissioned soundtrack from Jessica Curry.</p>
+<p>Forget the normal rules of play; if nothing seems real here, it’s because it may just be all a delusion. What is the significance of the aerial – What happened on the motorway – is the island real or imagined – who is Esther and why has she chosen to summon you here? The answers are out there, on the lost beach and the tunnels under the island. Or then again, they may just not be, after all&hellip;</p>
+</blockquote>
+<p><a href="http://dear-esther.com/?page_id=2">About Dear Esther &#187; Dear Esther</a></p>
+<p><iframe width="705" height="430" src="http://www.youtube.com/embed/D7VJ4lP-05A?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Volt olyan pillanat, amikor kb. azt éreztem, mint a 2001: Űrodüsszeiában, amikor a Holdon állnak és mézik a monolitot, volt valami hasonló zene, de semmi paráztató, mint a horrorokban, de mégis felállt a hátamon a szőr.</p>
+<p>Egy másik nézőpont egy barátomtól:</p>
+<blockquote>
+<p><pre>azert nezd meg, hogy mikkel jatszunk 05:32:06 PM
+csupa ilyen indilofasszal 05:32:11 PM
+meg retro gamékkal 05:32:14 PM
+merigy a quake akarhanyat mar nyilvan leszarjuk 05:32:24 PM
+szoval oregszunk 05:32:28 PM</pre>
+</p>
+</blockquote>
+<p>Benne van ez is. Öregszünk.</p>
+<p><img src="../../../../wp-content/uploads/2012/02/dear_esther_concept_art.png" alt="" title="Dear Esther" width="705" height="397" class="alignnone size-full wp-image-6916" srcset="../../../../wp-content/uploads/2012/02/dear_esther_concept_art.png 705w, ../../../../wp-content/uploads/2012/02/dear_esther_concept_art-225x126.png 225w, ../../../../wp-content/uploads/2012/02/dear_esther_concept_art-350x197.png 350w" sizes="(max-width: 705px) 100vw, 705px" /></p>
+<p>Életem egyik legjobb játéka, ott van a Morrowind és a TTD mellett.</p>
+<p>Egy másik, szintén elmés meglátással zárok:</p>
+<blockquote>
+<p><pre>ebben gyakorlatilag csak menni kell 05:32:51 PM
+null interakcio, csak igy bamulsz, befogadsz 05:33:01 PM
+es probalod osszerkani, hogy miafasz van 05:33:08 PM</pre>
+</p>
+</blockquote>
+<p>És valóban.</p>
+<p><a href="http://store.steampowered.com/app/203810/">7 Euró.</a> Ennyit, sőt többet is megér.</p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/termeszet/index.html" rel="tag">természet</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F26%2Fdear-esther%2F&amp;t=Dear+Esther">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F26%2Fdear-esther%2F&amp;t=Dear+Esther">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F26%2Fdear-esther%2F&amp;name=Dear+Esther&amp;description=Dear+Esther+is+a+ghost+story%2C+told+using+first-person+gaming+technologies.+Rather+than+traditional+game-play+the+focus+here+is+on+exploration%2C+uncovering+the+mystery+of%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/02/26/dear-esther/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2012/02/26/dear-esther/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Dear&#32;Esther&amp;url=http://sidenote.hu/2012/02/26/dear-esther/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/02/26/dear-esther/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6841 post type-post status-publish format-standard hentry category-linux category-muveszet-dizajn category-szoftver category-zene tag-ubuntu" id="post_6841">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6841.html" title="Ubuntu Sound Theme" rel="bookmark">Ubuntu Sound Theme</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2012. február 19. 11:51</div>
+                    <div class="post_categories"><a href="../../../linux/index.html" rel="category tag">Linux</a>, <a href="../../../muveszet-dizajn/index.html" rel="category tag">művészet, dizájn</a>, <a href="../../index.html" rel="category tag">szoftver</a>, <a href="../../../zene/index.html" rel="category tag">zene</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <blockquote>
+<p>As Ubuntu expands onto new form factors, with an increasingly definitive visual identity and brand, it is important to ensure that the theme of Ubuntu is reflected in all aspects of the experience. The auditory experience of Ubuntu must be included in this theme to maintain an immersive environment and consistency with the brand.</p>
+</blockquote>
+<p><a href="http://design.canonical.com/2012/02/ubuntu-sound-theme-design/">Ubuntu sound theme design &laquo;  Canonical Design</a></p>
+<p>Röviden, tömören arról van szó, hogy a Canonicalnél végre nekiláttak az Ubuntu hangok tervezésének, hogy a majd&#8217; <a href="../../../../index.html%3Fp=2932.html" title="Az Ubuntu új arca / sidenote">két éve megújított brandjük</a> még profibb, egységesebb legyen.</p>
+<p>Ideje volt már, hogy ezt meglépjék, mert az Ubuntu Sound Theméje eléggé le van maradva a vizuális dizájn mögött. Kérdés, hogy lesz-e még elég idő a következő kiadás előtt befejezni a hangok megújítását, mert a 12.04, kódnevén Precise Pangolin ugye április végén érkezik.</p>
+<p><a href="http://design.canonical.com/category/design/sound/"><img src="../../../../wp-content/uploads/2012/02/ubuntu_sound_theme.png" alt="" title="Ubuntu Sound Theme" width="656" height="523" class="alignnone size-full wp-image-6844" srcset="../../../../wp-content/uploads/2012/02/ubuntu_sound_theme.png 656w, ../../../../wp-content/uploads/2012/02/ubuntu_sound_theme-225x179.png 225w, ../../../../wp-content/uploads/2012/02/ubuntu_sound_theme-350x279.png 350w" sizes="(max-width: 656px) 100vw, 656px" /></a></p>
+<p>Mindenesetre a február 7-én meghirdetett <a href="http://design.canonical.com/2012/02/ubuntu-sound-theme-design/" title="Ubuntu sound theme design &laquo;  Canonical Design">első hangokra vonatkozó kiírásra</a> <a href="http://design.canonical.com/2012/02/sound-theme-update/" title="Sound theme update &laquo;  Canonical Design">rengeteg pályamunka érkezett</a>. Ezeket érdemes meghallgatni, és kitölteni a hozzájuk tartozó kérdőívet. Egy kis feedback senkinek sem árt meg, aki szeretné, hogy az Ubuntu 12.04 ne csak stabil legyen, hanem szépen is szóljon.</p>
+<blockquote>
+<p>[B:]Other rappers dis me<br />
+Say my rhymes are sissy.<br />
+Why?<br />
+[J:]Why?<br />
+[J&#038;B:]Why?<br />
+[B:]What?<br />
+[J:]Why exactly?<br />
+[B:]What? Why?<br />
+[J:]Be more constructive with your feedback, please. Why?<br />
+[B:]Why?</p>
+</blockquote>
+<p><a href="http://www.youtube.com/watch?v=FArZxLj6DLk">Flight of the Conchords &ndash; Hiphopopotamus Vs. Rhymenoceros</a></p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F19%2Fubuntu-sound-theme%2F&amp;t=Ubuntu+Sound+Theme">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F19%2Fubuntu-sound-theme%2F&amp;t=Ubuntu+Sound+Theme">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F19%2Fubuntu-sound-theme%2F&amp;name=Ubuntu+Sound+Theme&amp;description=As+Ubuntu+expands+onto+new+form+factors%2C+with+an+increasingly+definitive+visual+identity+and+brand%2C+it+is+important+to+ensure+that+the+theme+of+Ubuntu%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/02/19/ubuntu-sound-theme/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2012/02/19/ubuntu-sound-theme/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Ubuntu&#32;Sound&#32;Theme&amp;url=http://sidenote.hu/2012/02/19/ubuntu-sound-theme/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/02/19/ubuntu-sound-theme/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6855 post type-post status-publish format-standard hentry category-gizmo category-szoftver" id="post_6855">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6855.html" title="OS/2 Warp 4: egy kis nosztalgia" rel="bookmark">OS/2 Warp 4: egy kis nosztalgia</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2012. február 18. 14:44</div>
+                    <div class="post_categories"><a href="../../../gizmo/index.html" rel="category tag">gizmó</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <blockquote>
+<p>A WARP család további tagokkal bővült, utolsó verziója a WARP 4, mely újabb áttörés volt az operációs rendszerek piacán. Miközben megőrizte az OS/2-re jellemző masszív, roppant üzembiztos felépítését, olyan kényelmi funkciókkal bővült, amelyek segítik és gyorsítják a munkát. (Pl. a VoiceAssist &#8211; a szövegszerkesztő beszéd után készíti a szöveget, teljesen szükségtelenné válik a billentyűzet, vagy a Netscape Navigator, amely az interneten való barangoláshoz használja a hangvezérlést.)<br />Ma már nem árulja az IBM az OS/2-t, és a támogatását 2006 végén megszüntette.</p>
+</blockquote>
+<p><a href="http://logout.hu/cikk/idoutazas_a_zx81-tol_napjainkig_2/ibm.html">Időutazás a ZX81-től napjainkig (2.) &#8211; LOGOUT.hu</a></p>
+<p>Nem tudom mit írhatnék&hellip; Az OS/2 rendszerek megelőzték a korukat. Egyszerűen gyönyörű.</p>
+<p><a href="../../../../wp-content/uploads/2012/02/os2warp4_1.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_1-350x194.png" alt="" title="OS/2 Warp 4" width="350" height="194" class="alignnone size-medium wp-image-6883" srcset="../../../../wp-content/uploads/2012/02/os2warp4_1-350x194.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_1-225x125.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_1-705x391.png 705w, ../../../../wp-content/uploads/2012/02/os2warp4_1.png 720w" sizes="(max-width: 350px) 100vw, 350px" /></a>&nbsp;<a href="../../../../wp-content/uploads/2012/02/os2warp4_2.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_2-350x262.png" alt="" title="OS/2 Warp 4" width="350" height="262" class="alignnone size-medium wp-image-6884" srcset="../../../../wp-content/uploads/2012/02/os2warp4_2-350x262.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_2-225x168.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_2.png 640w" sizes="(max-width: 350px) 100vw, 350px" /></a><br /><a href="../../../../wp-content/uploads/2012/02/os2warp4_3.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_3-350x262.png" alt="" title="OS/2 Warp 4" width="350" height="262" class="alignnone size-medium wp-image-6885" srcset="../../../../wp-content/uploads/2012/02/os2warp4_3-350x262.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_3-225x168.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_3.png 640w" sizes="(max-width: 350px) 100vw, 350px" /></a>&nbsp;<a href="../../../../wp-content/uploads/2012/02/os2warp4_4.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_4-350x262.png" alt="" title="OS/2 Warp 4" width="350" height="262" class="alignnone size-medium wp-image-6886" srcset="../../../../wp-content/uploads/2012/02/os2warp4_4-350x262.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_4-225x168.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_4.png 640w" sizes="(max-width: 350px) 100vw, 350px" /></a><br /><a href="../../../../wp-content/uploads/2012/02/os2warp4_5.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_5-350x262.png" alt="" title="OS/2 Warp 4" width="350" height="262" class="alignnone size-medium wp-image-6887" srcset="../../../../wp-content/uploads/2012/02/os2warp4_5-350x262.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_5-225x168.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_5.png 640w" sizes="(max-width: 350px) 100vw, 350px" /></a>&nbsp;<a href="../../../../wp-content/uploads/2012/02/os2warp4_6.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_6-350x262.png" alt="" title="OS/2 Warp 4" width="350" height="262" class="alignnone size-medium wp-image-6888" srcset="../../../../wp-content/uploads/2012/02/os2warp4_6-350x262.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_6-225x168.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_6.png 640w" sizes="(max-width: 350px) 100vw, 350px" /></a><br /><a href="../../../../wp-content/uploads/2012/02/os2warp4_7.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_7-350x262.png" alt="" title="OS/2 Warp 4" width="350" height="262" class="alignnone size-medium wp-image-6889" srcset="../../../../wp-content/uploads/2012/02/os2warp4_7-350x262.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_7-225x168.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_7.png 640w" sizes="(max-width: 350px) 100vw, 350px" /></a>&nbsp;<a href="../../../../wp-content/uploads/2012/02/os2warp4_8.png"><img src="../../../../wp-content/uploads/2012/02/os2warp4_8-350x262.png" alt="" title="OS/2 Warp 4" width="350" height="262" class="alignnone size-medium wp-image-6890" srcset="../../../../wp-content/uploads/2012/02/os2warp4_8-350x262.png 350w, ../../../../wp-content/uploads/2012/02/os2warp4_8-225x168.png 225w, ../../../../wp-content/uploads/2012/02/os2warp4_8.png 640w" sizes="(max-width: 350px) 100vw, 350px" /></a></p>
+<p><img src="../../../../wp-content/uploads/2012/02/forever_alone.png" alt="" title="forever alone" width="265" height="285" class="alignnone size-full wp-image-6856" srcset="../../../../wp-content/uploads/2012/02/forever_alone.png 265w, ../../../../wp-content/uploads/2012/02/forever_alone-225x241.png 225w" sizes="(max-width: 265px) 100vw, 265px" /></p>
+<p>További leírások, képek, unofficial support:</p>
+<ul>
+<li><a href="http://logout.hu/cikk/idoutazas_a_zx81-tol_napjainkig_2/ibm.html">Időutazás a ZX81-től napjainkig (2.) &#8211; LOGOUT.hu</a></li>
+<li><a href="http://logout.hu/cikk/os_2_tortenelem_i/teljes.html">OS/2 történelem I. &#8211; LOGOUT.hu</a></li>
+<li><a href="http://www.guidebookgallery.org/screenshots/os2warp4">GUIdebook &gt; Screenshots &gt; OS/2 Warp 4</a></li>
+<li><a href="http://www.os2world.com/">OS2 World.Com</a></li>
+</ul>
+                                <div class="post_tags clear">
+                                    </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F18%2Fos2-warp-4-egy-kis-nosztalgia%2F&amp;t=OS%2F2+Warp+4%3A+egy+kis+nosztalgia">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F18%2Fos2-warp-4-egy-kis-nosztalgia%2F&amp;t=OS%2F2+Warp+4%3A+egy+kis+nosztalgia">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F18%2Fos2-warp-4-egy-kis-nosztalgia%2F&amp;name=OS%2F2+Warp+4%3A+egy+kis+nosztalgia&amp;description=A+WARP+csal%C3%A1d+tov%C3%A1bbi+tagokkal+b%C5%91v%C3%BClt%2C+utols%C3%B3+verzi%C3%B3ja+a+WARP+4%2C+mely+%C3%BAjabb+%C3%A1tt%C3%B6r%C3%A9s+volt+az+oper%C3%A1ci%C3%B3s+rendszerek+piac%C3%A1n.+Mik%C3%B6zben+meg%C5%91rizte+az+OS%2F2-re+jellemz%C5%91+massz%C3%ADv%2C%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/02/18/os2-warp-4-egy-kis-nosztalgia/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2012/02/18/os2-warp-4-egy-kis-nosztalgia/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=OS/2&#32;Warp&#32;4:&#32;egy&#32;kis&#32;nosztalgia&amp;url=http://sidenote.hu/2012/02/18/os2-warp-4-egy-kis-nosztalgia/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/02/18/os2-warp-4-egy-kis-nosztalgia/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6814 post type-post status-publish format-standard hentry category-alkotunk category-munka category-szoftver tag-tex-latex" id="post_6814">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6814.html" title="Makefile for Large LaTeX Projects" rel="bookmark">Makefile for Large LaTeX Projects</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2012. február 4. 9:06</div>
+                    <div class="post_categories"><a href="../../../alkotunk/index.html" rel="category tag">alkotunk</a>, <a href="../../../munka/index.html" rel="category tag">munka</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <p>Using a makefile for large LaTeX projects is a real time saver if you don&#8217;t use LaTeX IDEs (e.g. <a href="http://www.xm1math.net/texmaker/">Texmaker</a>, <a href="http://www.tug.org/texworks/">TeXworks</a>). For example some of my friends have to log in to a central server, which provides the same LaTeX setup for everyone in their institution, to compile their documents. In this particular case using <em>make</em> is a <em>must do!</em> thing if you don&#8217;t want to fiddle around keeping track of which was the last command you executed or whether your pdf is up to date.</p>
+<p><em>So, what are these makefile and make things?</em></p>
+<blockquote>
+<p>Make is a tool which controls the generation of executables and other non-source files of a program from the program&#8217;s source files.</p>
+<p>Make gets its knowledge of how to build your program from a file called the <em>makefile</em>, which lists each of the non-source files and how to compute it from other files. When you write a program, you should write a makefile for it, so that it is possible to use Make to build and install the program.</p>
+<p>[&hellip;]</p>
+<p>Make figures out automatically which files it needs to update, based on which source files have changed. It also automatically determines the proper order for updating files, in case one non-source file depends on another non-source file. </p>
+</blockquote>
+<p><a href="http://www.gnu.org/software/make/">GNU Make</a></p>
+<p>Here is my standard makefile template for projects utilizing <em>pdflatex</em> and <em>bibtex</em> (also downloadable at the end of the post):</p>
+<div class="codecolorer-container make dawn" style="overflow:auto;white-space:nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />21<br />22<br />23<br />24<br />25<br />26<br />27<br />28<br />29<br />30<br />31<br />32<br />33<br />34<br />35<br />36<br />37<br />38<br />39<br />40<br /></div></td><td><div class="make codecolorer"><span class="co1"># Makefile for my LaTeX project</span><br />
+<br />
+<span class="co1"># LaTeX</span><br />
+LC<span class="sy0">=</span>pdflatex<br />
+<br />
+<span class="co1"># Bibtex</span><br />
+BC<span class="sy0">=</span>bibtex<br />
+<br />
+<span class="co1"># The main tex file (without extension)</span><br />
+MAIN<span class="sy0">=</span>main<br />
+<br />
+<span class="co1"># The tex files that are included in the project's main tex file</span><br />
+DEPS<span class="sy0">=./</span>tex<span class="sy0">/</span>chapter1<span class="sy0">.</span>tex <span class="sy0">./</span>tex<span class="sy0">/</span>chapter2<span class="sy0">.</span>tex <span class="sy0">./</span>tex<span class="sy0">/</span>chapter3<span class="sy0">.</span>tex<br />
+<br />
+MIDTARGET<span class="sy0">=$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>pdf<br />
+<br />
+<span class="co1"># The desired filename</span><br />
+TARGET<span class="sy0">=</span>myprojectv01<span class="sy0">.</span>pdf<br />
+<br />
+<span class="kw2">.PHONY</span><span class="sy0">:</span> clean show all<br />
+<br />
+all<span class="sy0">:</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">TARGET</span><span class="br0">&#41;</span><br />
+<br />
+<span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">TARGET</span><span class="br0">&#41;</span><span class="sy0">:</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MIDTARGET</span><span class="br0">&#41;</span><br />
+&nbsp; &nbsp; cp <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MIDTARGET</span><span class="br0">&#41;</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">TARGET</span><span class="br0">&#41;</span><br />
+<br />
+<span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MIDTARGET</span><span class="br0">&#41;</span><span class="sy0">:</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>tex <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>aux<br />
+&nbsp; &nbsp; <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">BC</span><span class="br0">&#41;</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>aux<br />
+&nbsp; &nbsp; <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">LC</span><span class="br0">&#41;</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>tex<br />
+&nbsp; &nbsp; <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">LC</span><span class="br0">&#41;</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>tex<br />
+<br />
+<span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>aux<span class="sy0">:</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>tex <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">DEPS</span><span class="br0">&#41;</span><br />
+&nbsp; &nbsp; <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">LC</span><span class="br0">&#41;</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>tex<br />
+<br />
+show<span class="sy0">:</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">TARGET</span><span class="br0">&#41;</span><br />
+&nbsp; &nbsp; xdg<span class="sy0">-</span>open <span class="re0">$&lt;</span> <span class="sy0">&amp;</span><br />
+<br />
+clean<span class="sy0">:</span><br />
+&nbsp; &nbsp; rm <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>out <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>aux <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>toc <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>lof <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>lot <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>log \<br />
+<span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>bbl <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MAIN</span><span class="br0">&#41;</span><span class="sy0">.</span>blg <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">MIDTARGET</span><span class="br0">&#41;</span> <span class="sy0">$</span><span class="br0">&#40;</span><span class="re2">TARGET</span><span class="br0">&#41;</span></div></td></tr></tbody></table></div>
+<p>I won&#8217;t go into the details, but if you want to complement this makefile for using <em>latex</em> instead of pdflatex then you&#8217;ll have to create another middle target for creating the dvi file. For those who&#8217;ll use this makefile in a non-X environment don&#8217;t use the <em>show</em> target beacuse <em>xdg-open</em> is meant to be used under X.</p>
+<p>I think the <a href="http://www.gnu.org/software/make/manual/">GNU Make Manual</a> is detailed enough to understand what I was talking about. But feel free to <a href="http://mailhide.recaptcha.net/d?k=01WJaJJnRSA8a4SyH5EPavKQ==&amp;c=se3ETJWwE6jinyR8vHzVftItootepBxqjwO5qkXt5VE=" onclick="window.open('http://mailhide.recaptcha.net/d?k=01WJaJJnRSA8a4SyH5EPavKQ==&amp;c=se3ETJWwE6jinyR8vHzVftItootepBxqjwO5qkXt5VE=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Kattints egy e-mail címért!">contact me</a> if you have any questions.</p>
+<p>Download: <a href='../../../../wp-content/uploads/2012/02/makefile.tar.gz'>makefile.tar.gz</a></p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/tex-latex/index.html" rel="tag">TeX/LaTeX</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F04%2Fmakefile-for-large-latex-projects%2F&amp;t=Makefile+for+Large+LaTeX+Projects">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F04%2Fmakefile-for-large-latex-projects%2F&amp;t=Makefile+for+Large+LaTeX+Projects">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F04%2Fmakefile-for-large-latex-projects%2F&amp;name=Makefile+for+Large+LaTeX+Projects&amp;description=Using+a+makefile+for+large+LaTeX+projects+is+a+real+time+saver+if+you+don%26%238217%3Bt+use+LaTeX+IDEs+%28e.g.+Texmaker%2C+TeXworks%29.+For+example+some+of%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/02/04/makefile-for-large-latex-projects/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2012/02/04/makefile-for-large-latex-projects/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Makefile&#32;for&#32;Large&#32;LaTeX&#32;Projects&amp;url=http://sidenote.hu/2012/02/04/makefile-for-large-latex-projects/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/02/04/makefile-for-large-latex-projects/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6781 post type-post status-publish format-standard hentry category-gizmo category-linux category-szoftver tag-ubuntu" id="post_6781">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6781.html" title="Ubuntu HUD" rel="bookmark">Ubuntu HUD</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2012. január 24. 18:35</div>
+                    <div class="post_categories"><a href="../../../gizmo/index.html" rel="category tag">gizmó</a>, <a href="../../../linux/index.html" rel="category tag">Linux</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <p>Itt az újabb magic! Még a héten lecsekkolom, de most legyen elég egy screenshot és egy videó Mark Shuttleworth-től.</p>
+<p><a href="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e.png"><img src="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-705x440.png" alt="" title="Say hello to the Head-Up Display, or HUD." width="705" height="440" class="alignnone size-large wp-image-6782" srcset="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-705x440.png 705w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-225x140.png 225w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-350x218.png 350w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e.png 1280w" sizes="(max-width: 705px) 100vw, 705px" /></a></p>
+<blockquote>
+<p>This is the HUD. It’s a way for you to express your intent and have the application respond appropriately. We think of it as “beyond interface”, it’s the “intenterface”.  This concept of “intent-driven interface” has been a primary theme of our work in the Unity shell, with dash search as a first class experience pioneered in Unity. Now we are bringing the same vision to the application, in a way which is completely compatible with existing applications and menus.</p>
+</blockquote>
+<p><a href="http://www.markshuttleworth.com/archives/939">Mark Shuttleworth  &raquo; Introducing the HUD. Say hello to the future of the menu.</a></p>
+<p><iframe width="705" height="388" src="http://www.youtube.com/embed/w_WW-DHqR3c?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Nem tudom, hogy sírjak-e vagy nevessek, mindenesetre egy 720p-s videónak jobban örültem volna.</p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F24%2Fubuntu-hud%2F&amp;t=Ubuntu+HUD">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F24%2Fubuntu-hud%2F&amp;t=Ubuntu+HUD">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F24%2Fubuntu-hud%2F&amp;name=Ubuntu+HUD&amp;description=Itt+az+%C3%BAjabb+magic%21+M%C3%A9g+a+h%C3%A9ten+lecsekkolom%2C+de+most+legyen+el%C3%A9g+egy+screenshot+%C3%A9s+egy+vide%C3%B3+Mark+Shuttleworth-t%C5%91l.+This+is+the+HUD.+It%E2%80%99s+a%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/01/24/ubuntu-hud/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2012/01/24/ubuntu-hud/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Ubuntu&#32;HUD&amp;url=http://sidenote.hu/2012/01/24/ubuntu-hud/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/01/24/ubuntu-hud/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6748 post type-post status-publish format-standard hentry category-gizmo category-ismeretterjeszto category-munka category-szoftver tag-tex-latex tag-tipografia" id="post_6748">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6748.html" title="Néhány dolog a hyperref csomaggal kapcsolatban" rel="bookmark">Néhány dolog a hyperref csomaggal kapcsolatban</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2012. január 7. 22:29</div>
+                    <div class="post_categories"><a href="../../../gizmo/index.html" rel="category tag">gizmó</a>, <a href="../../../ismeretterjeszto/index.html" rel="category tag">ismeretterjesztő</a>, <a href="../../../munka/index.html" rel="category tag">munka</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <p>Ez azoknak szól, akik &ndash; hozzám hasonlóan &ndash; sokat szoptak már a <em>hyperref</em> csomaggal.</p>
+<p>Szeptemberben volt egy alkalom, amikor fekvő A4-es méretű lappal kellett dolgoznom. Ez eddig nem ügy, amíg később rá nem jöttem, hogy kell nekem <em>hyperref</em> is. Betöltöttem hát. Ekkor borult fel minden, mert az elkészült oldal valami félig fekete, álló A4-es dokumentum lett. Alászálltam a net legmélyebb bugyraiba, ahol megtaláltam a választ a kérdésemre. Először töltsük be a <em>hyperref</em> csomagot a <em>setpagesize=false</em> opcióval és csak aztán a <em>geometry</em>-t.</p>
+<div class="codecolorer-container latex dawn" style="overflow:auto;white-space:nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br />2<br />3<br /></div></td><td><div class="latex codecolorer"><span class="sy0">\</span><span class="kw1">documentclass</span><span class="sy0">{</span><span class="re9">memoir<span class="sy0">}</span><br />
+<span class="sy0">\</span><span class="kw1">usepackage</span><span class="sy0">[</span><span class="re2">setpagesize=false, xetex</span><span class="sy0">]{</span>hyperref<span class="sy0">}</span><br />
+<span class="sy0">\</span><span class="kw1">usepackage</span><span class="sy0">[</span><span class="re2">a4paper, landscape, xetex</span>]{geometry</span><span class="sy0">}</span></div></td></tr></tbody></table></div>
+<p>Ma pedig nekiálltam review-olni egy egy évvel korábbi projektemet. Egy darab kommentet nem írtam hozzá, úgyhogy ezzel el is ment a napom nagy része. Aztán ugyanabba a problémába ütköztem, amibe már egy évvel ezelőtt is. Vagyis a kész PDF-ben az összes bookmarkot egyetlen láncba fűzve, nem pedig szép fát találtam. Újfent alászálltam a mélybe, és egy <a href="http://lists.debian.org/debian-tetex-maint/2005/04/msg00159.html">Debian maintenance levlistán</a> találtam meg a megoldást.</p>
+<blockquote>
+<p>&#8220;magyar.ldf&#8221; redefines most of the essential commands<br />
+that also hyperref must change. A patch would have to<br />
+include many of hyperref/driver stuff/nameref, adopted<br />
+to magyar.ldf.</p>
+</blockquote>
+<p>Alatta pedig ott volt egy gyönyörű makró:</p>
+<div class="codecolorer-container latex dawn" style="overflow:auto;white-space:nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />21<br />22<br />23<br />24<br />25<br />26<br />27<br />28<br />29<br />30<br />31<br />32<br /></div></td><td><div class="latex codecolorer"><span class="sy0">\</span><span class="kw1">makeatletter</span><br />
+<span class="sy0">\</span><span class="kw1">let</span><span class="re12">\Hy</span>@magyar@saved@refstepcounter<span class="re12">\refstepcounter</span><br />
+<span class="re12">\addto</span><span class="re12">\extrasmagyar</span><span class="sy0">{</span><span class="co1">%</span><br />
+&nbsp; <span class="sy0">\</span><span class="kw1">let</span><span class="re12">\H</span>@refstepcounter<span class="re12">\refstepcounter</span><br />
+&nbsp; <span class="sy0">\</span><span class="kw1">let</span><span class="re12">\refstepcounter</span><span class="re12">\Hy</span>@magyar@saved@refstepcounter<br />
+&nbsp; <span class="re12">\expandafter</span><span class="sy0">\</span><span class="kw1">renewcommand</span><span class="re12">\expandafter*</span><span class="re12">\expandafter</span><span class="re11">\@ssect</span><br />
+&nbsp; &nbsp; &nbsp; <span class="re12">\expandafter</span><span class="sy0">[</span><span class="re2"><span class="re12">\expandafter</span> 5<span class="re12">\expandafter</span></span><span class="sy0">]</span><span class="re12">\expandafter</span><span class="sy0">{</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="re12">\expandafter</span><span class="sy0">\</span><span class="kw1">def</span><span class="re12">\expandafter</span><span class="re11">\@currentlabelname</span><span class="re12">\expandafter</span><span class="sy0">{</span><span class="co1">%</span><br />
+&nbsp; &nbsp; &nbsp; <span class="re12">\expandafter</span> #<span class="re12">\expandafter</span> 5<span class="re12">\expandafter</span><br />
+&nbsp; &nbsp; <span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="re11">\@ssect</span><span class="sy0">{</span><span class="re9">#1}{#2}{#3}{#4}{#5</span><span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="re12">\phantomsection</span><br />
+&nbsp; <span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; <span class="re12">\expandafter</span><span class="re12">\Hy</span>@magyar@patch@sect<span class="re12">\expandafter</span><span class="sy0">{</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="re11">\@sect</span><span class="sy0">{</span><span class="re9">#1}{#2}{#3}{#4}{#5}{#6}[<span class="re2">{#7}</span>]{#8</span><span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; <span class="sy0">}{</span><span class="re9">#1#2#3#4#5#6[<span class="re2">#7</span>]#8}{#2}{#7</span><span class="sy0">}</span><span class="co1">%</span><br />
+<span class="sy0">}</span><br />
+<span class="sy0">\</span><span class="kw1">def</span><span class="re12">\Hy</span>@magyar@patch@sect#1#2#3#4<span class="sy0">{</span><span class="co1">%</span><br />
+&nbsp; <span class="sy0">\</span><span class="kw1">def</span><span class="re11">\@sect</span>#2<span class="sy0">{</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="re12">\setcounter</span><span class="sy0">{</span><span class="re9">section@level}{#3</span><span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="sy0">\</span><span class="kw1">def</span><span class="re11">\@currentlabelname</span><span class="sy0">{</span><span class="re9">#4</span><span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="re12">\ifnum</span> #3&gt;<span class="re12">\c</span>@secnumdepth<br />
+&nbsp; &nbsp; &nbsp; <span class="re12">\Hy</span>@GlobalStepCount<span class="re12">\Hy</span>@linkcounter<br />
+&nbsp; &nbsp; &nbsp; <span class="re12">\xdef</span><span class="re11">\@currentHref</span><span class="sy0">{</span><span class="re9">section*.<span class="re12">\the</span><span class="re12">\Hy</span>@linkcounter</span><span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="sy0">\</span><span class="kw1">fi</span><br />
+&nbsp; &nbsp; #1<span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="re12">\ifnum</span> #3&gt;<span class="re12">\c</span>@secnumdepth<br />
+&nbsp; &nbsp; &nbsp; <span class="re12">\Hy</span>@raisedlink<span class="sy0">{</span><span class="re9"><span class="re12">\hyper</span>@anchorstart<span class="sy0">{</span><span class="re11">\@currentHref</span><span class="sy0">}</span><span class="re12">\hyper</span>@anchorend</span><span class="sy0">}</span><span class="co1">%</span><br />
+&nbsp; &nbsp; <span class="sy0">\</span><span class="kw1">fi</span><br />
+&nbsp; <span class="sy0">}</span><span class="co1">%</span><br />
+<span class="sy0">}</span><br />
+<span class="sy0">\</span><span class="kw1">makeatother</span></div></td></tr></tbody></table></div>
+<p>Őszintén megmondom, még nem néztem át tüzetesebben, de eddig minden gondomat megoldotta.</p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/tex-latex/index.html" rel="tag">TeX/LaTeX</a></li><li><a href="../../../../tag/tipografia/index.html" rel="tag">tipográfia</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F07%2Fnehany-dolog-a-hyperref-csomaggal-kapcsolatban%2F&amp;t=N%C3%A9h%C3%A1ny+dolog+a+hyperref+csomaggal+kapcsolatban">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F07%2Fnehany-dolog-a-hyperref-csomaggal-kapcsolatban%2F&amp;t=N%C3%A9h%C3%A1ny+dolog+a+hyperref+csomaggal+kapcsolatban">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F07%2Fnehany-dolog-a-hyperref-csomaggal-kapcsolatban%2F&amp;name=N%C3%A9h%C3%A1ny+dolog+a+hyperref+csomaggal+kapcsolatban&amp;description=Ez+azoknak+sz%C3%B3l%2C+akik+%26ndash%3B+hozz%C3%A1m+hasonl%C3%B3an+%26ndash%3B+sokat+szoptak+m%C3%A1r+a+hyperref+csomaggal.+Szeptemberben+volt+egy+alkalom%2C+amikor+fekv%C5%91+A4-es+m%C3%A9ret%C5%B1+lappal+kellett+dolgoznom.%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/01/07/nehany-dolog-a-hyperref-csomaggal-kapcsolatban/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2012/01/07/nehany-dolog-a-hyperref-csomaggal-kapcsolatban/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=N%C3%A9h%C3%A1ny%20dolog%20a%20hyperref%20csomaggal%20kapcsolatban&amp;url=http://sidenote.hu/2012/01/07/nehany-dolog-a-hyperref-csomaggal-kapcsolatban/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/01/07/nehany-dolog-a-hyperref-csomaggal-kapcsolatban/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6706 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu" id="post_6706">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6706.html" title="Apró figyelmesség" rel="bookmark">Apró figyelmesség</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2011. december 17. 8:56</div>
+                    <div class="post_categories"><a href="../../../linux/index.html" rel="category tag">Linux</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <p><img src="../../../../wp-content/uploads/2011/12/like_ubuntu_update.png" alt="" title="It's safer to connect the computer to AC power before updating." width="600" height="91" class="alignnone size-full wp-image-6707" srcset="../../../../wp-content/uploads/2011/12/like_ubuntu_update.png 600w, ../../../../wp-content/uploads/2011/12/like_ubuntu_update-225x34.png 225w, ../../../../wp-content/uploads/2011/12/like_ubuntu_update-350x53.png 350w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<blockquote>
+<p>It&#8217;s safer to connect the computer to AC power before updating.</p>
+</blockquote>
+<p>Az ilyet szeretem.</p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F17%2Fapro-figyelmesseg%2F&amp;t=Apr%C3%B3+figyelmess%C3%A9g">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F17%2Fapro-figyelmesseg%2F&amp;t=Apr%C3%B3+figyelmess%C3%A9g">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F17%2Fapro-figyelmesseg%2F&amp;name=Apr%C3%B3+figyelmess%C3%A9g&amp;description=It%26%238217%3Bs+safer+to+connect+the+computer+to+AC+power+before+updating.+Az+ilyet+szeretem.">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/12/17/apro-figyelmesseg/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2011/12/17/apro-figyelmesseg/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Apr%C3%B3%20figyelmess%C3%A9g&amp;url=http://sidenote.hu/2011/12/17/apro-figyelmesseg/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/12/17/apro-figyelmesseg/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6688 post type-post status-publish format-standard hentry category-humor category-jatek category-szoftver tag-auto tag-video" id="post_6688">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6688.html" title="_A. Vilag. Legjobb. Jateka._" rel="bookmark">_A. Vilag. Legjobb. Jateka._</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2011. december 10. 10:04</div>
+                    <div class="post_categories"><a href="../../../humor/index.html" rel="category tag">humor</a>, <a href="../../../jatek/index.html" rel="category tag">játék</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <p>Hajnalban kaptam ezt a mailt:</p>
+<blockquote>
+<p>Itt a vilag legjobb jateka. Ennyi. Kesz. Abba lehet fejezni a jatekfejlesztest ezutan.</p>
+<p>A jatek cime Desert Bus. Jol jegyezzetek meg ezt a nevet.</p>
+<p>Egy buszt kell elvezetni Arizonabol Nevadaba egy nyilegyenes uton valos idoben (nyolc oraig tart az ut) aztan VISSZA. A busz enyhen jobbra tart, ezert vegig ott kell ulni, es kanyarodni vele, hogy ne menjen le az utrol. Ez utobbi esetben az arokba szalad, es visszavontatjak Arizonaba. Termeszetesen ezt is valos idoben.</p>
+<p>Itt a link, jatsszatok!</p>
+<p><a href="http://desertbus-game.org/">http://desertbus-game.org/</a></p>
+<p>Itt a leiras, addig is.</p>
+<p><a href="http://desertbus.org/the-rules-of-desert-bus/">http://desertbus.org/the-rules-of-desert-bus/</a></p>
+<p>Mondom, lehet, hogy ez csak nekem vicces, de en majdnem megfulladtam a rohogestol. Baldur&#8217;s Gate. Lofasz.</p>
+</blockquote>
+<p><iframe width="705" height="388" src="http://www.youtube.com/embed/nBr7EhL6Jpg?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe></p>
+<p><a href="http://www.youtube.com/watch?v=yfysmVFcZ2E">48 részes speed run</a> :)</p>
+<p>Review:</p>
+<p><iframe width="705" height="388" src="http://www.youtube.com/embed/4RsYxIDNjHo?rel=0" frameborder="0" allowfullscreen></iframe></p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/auto/index.html" rel="tag">autó</a></li><li><a href="../../../../tag/video/index.html" rel="tag">videó</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F10%2F_a-vilag-legjobb-jateka-_%2F&amp;t=_A.+Vilag.+Legjobb.+Jateka._">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F10%2F_a-vilag-legjobb-jateka-_%2F&amp;t=_A.+Vilag.+Legjobb.+Jateka._">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F10%2F_a-vilag-legjobb-jateka-_%2F&amp;name=_A.+Vilag.+Legjobb.+Jateka._&amp;description=Hajnalban+kaptam+ezt+a+mailt%3A+Itt+a+vilag+legjobb+jateka.+Ennyi.+Kesz.+Abba+lehet+fejezni+a+jatekfejlesztest+ezutan.+A+jatek+cime+Desert+Bus.+Jol+jegyezzetek%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/12/10/_a-vilag-legjobb-jateka-_/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2011/12/10/_a-vilag-legjobb-jateka-_/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=_A.&#32;Vilag.&#32;Legjobb.&#32;Jateka._&amp;url=http://sidenote.hu/2011/12/10/_a-vilag-legjobb-jateka-_/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/12/10/_a-vilag-legjobb-jateka-_/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6671 post type-post status-publish format-standard hentry category-szoftver category-void" id="post_6671">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6671.html" title="Patent?" rel="bookmark">Patent?</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2011. december 5. 10:10</div>
+                    <div class="post_categories"><a href="../../index.html" rel="category tag">szoftver</a>, <a href="../../../void/index.html" rel="category tag">void *</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <blockquote>
+<pre>[15:32] &lt;ClassBot&gt; kamilnadeem asked: Your reaction on the latest thrashing of
+Micro$oft by Barnes & Noble against their way of using litigation instead of
+Innovations philosophy?
+[15:33] &lt;sabdfl&gt; the biggest mistake microsoft made was to decide that patents
+would be an effective defence against new competitors
+[15:33] &lt;sabdfl&gt; because that stops you from really innovating yourself
+[15:33] &lt;sabdfl&gt; so Microsoft wasted most of a decade, thinking they could use
+patents to defend the castle.
+[15:33] &lt;sabdfl&gt; Meanwhile, others were innovating for real.
+[15:34] &lt;sabdfl&gt; The whole patent system is a sham, unfortunately.
+[15:34] &lt;sabdfl&gt; Patent authorities cannot realistically do their job; it
+[15:34] &lt;sabdfl&gt; it's an impossible job to do.
+[15:34] &lt;sabdfl&gt; and the patent system has slowly been twisted to do the exact
+opposite of its PR
+[15:35] &lt;sabdfl&gt; it's not, as many think, a system to defend the little inventor
+against the big bad corporate.
+[15:35] &lt;sabdfl&gt; Instead, it's a system to ensure the big bad corporate doesn't
+get any scary new competition.
+[15:35] &lt;sabdfl&gt; Patents were invented to encourage inventors to publish their
+trade secrets, because society would benefit from the disclosure.
+[15:36] &lt;sabdfl&gt; But we now allow patents on things you could never keep secret
+in the first place, like software and business methods and medicines.
+[15:36] &lt;sabdfl&gt; That's insanity. Innovation happens because people solve
+problems, not because they might get a monopoly on it.
+[15:37] &lt;sabdfl&gt; The reason this is not being changed is simple: legislation
+evolves to suit those who can influence legislators. And large patent holders
+tend to be influential in that regard.</pre>
+</blockquote>
+<p><a href="http://irclogs.ubuntu.com/2011/11/23/%23ubuntu-classroom.txt">#ubuntu-classroom IRC Log on the Freenode IRC network 24-Nov-2011</a></p>
+<blockquote><p><em>Duncan McLeod:</em> Looking at all the software patent battles that are going on in the industry at the moment between Apple and Microsoft and Google and Samsung and HTC and so on, what is your view of the situation?</p>
+<p><em>Mark Shuttleworth:</em> The patent system is often misunderstood. It’s sold as a way of giving the little guy an opportunity to create something big … when in fact patents don’t really work that way at all.</p>
+<p>What they do very well is keep the big guys entrenched and the little guys out. For example, it’s very common in established industries for all of the majors to buy up or file as many patents as they can covering a particular area. They know and accept that the other majors are all in the same industry and essentially cross-license each other to keep the peace within that defined market. But they use that arsenal to stop new entrants coming in and disrupting the market.</p>
+<p>That’s almost the exact opposite of the way people think about the patent system. They think it’s supposed to catalyse disruption and innovation, but in reality it has the opposite effect.</p>
+<p>What we’re seeing in the mobile space is that game being played out at large because Google is trying to disrupt that cosy ecosystem by entering the market with a product [Android] that is highly disruptive. And it’s disruptive to all of the majors, so what you’re seeing is this cascading series of suits and countersuits.</p>
+<p>None of it is particularly constructive and it’s hugely expensive, often at the cost of end users who don’t have the real range of choice they should have.</p></blockquote>
+<p><a href="http://www.techcentral.co.za/mark-shuttleworth-on-patents-tablets-and-the-future-of-ubuntu/25192/">Mark Shuttleworth on patents, tablets and the future of Ubuntu | TechCentral</a></p>
+<p>Szerintem igaza van, ez már rég nem patent.</p>
+                                <div class="post_tags clear">
+                                    </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F05%2Fpatent%2F&amp;t=Patent%3F">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F05%2Fpatent%2F&amp;t=Patent%3F">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F05%2Fpatent%2F&amp;name=Patent%3F&amp;description=%5B15%3A32%5D+%26lt%3BClassBot%26gt%3B+kamilnadeem+asked%3A+Your+reaction+on+the+latest+thrashing+of+Micro%24oft+by+Barnes+%26+Noble+against+their+way+of+using+litigation+instead+of+Innovations%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/12/05/patent/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2011/12/05/patent/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Patent?&amp;url=http://sidenote.hu/2011/12/05/patent/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/12/05/patent/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+        <div class="clear post-6578 post type-post status-publish format-standard hentry category-ismeretterjeszto category-linux category-szoftver tag-android tag-konferencia tag-libreoffice tag-tipografia tag-ubuntu" id="post_6578">
+            <div class="post_meta">
+                				<h2><a href="../../../../index.html%3Fp=6578.html" title="Szabad Szoftver Konferencia és Kiállítás 2011, Budapest" rel="bookmark">Szabad Szoftver Konferencia és Kiállítás 2011, Budapest</a></h2>
+                <div class="post_data">
+                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
+                                        <div class="post_date">2011. október 6. 12:25</div>
+                    <div class="post_categories"><a href="../../../ismeretterjeszto/index.html" rel="category tag">ismeretterjesztő</a>, <a href="../../../linux/index.html" rel="category tag">Linux</a>, <a href="../../index.html" rel="category tag">szoftver</a></div>
+                                    </div>
+            </div>
+            <div class="post_content">
+                <blockquote>
+<p><em>2011. november 12., Budapest, Infopark, BME Informatikai épülete<br />
+A részvétel a látogatók számára ingyenes, de regisztrációhoz kötött</em></p>
+<p>Az FSF.hu Alapítvány 2011-ben újra megrendezi a Szabad Szoftver Konferenciát és Kiállítást Budapesten.</p>
+<p>A rendezvény Budapesten, a <a href="http://www.google.com/search?client=ubuntu&#038;channel=fs&#038;q=47.472654%2C+19.059653">BME épületében, az Infoparkban</a> kerül megrendezésre, az időpont <em>2011. november 12-e.</em> A konferencia reggel kilenc órától délután negyed hatig tart. Előadói szekciói és a kiállítás párhuzamosan zajlanak, így minden látogató találhat számára érdekes előadásokat, megfelelő elfoglaltságot.</p>
+<p>A konferencia programja hamarosan kikerül a honlapra. Amint véglegessé válik, a regisztráltak értesítést kapnak róla. </p>
+<p><em>A konferencia kiemelt előadói</em></p>
+<p><em>Kadlecsik József,</em> a Linux kernel csomagszűrő alrendszerének, a netfilter-nek egyik vezető fejlesztője, <em>Tímár András,</em> a Firefox és a LibreOffice magyar honosításának lelke és a LibreOffice Engineering Steering Comittee tagja, valamint <em>Torma László (Toros),</em> a hazai Ubuntu közösség egyik vezéralakja, fáradhatatlan blogger és szervező. Ők fogják a jelentkező előadók közül kiválasztani azokat, akik várhatóan érdekes és hasznos előadásokat fognak tartani.</p>
+<p>A konferenciára Magyarország legjobb előadóit, kiállítóként pedig minél több szabad szoftverekkel foglalkozó civil, szakmai szervezeteket valamint cégeket hívunk meg. A részvétel látogatók számára ingyenes lesz, de regisztrációhoz kötött. Az előadások anyagából konferenciakiadvány készül, melynek ISBN számot is fogunk kérni.</p>
+<p>Amennyiben szívesen látogatnál el, adnál elő vagy állítanál ki a konferencián, akkor kérjük regisztráld magad a bal oldalon található regisztrációs menüpontok valamelyikénél!</p>
+<p>A potenciális kiállítók és támogatók az egyszerűség kedvéért küldhetnek azonnal levelet a konf2011@fsf.hu címre, és megkezdjük velük az egyeztetést.</p>
+<p>Üdvözlettel:<br />
+<em>Konferenciaszervező csapat, <a href="http://fsf.hu/" title="FSF.hu">FSF.hu Alapítvány</a></em></p>
+</blockquote>
+<p><a href="http://konf.fsf.hu/cgis/ossc" title="Szabad Szoftver Konferencia és Kiállítás 2011, Budapest">Szabad Szoftver Konferencia és Kiállítás 2011, Budapest</a></p>
+                                <div class="post_tags clear">
+                    <ul><li><a href="../../../../tag/android/index.html" rel="tag">Android</a></li><li><a href="../../../../tag/konferencia/index.html" rel="tag">konferencia</a></li><li><a href="../../../../tag/libreoffice/index.html" rel="tag">LibreOffice</a></li><li><a href="../../../../tag/tipografia/index.html" rel="tag">tipográfia</a></li><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
+                                <div class="post_share">
+	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
+	<div class="sharelist">
+		<div class="sharelist_list">
+			<ul>
+				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F10%2F06%2Fszabad-szoftver-konferencia-es-kiallitas-2011-budapest%2F&amp;t=Szabad+Szoftver+Konferencia+%C3%A9s+Ki%C3%A1ll%C3%ADt%C3%A1s+2011%2C+Budapest">Facebook</a></li>
+				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F10%2F06%2Fszabad-szoftver-konferencia-es-kiallitas-2011-budapest%2F&amp;t=Szabad+Szoftver+Konferencia+%C3%A9s+Ki%C3%A1ll%C3%ADt%C3%A1s+2011%2C+Budapest">iWiW</a></li>
+				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F10%2F06%2Fszabad-szoftver-konferencia-es-kiallitas-2011-budapest%2F&amp;name=Szabad+Szoftver+Konferencia+%C3%A9s+Ki%C3%A1ll%C3%ADt%C3%A1s+2011%2C+Budapest&amp;description=2011.+november+12.%2C+Budapest%2C+Infopark%2C+BME+Informatikai+%C3%A9p%C3%BClete+A+r%C3%A9szv%C3%A9tel+a+l%C3%A1togat%C3%B3k+sz%C3%A1m%C3%A1ra+ingyenes%2C+de+regisztr%C3%A1ci%C3%B3hoz+k%C3%B6t%C3%B6tt+Az+FSF.hu+Alap%C3%ADtv%C3%A1ny+2011-ben+%C3%BAjra+megrendezi+a+Szabad%26hellip%3B">Tumblr</a></li>
+			</ul>
+		</div>
+		<div class="facebook_like_button">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
+		</div>
+		<div class="plusone_button">
+			<g:plusone size="medium" href="http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/"></g:plusone>
+		</div>
+		<div class="tweet_button">
+			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Szabad%20Szoftver%20Konferencia%20%C3%A9s%20Ki%C3%A1ll%C3%ADt%C3%A1s%202011,%20Budapest&amp;url=http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/" style="width: 78px; height: 20px;"></iframe>
+					</div>
+	</div>
+</div>            </div>
+        </div>
+
+    
+    <div class="pagination">
+    <a href="../4/index.html" class="previouspostslink">Következő oldal</a><a href="../6/index.html" class="nextpostslink">Előző oldal</a></div>
+
+</div>
+
+<div class="sidebar">
+    
+        <div class="widget">
+            <h3>Személyes</h3>
+            <div class="widget_body">
+                <ul>
+                                        <li><a href="../../../../wp-login.php.html">Bejelentkezés</a></li>
+                    <li><a href="../../../../feed/rss/index.html" title="Syndicate this site using RSS 2.0"><abbr title="Really Simple Syndication">RSS</abbr> (bejegyzés)</a></li>
+                    <li><a href="../../../../comments/feed/index.html" title="The latest comments to all posts in RSS"><acronym title="Really Simple Syndication">RSS</acronym> (hozzászólás)</a></li>
+                                    </ul>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h3>Quick Access</h3>
+            <div class="widget_body">
+                <ul>
+                    <li><a href="../../../../dev/null.html" title="/dev/null">/dev/null</a></li>
+                    <li><a href="../../../../dev/zero.html" title="/dev/zero">/dev/zero</a></li>
+                    <li><a href="../../../../index.html%3Frandom.html" title="Random bejegyzés">Random bejegyzés</a></li>
+                    <li><select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'><option value="">Hónap kiválasztása</option>	<option value='http://sidenote.hu/2015/03/'> 2015. március &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2015/01/'> 2015. január &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2014/10/'> 2014. október &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2014/09/'> 2014. szeptember &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2014/08/'> 2014. augusztus &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2014/07/'> 2014. július &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2014/01/'> 2014. január &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2013/11/'> 2013. november &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2013/10/'> 2013. október &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2013/09/'> 2013. szeptember &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2013/08/'> 2013. augusztus &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2013/07/'> 2013. július &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2013/06/'> 2013. június &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2013/05/'> 2013. május &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2013/04/'> 2013. április &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2013/03/'> 2013. március &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2013/02/'> 2013. február &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2013/01/'> 2013. január &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2012/12/'> 2012. december &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2012/11/'> 2012. november &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2012/10/'> 2012. október &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2012/09/'> 2012. szeptember &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2012/07/'> 2012. július &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2012/06/'> 2012. június &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2012/05/'> 2012. május &nbsp;(8)</option>
+	<option value='http://sidenote.hu/2012/04/'> 2012. április &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2012/03/'> 2012. március &nbsp;(6)</option>
+	<option value='http://sidenote.hu/2012/02/'> 2012. február &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2012/01/'> 2012. január &nbsp;(6)</option>
+	<option value='http://sidenote.hu/2011/12/'> 2011. december &nbsp;(6)</option>
+	<option value='http://sidenote.hu/2011/11/'> 2011. november &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2011/10/'> 2011. október &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2011/09/'> 2011. szeptember &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2011/08/'> 2011. augusztus &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2011/07/'> 2011. július &nbsp;(10)</option>
+	<option value='http://sidenote.hu/2011/06/'> 2011. június &nbsp;(6)</option>
+	<option value='http://sidenote.hu/2011/04/'> 2011. április &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2011/03/'> 2011. március &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2011/02/'> 2011. február &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2011/01/'> 2011. január &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2010/12/'> 2010. december &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2010/11/'> 2010. november &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2010/10/'> 2010. október &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2010/09/'> 2010. szeptember &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2010/08/'> 2010. augusztus &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2010/07/'> 2010. július &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2010/06/'> 2010. június &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2010/05/'> 2010. május &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2010/04/'> 2010. április &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2010/03/'> 2010. március &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2010/02/'> 2010. február &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2010/01/'> 2010. január &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2009/12/'> 2009. december &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2009/11/'> 2009. november &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2009/10/'> 2009. október &nbsp;(5)</option>
+	<option value='http://sidenote.hu/2009/09/'> 2009. szeptember &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2009/08/'> 2009. augusztus &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2009/07/'> 2009. július &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2009/06/'> 2009. június &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2009/05/'> 2009. május &nbsp;(5)</option>
+	<option value='http://sidenote.hu/2009/04/'> 2009. április &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2009/03/'> 2009. március &nbsp;(8)</option>
+	<option value='http://sidenote.hu/2009/02/'> 2009. február &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2009/01/'> 2009. január &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2008/12/'> 2008. december &nbsp;(6)</option>
+	<option value='http://sidenote.hu/2008/11/'> 2008. november &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2008/10/'> 2008. október &nbsp;(4)</option>
+	<option value='http://sidenote.hu/2008/09/'> 2008. szeptember &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2008/08/'> 2008. augusztus &nbsp;(5)</option>
+	<option value='http://sidenote.hu/2008/07/'> 2008. július &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2008/06/'> 2008. június &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2008/05/'> 2008. május &nbsp;(2)</option>
+	<option value='http://sidenote.hu/2008/04/'> 2008. április &nbsp;(3)</option>
+	<option value='http://sidenote.hu/2008/03/'> 2008. március &nbsp;(1)</option>
+	<option value='http://sidenote.hu/2008/02/'> 2008. február &nbsp;(5)</option>
+	<option value='http://sidenote.hu/2008/01/'> 2008. január &nbsp;(2)</option>
+</select></li>
+                    <li><form action="../../../../index.html" method="get"><select  name='cat' id='cat' class='postform'  onchange='return this.form.submit()'>
+	<option value='-1'>Kategória kiválasztása</option>
+	<option class="level-0" value="3">a blog&nbsp;&nbsp;(10)</option>
+	<option class="level-0" value="4">alkotunk&nbsp;&nbsp;(37)</option>
+	<option class="level-0" value="6">animáció&nbsp;&nbsp;(16)</option>
+	<option class="level-0" value="7">anime&nbsp;&nbsp;(9)</option>
+	<option class="level-0" value="8">Apple&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="15">film&nbsp;&nbsp;(36)</option>
+	<option class="level-0" value="17">fotó&nbsp;&nbsp;(18)</option>
+	<option class="level-0" value="18">gizmó&nbsp;&nbsp;(48)</option>
+	<option class="level-0" value="20">hardver&nbsp;&nbsp;(16)</option>
+	<option class="level-0" value="21">holiday&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="36">humor&nbsp;&nbsp;(14)</option>
+	<option class="level-0" value="26">ismeretterjesztő&nbsp;&nbsp;(31)</option>
+	<option class="level-0" value="28">Japán&nbsp;&nbsp;(22)</option>
+	<option class="level-0" value="29">játék&nbsp;&nbsp;(35)</option>
+	<option class="level-0" value="34">könyv&nbsp;&nbsp;(15)</option>
+	<option class="level-0" value="35">Linux&nbsp;&nbsp;(38)</option>
+	<option class="level-0" value="43">munka&nbsp;&nbsp;(8)</option>
+	<option class="level-0" value="44">művészet, dizájn&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="46">para&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="52">sport&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="54" selected="selected">szoftver&nbsp;&nbsp;(88)</option>
+	<option class="level-0" value="99">TV&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="67">void *&nbsp;&nbsp;(22)</option>
+	<option class="level-0" value="68">web2&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="70">zene&nbsp;&nbsp;(25)</option>
+</select>
+ <noscript><div><input type="submit" value="View" /></div></noscript></form></li>
+                    <select name="tag-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;"><option value="#">Címke kiválasztása</option>	<option value='http://sidenote.hu/tag/android/'>Android (2)</option>
+	<option value='http://sidenote.hu/tag/auto/'>autó (3)</option>
+	<option value='http://sidenote.hu/tag/bash/'>Bash (10)</option>
+	<option value='http://sidenote.hu/tag/basic/'>Basic (2)</option>
+	<option value='http://sidenote.hu/tag/batch/'>Batch (1)</option>
+	<option value='http://sidenote.hu/tag/bond/'>Bond (1)</option>
+	<option value='http://sidenote.hu/tag/cyberpunk/'>cyberpunk (4)</option>
+	<option value='http://sidenote.hu/tag/del-korea/'>Dél-Korea (2)</option>
+	<option value='http://sidenote.hu/tag/egeszseg/'>egészség (1)</option>
+	<option value='http://sidenote.hu/tag/filmklub/'>filmklub (1)</option>
+	<option value='http://sidenote.hu/tag/google/'>Google (2)</option>
+	<option value='http://sidenote.hu/tag/ikea/'>IKEA (1)</option>
+	<option value='http://sidenote.hu/tag/indie/'>indie (14)</option>
+	<option value='http://sidenote.hu/tag/jazz/'>jazz (3)</option>
+	<option value='http://sidenote.hu/tag/kiallitas/'>kiállítás (5)</option>
+	<option value='http://sidenote.hu/tag/konferencia/'>konferencia (3)</option>
+	<option value='http://sidenote.hu/tag/kepregeny/'>képregény (2)</option>
+	<option value='http://sidenote.hu/tag/libreoffice/'>LibreOffice (1)</option>
+	<option value='http://sidenote.hu/tag/manga/'>manga (2)</option>
+	<option value='http://sidenote.hu/tag/mirror-pi/'>Mirror&nbsp;π (1)</option>
+	<option value='http://sidenote.hu/tag/mit-olvasunk/'>Mit&nbsp;olvasunk? (2)</option>
+	<option value='http://sidenote.hu/tag/mozi/'>mozi (4)</option>
+	<option value='http://sidenote.hu/tag/os-x/'>OS&nbsp;X (1)</option>
+	<option value='http://sidenote.hu/tag/philip-k-dick/'>Philip&nbsp;K.&nbsp;Dick (9)</option>
+	<option value='http://sidenote.hu/tag/powershell/'>PowerShell (1)</option>
+	<option value='http://sidenote.hu/tag/rajz/'>rajz (7)</option>
+	<option value='http://sidenote.hu/tag/raspberry-pi/'>Raspberry&nbsp;Pi (11)</option>
+	<option value='http://sidenote.hu/tag/reklam/'>reklám (5)</option>
+	<option value='http://sidenote.hu/tag/retro/'>retro (2)</option>
+	<option value='http://sidenote.hu/tag/sci-fi/'>sci-fi (12)</option>
+	<option value='http://sidenote.hu/tag/star-trek/'>Star&nbsp;Trek (1)</option>
+	<option value='http://sidenote.hu/tag/telefon/'>telefon (2)</option>
+	<option value='http://sidenote.hu/tag/termeszet/'>természet (7)</option>
+	<option value='http://sidenote.hu/tag/tex-latex/'>TeX/LaTeX (13)</option>
+	<option value='http://sidenote.hu/tag/tipografia/'>tipográfia (23)</option>
+	<option value='http://sidenote.hu/tag/tokio/'>Tokió (7)</option>
+	<option value='http://sidenote.hu/tag/ubuntu/'>Ubuntu (17)</option>
+	<option value='http://sidenote.hu/tag/valve/'>Valve (4)</option>
+	<option value='http://sidenote.hu/tag/video/'>videó (47)</option>
+	<option value='http://sidenote.hu/tag/vilagur/'>világűr (6)</option>
+	<option value='http://sidenote.hu/tag/webcam/'>webcam (1)</option>
+	<option value='http://sidenote.hu/tag/allat/'>állat (3)</option></select>
+                </ul>
+            </div>
+        </div>
+
+        <div class="widget">
+            <h3>Közösség</h3>
+            <div class="widget_body">
+                <ul>
+                    <li><a title="sidenote a Facebookon" href="http://www.facebook.com/pages/sidenotehu/112718384668">Facebook</a></li>
+                    <li><a title="sidenote a Google Plus-on"  href="https://plus.google.com/108693717971418449096/">Google+</a></li>
+                    <li><a title="sidenote a Tumblren" href="http://sidenotehu.tumblr.com/">Tumblr</a></li>
+                    <li><a title="sidenote a Twitteren" href="https://twitter.com/#!/sidenotehu">Twitter</a></li>
+                    <li><a title="sidenote a Vimeon" href="http://vimeo.com/sidenote">Vimeo</a></li>
+                    <li><a title="sidenote a YouTube-on" href="http://www.youtube.com/sidenotehu">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+
+        		
+		
+		
+        <div class="widget">
+		<h3>Mit olvasunk?</h3>
+            <div class="widget_body">
+                <ul>
+                    <li><a href="http://www.boingboing.net/">Boing Boing</a></li>
+<li><a href="http://design.canonical.com/" title="Canonical Design">Canonical Design</a></li>
+<li><a href="http://www.dannychoo.com/" title="Culture Japan &ndash; Your portal to Japan">Culture Japan</a></li>
+<li><a href="http://www.engadget.com/" title="Engadget">Engadget</a></li>
+<li><a href="http://fat-pie.com/" title="Fat-Pie.com :: Animation and stuff by David Firth">Fat-Pie.com</a></li>
+<li><a href="http://freegamer.blogspot.com/" title="Free Gamer &#8211; Open Source Games">Free Gamer</a></li>
+<li><a href="http://handras.hu/" title="Handras">Handras</a></li>
+<li><a href="http://hup.hu/" title="Hungarian Unix Portal">Hungarian Unix Portal</a></li>
+<li><a href="http://www.ikeahackers.net/" title="IKEA Hackers">IKEA Hackers</a></li>
+<li><a href="http://www.jupiterbroadcasting.com/" title="Jupiter Broadcasting">Jupiter Broadcasting</a></li>
+<li><a href="http://asiafan.hu/" title="Keleti Szél ">Keleti Szél</a></li>
+<li><a href="http://napirajz.hu/" title="Napirajz &ndash; Súlyosbítva azt, ami amúgy is.">Napirajz</a></li>
+<li><a href="http://plastik.hu/" title="plastik media">Plastik média</a></li>
+<li><a href="http://prohardver.hu/" title="PROHARDVER! &ndash; Az Online PC Magazin">PROHARDVER!</a></li>
+<li><a href="http://tokyotimes.org/" title="Tokyo Times &ndash; Photographs from a small group of islands">Tokyo Times</a></li>
+<li><a href="http://twitchfilm.com/" title="Twitch">Twitch</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="widget">
+            <h3>Kategóriák</h3>
+            <div class="widget_body">
+                <ul>
+                    	<li class="cat-item cat-item-3"><a href="../../../a-blog/index.html" >a blog</a> (10)
+</li>
+	<li class="cat-item cat-item-4"><a href="../../../alkotunk/index.html" >alkotunk</a> (37)
+</li>
+	<li class="cat-item cat-item-6"><a href="../../../animacio/index.html" >animáció</a> (16)
+</li>
+	<li class="cat-item cat-item-7"><a href="../../../anime/index.html" >anime</a> (9)
+</li>
+	<li class="cat-item cat-item-8"><a href="../../../apple/index.html" >Apple</a> (2)
+</li>
+	<li class="cat-item cat-item-15"><a href="../../../film/index.html" >film</a> (36)
+</li>
+	<li class="cat-item cat-item-17"><a href="../../../foto/index.html" >fotó</a> (18)
+</li>
+	<li class="cat-item cat-item-18"><a href="../../../gizmo/index.html" >gizmó</a> (48)
+</li>
+	<li class="cat-item cat-item-20"><a href="../../../hardver/index.html" >hardver</a> (16)
+</li>
+	<li class="cat-item cat-item-21"><a href="../../../holiday/index.html" >holiday</a> (3)
+</li>
+	<li class="cat-item cat-item-36"><a href="../../../humor/index.html" >humor</a> (14)
+</li>
+	<li class="cat-item cat-item-26"><a href="../../../ismeretterjeszto/index.html" >ismeretterjesztő</a> (31)
+</li>
+	<li class="cat-item cat-item-28"><a href="../../../japan/index.html" >Japán</a> (22)
+</li>
+	<li class="cat-item cat-item-29"><a href="../../../jatek/index.html" >játék</a> (35)
+</li>
+	<li class="cat-item cat-item-34"><a href="../../../konyv/index.html" >könyv</a> (15)
+</li>
+	<li class="cat-item cat-item-35"><a href="../../../linux/index.html" >Linux</a> (38)
+</li>
+	<li class="cat-item cat-item-43"><a href="../../../munka/index.html" >munka</a> (8)
+</li>
+	<li class="cat-item cat-item-44"><a href="../../../muveszet-dizajn/index.html" >művészet, dizájn</a> (34)
+</li>
+	<li class="cat-item cat-item-46"><a href="../../../para/index.html" >para</a> (3)
+</li>
+	<li class="cat-item cat-item-52"><a href="../../../sport/index.html" >sport</a> (3)
+</li>
+	<li class="cat-item cat-item-54 current-cat"><a href="../../index.html" >szoftver</a> (88)
+</li>
+	<li class="cat-item cat-item-99"><a href="../../../tv/index.html" >TV</a> (1)
+</li>
+	<li class="cat-item cat-item-67"><a href="../../../void/index.html" >void *</a> (22)
+</li>
+	<li class="cat-item cat-item-68"><a href="../../../web2/index.html" >web2</a> (3)
+</li>
+	<li class="cat-item cat-item-70"><a href="../../../zene/index.html" >zene</a> (25)
+</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        
+        <div class="widget">
+            <h3>Friss kommentek</h3>
+            <div class="widget_body">
+                <ul>
+	<li><a href="../../../../index.html%3Fp=1575.html#li-comment-1149" title="Hozzászólás a(z) Neo Tokyo (1987) bejegyzéshez">Kadmon</a>: Alapos leírás! Linkeltem az animéről&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=1344.html#li-comment-1148" title="Hozzászólás a(z) Memories (1995) bejegyzéshez">Kadmon</a>: Hasznos ismertető volt, köszönöm! Li&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=8680.html#li-comment-1147" title="Hozzászólás a(z) bash-weather update bejegyzéshez">Pecsét Józsi</a>: magyarul elfelejtettünk?</li>
+	<li><a href="../../../../index.html%3Fp=8674.html#li-comment-1146" title="Hozzászólás a(z) Introducing Mirror π bejegyzéshez">The TA master</a>: Le a kalappal előttetek! 
+Most már cs&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=7603.html#li-comment-1135" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">Miki</a>: rrel hosszabb a k BASH-ben expr-t haszn�&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=7603.html#li-comment-1124" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">szantaii</a>: Kösz!</li>
+	<li><a href="../../../../index.html%3Fp=7603.html#li-comment-1123" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">Miki</a>: Ha rövidségre törekedik az ember, pow&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1121" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">szantaii</a>: Örülök, hogy sikerült, de az azért&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1120" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">Simon János Bálint</a>: Szia!
+
+Nagyon köszi!
+
+12.04-et hasz&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1119" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">szantaii</a>: Szia!
+Ha a legújabb Ubuntut használod&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1118" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">Simon János Bálint</a>: Szia!
+
+Teljesen új nekem a Linux / Ub&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1116" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">szantaii</a>: 4&thinsp;db 1.2&thinsp;V-os 2500&thinsp;&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1115" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">Róbert</a>: Szia !
+
+Érdeklődnék, hogy több ele&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1114" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">szantaii</a>: Kedves József!
+
+Örülök a megkeres�&hellip;</li>
+	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1113" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">Kövecses József</a>: Tiszteletem!
+
+Érdeklődnék a készü&hellip;</li>
+</ul>            </div>
+        </div>
+
+</div>
+
+
+    </div>
+
+            </div>
+        </div>
+        <div class="footer">
+                        <p class="copy">Minden itt található tartalomra a <a title="Creative Commons &mdash; Attribution-NonCommercial-ShareAlike 2.5 Hungary" href="http://creativecommons.org/licenses/by-nc-sa/2.5/hu/" rel="copyright">Creative<br />Commons 2.5</a> licencfeltételek érvényesek.</p>
+            <p class="credits">Dizájn: <a href="http://wpshower.com/" title="WPSHOWER - Free wordpress themes">Wpshower</a> &amp; <a href="http://www.google.com/recaptcha/mailhide/d?k=01-eS1OVupYM1Ym0ghoHG98w==&amp;c=uIaPdoIEI5zPDUMR-YI8hSgN4JHjcYZBqtigR7VOzcQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501-eS1OVupYM1Ym0ghoHG98w\75\75\46c\75uIaPdoIEI5zPDUMR-YI8hSgN4JHjcYZBqtigR7VOzcQ\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">szantaii</a>.</p>
+        </div>
+
+        <!-- Page generated: 0,272 s, 56 queries -->
+<script type='text/javascript' src='../../../../wp-includes/js/wp-embed.min.js%3Fver=4.8.15'></script>
+		<script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
+	</body>
+</html>

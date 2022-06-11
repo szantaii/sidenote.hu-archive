@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Hozzászólás: exFAT Linux támogatás</title>
+	<atom:link href="http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/feed/" rel="self" type="application/rss+xml" />
+	<link>http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/</link>
+	<description></description>
+	<lastBuildDate>Sun, 10 May 2020 10:58:34 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.15</generator>
+	<item>
+		<title>Szerző: szantaii</title>
+		<link>http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/#comment-1121</link>
+		<dc:creator><![CDATA[szantaii]]></dc:creator>
+		<pubDate>Wed, 19 Feb 2014 07:47:42 +0000</pubDate>
+		<guid isPermaLink="false">http://sidenote.hu/?p=7189#comment-1121</guid>
+		<description><![CDATA[Örülök, hogy sikerült, de az azért annyira nem jó, ha nem látsz minden mappát a felcsatolt fájlrendszeren. Nem tudom, hogy azt tudod-e, hogy Linuxon (Unixokon) azok a fájlok és mappák, amiknek a nevük ponttal (&#8222;[cci].[/cci]&#8221;) kezdődik azok rejtettek. Azaz ha grafikus fájlkezelőben nézed a fájlrendszered, akkor ezek alapértelmezetten nem jelennek meg, csak akkor ha bekapcsolod, hogy látszódjanak a rejtett állományok. Nem lehet, hogy ez a gond?]]></description>
+		<content:encoded><![CDATA[<p>Örülök, hogy sikerült, de az azért annyira nem jó, ha nem látsz minden mappát a felcsatolt fájlrendszeren. Nem tudom, hogy azt tudod-e, hogy Linuxon (Unixokon) azok a fájlok és mappák, amiknek a nevük ponttal (&bdquo;<code class="codecolorer text dawn"><span class="text">.</span></code>&rdquo;) kezdődik azok rejtettek. Azaz ha grafikus fájlkezelőben nézed a fájlrendszered, akkor ezek alapértelmezetten nem jelennek meg, csak akkor ha bekapcsolod, hogy látszódjanak a rejtett állományok. Nem lehet, hogy ez a gond?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Szerző: Simon János Bálint</title>
+		<link>http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/#comment-1120</link>
+		<dc:creator><![CDATA[Simon János Bálint]]></dc:creator>
+		<pubDate>Wed, 19 Feb 2014 00:47:11 +0000</pubDate>
+		<guid isPermaLink="false">http://sidenote.hu/?p=7189#comment-1120</guid>
+		<description><![CDATA[Szia!
+
+Nagyon köszi!
+
+12.04-et használom, így az utóbbival szépen összejött!!!
+
+Vannak még hibák (nem lát minden mappát, szerintem egy restart talán jót tesz?!)
+de itt is egy jó leírás:
+
+http://blog.campodoro.org/?p=261]]></description>
+		<content:encoded><![CDATA[<p>Szia!</p>
+<p>Nagyon köszi!</p>
+<p>12.04-et használom, így az utóbbival szépen összejött!!!</p>
+<p>Vannak még hibák (nem lát minden mappát, szerintem egy restart talán jót tesz?!)<br />
+de itt is egy jó leírás:</p>
+<p><a href="http://blog.campodoro.org/?p=261" rel="nofollow">http://blog.campodoro.org/?p=261</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Szerző: szantaii</title>
+		<link>http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/#comment-1119</link>
+		<dc:creator><![CDATA[szantaii]]></dc:creator>
+		<pubDate>Tue, 18 Feb 2014 07:33:06 +0000</pubDate>
+		<guid isPermaLink="false">http://sidenote.hu/?p=7189#comment-1119</guid>
+		<description><![CDATA[Szia!
+Ha a legújabb Ubuntut használod (13.10), akkor nincs más tennivalód, mint feltenni ezt a két csomagot: [cci]exfat-fuse[/cci], [cci]exfat-utils[/cci].
+
+Nyiss egy terminált, és ezt írd be:
+
+[cclN_bash]sudo apt-get install exfat-fuse exfat-utils -y[/cclN_bash].
+
+Ha régebbi Ubuntud van, és az imént leírt megoldás nem működne, akkor ezeket a parancsokat hajtsd végre:
+
+[cclN_bash]sudo apt-add-repository ppa:relan/exfat
+sudo apt-get update
+sudo apt-get install fuse-exfat exfat-utils[/cclN_bash]]]></description>
+		<content:encoded><![CDATA[<p>Szia!<br />
+Ha a legújabb Ubuntut használod (13.10), akkor nincs más tennivalód, mint feltenni ezt a két csomagot: <code class="codecolorer text dawn"><span class="text">exfat-fuse</span></code>, <code class="codecolorer text dawn"><span class="text">exfat-utils</span></code>.</p>
+<p>Nyiss egy terminált, és ezt írd be:</p>
+<div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;border:1px solid #9F9F9F;width:435px;"><div class="bash codecolorer" style="padding:5px;font:normal 12px/1.4em Monaco, Lucida Console, monospace;white-space:nowrap;"><span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> exfat-fuse exfat-utils <span style="color: #660033;">-y</span></div></div>
+<p>.</p>
+<p>Ha régebbi Ubuntud van, és az imént leírt megoldás nem működne, akkor ezeket a parancsokat hajtsd végre:</p>
+<div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;border:1px solid #9F9F9F;width:435px;"><div class="bash codecolorer" style="padding:5px;font:normal 12px/1.4em Monaco, Lucida Console, monospace;white-space:nowrap;"><span style="color: #c20cb9; font-weight: bold;">sudo</span> apt-add-repository ppa:relan<span style="color: #000000; font-weight: bold;">/</span>exfat<br />
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get update</span><br />
+<span style="color: #c20cb9; font-weight: bold;">sudo</span> <span style="color: #c20cb9; font-weight: bold;">apt-get install</span> fuse-exfat exfat-utils</div></div>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Szerző: Simon János Bálint</title>
+		<link>http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/#comment-1118</link>
+		<dc:creator><![CDATA[Simon János Bálint]]></dc:creator>
+		<pubDate>Tue, 18 Feb 2014 00:42:40 +0000</pubDate>
+		<guid isPermaLink="false">http://sidenote.hu/?p=7189#comment-1118</guid>
+		<description><![CDATA[Szia!
+
+Teljesen új nekem a Linux / Ubuntu és az általad leírtak
+http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/
+miatt nekem is el kéne érnem a külső HDD-im
+
+Mi a megoldás - kérlek ha nem gond, bizony lépésről lépésre... :]
+
+Ha jó címre írtam és tudsz / akarsz választ adni, leírom azt a pár lépést ameddig eljutottam.
+
+
+Köszönöm!]]></description>
+		<content:encoded><![CDATA[<p>Szia!</p>
+<p>Teljesen új nekem a Linux / Ubuntu és az általad leírtak<br />
+<a href="http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/" rel="nofollow">http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/</a><br />
+miatt nekem is el kéne érnem a külső HDD-im</p>
+<p>Mi a megoldás &#8211; kérlek ha nem gond, bizony lépésről lépésre&#8230; :]</p>
+<p>Ha jó címre írtam és tudsz / akarsz választ adni, leírom azt a pár lépést ameddig eljutottam.</p>
+<p>Köszönöm!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Szerző: szantaii</title>
+		<link>http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/#comment-1008</link>
+		<dc:creator><![CDATA[szantaii]]></dc:creator>
+		<pubDate>Mon, 24 Sep 2012 10:24:34 +0000</pubDate>
+		<guid isPermaLink="false">http://sidenote.hu/?p=7189#comment-1008</guid>
+		<description><![CDATA[Kösz! Ha egyszer odajutok, megnézem.]]></description>
+		<content:encoded><![CDATA[<p>Kösz! Ha egyszer odajutok, megnézem.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Szerző: hron84</title>
+		<link>http://sidenote.hu/2012/05/12/exfat-linux-tamogatas/#comment-1007</link>
+		<dc:creator><![CDATA[hron84]]></dc:creator>
+		<pubDate>Mon, 24 Sep 2012 08:33:04 +0000</pubDate>
+		<guid isPermaLink="false">http://sidenote.hu/?p=7189#comment-1007</guid>
+		<description><![CDATA[De mar van NTFS-3G Macre. http://macntfs-3g.blogspot.hu/ Kiraly cucc, es mukodik, efelol biztositalak.]]></description>
+		<content:encoded><![CDATA[<p>De mar van NTFS-3G Macre. <a href="http://macntfs-3g.blogspot.hu/" rel="nofollow">http://macntfs-3g.blogspot.hu/</a> Kiraly cucc, es mukodik, efelol biztositalak.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
