@@ -149,6 +149,11 @@ $elements_to_remove = array(
             'rel'  => 'publisher',
         ),
         array(
+            'rel'  => 'stylesheet',
+            'type' => 'text/css',
+            'href' => 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic&subset=latin,latin-ext',
+        ),
+        array(
             'rel'  => 'wlwmanifest',
         ),
     ),
