@@ -62,9 +62,3 @@ p#footer { margin: 0px 0px 0px 320px; display: inline; }
 p#footer em { display: block; }
 
 a.atom-rss { margin: 0px 0px 0px 6px; padding: 1px 2px 0px; font-size: 0.93em; letter-spacing: 0.08em; background: #ddd; }
-
-/* Javascript-enabled styles */
-body.js-enabled p#gallery-count, body.js-enabled div#gallery-navigation { display: block; }
-body.js-enabled p#project-count { display: none; }
-body.js-enabled div#media div.image { display: none; }
-body.js-enabled div#media div.image:first-child { display: block; }
