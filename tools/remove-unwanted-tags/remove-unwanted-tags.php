@@ -57,7 +57,41 @@ function removeElements(DOMDocument $document, array $elements): DOMDocument
     return $new_document;
 }
 
-$file_name                    =  $argv[1];
+function removeStylesBasedOnContents(DOMDocument $document, array $style_contents): DOMDocument
+{
+    $new_document       = $document;
+    $selected_elements  = $new_document->getElementsByTagName('style');
+    $elements_to_remove = array();
+
+    foreach ($selected_elements as $element)
+    {
+        if ($element->getAttribute('type') !== 'text/css'
+            || $element->childNodes->count() !== 1
+            || !is_string($element->childNodes->item(0)->nodeValue))
+        {
+            continue;
+        }
+
+        foreach ($style_contents as $style_content)
+        {
+            if (str_contains($element->nodeValue, $style_content))
+            {
+                $elements_to_remove[] = $element;
+
+                continue;
+            }
+        }
+    }
+
+    foreach ($elements_to_remove as $element_to_remove)
+    {
+        $element_to_remove->parentNode->removeChild($element_to_remove);
+    }
+
+    return $new_document;
+}
+
+$file_name                    = $argv[1];
 $file_contents                = file_get_contents($file_name);
 $document                     = new DOMDocument();
 $document->validateOnParse    = false;
@@ -125,8 +159,13 @@ $elements_to_remove = array(
     ),
     'script' => array(),
 );
+$styles_to_remove = array(
+    'wp-smiley',
+    'si_captcha',
+);
 
 $document = removeElements($document, $elements_to_remove);
+$document = removeStylesBasedOnContents($document, $styles_to_remove);
 
 $file_contents = mb_convert_encoding(
     $document->saveHTML(),
