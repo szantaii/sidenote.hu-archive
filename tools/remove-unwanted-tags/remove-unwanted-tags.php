@@ -19,7 +19,7 @@ function elementHasAttributesWithValues(DOMElement $element, array $attribute_na
     return $result;
 }
 
-function removeElements(DOMDocument $document, array $elements): DOMDocument
+function removeElementsBasedOnAttributeValues(DOMDocument $document, array $elements): DOMDocument
 {
     $new_document       = $document;
     $elements_to_remove = array();
@@ -80,6 +80,36 @@ function removeStylesBasedOnContents(DOMDocument $document, array $style_content
 
                 continue;
             }
+        }
+    }
+
+    foreach ($elements_to_remove as $element_to_remove)
+    {
+        $element_to_remove->parentNode->removeChild($element_to_remove);
+    }
+
+    return $new_document;
+}
+
+function removeSomeSidebarElements(DOMDocument $document): DOMDocument
+{
+    $new_document        = $document;
+    $selected_elements   = $new_document->getElementsByTagName('h3');
+    $elements_to_remove  = array();
+    $header_tag_contents = array(
+        'Közösség',
+        'Friss kommentek',
+        'Személyes',
+        'Quick Access',
+    );
+
+    foreach ($selected_elements as $element)
+    {
+        if (in_array(trim($element->nodeValue), $header_tag_contents)
+            && $element->parentNode->attributes->getNamedItem('class')->value === 'widget'
+            && $element->parentNode->parentNode->attributes->getNamedItem('class')->value === 'sidebar')
+        {
+            $elements_to_remove[] = $element->parentNode;
         }
     }
 
@@ -174,8 +204,10 @@ $styles_to_remove = array(
     'si_captcha',
 );
 
-$document = removeElements($document, $elements_to_remove);
+$document = removeElementsBasedOnAttributeValues($document, $elements_to_remove);
 $document = removeStylesBasedOnContents($document, $styles_to_remove);
+$document = removeSomeSidebarElements($document);
+
 
 $file_contents = mb_convert_encoding(
     $document->saveHTML(),
