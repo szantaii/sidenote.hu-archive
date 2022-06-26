@@ -142,64 +142,67 @@ $document->loadHTML(
 $elements_to_remove = array(
     'div'    => array(
         array(
-            'class' => 'post_share',
+            'class'      => 'post_share',
         )
     ),
     'link'   => array(
         array(
-            'rel'   => 'alternate',
-            'type'  => 'application/atom',
+            'rel'        => 'alternate',
+            'type'       => 'application/atom',
         ),
         array(
-            'rel'   => 'alternate',
-            'type'  => 'application/json',
+            'rel'        => 'alternate',
+            'type'       => 'application/json',
         ),
         array(
-            'rel'   => 'alternate',
-            'type'  => 'application/rss',
+            'rel'        => 'alternate',
+            'type'       => 'application/rss',
         ),
         array(
-            'rel'   => 'alternate',
-            'type'  => 'text/xml',
+            'rel'        => 'alternate',
+            'type'       => 'text/xml',
         ),
         array(
-            'rel'   => 'dns-prefetch',
+            'rel'        => 'dns-prefetch',
         ),
         array(
-            'rel'   => 'EditURI',
-            'type'  => 'application/rsd',
-            'href'  => 'xmlrpc',
+            'rel'        => 'EditURI',
+            'type'       => 'application/rsd',
+            'href'       => 'xmlrpc',
         ),
         array(
-            'rel'   => 'https://api.w.org/',
-            'href'  => 'wp-json/index.html',
+            'rel'        => 'https://api.w.org/',
+            'href'       => 'wp-json/index.html',
         ),
         array(
-            'rel'   => 'pingback',
+            'rel'        => 'pingback',
         ),
         array(
-            'rel'   => 'profile',
+            'rel'        => 'profile',
         ),
         array(
-            'rel'   => 'publisher',
+            'rel'        => 'publisher',
         ),
         array(
-            'rel'   => 'stylesheet',
-            'type'  => 'text/css',
-            'href'  => 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic&subset=latin,latin-ext',
+            'rel'        => 'stylesheet',
+            'type'       => 'text/css',
+            'href'       => 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic&subset=latin,latin-ext',
         ),
         array(
-            'rel'   => 'stylesheet',
-            'type'  => 'text/css',
-            'href'  => 'http://fonts.googleapis.com/css?family=Source+Code+Pro:300',
+            'rel'        => 'stylesheet',
+            'type'       => 'text/css',
+            'href'       => 'http://fonts.googleapis.com/css?family=Source+Code+Pro:300',
         ),
         array(
-            'rel'   => 'wlwmanifest',
+            'rel'        => 'wlwmanifest',
         ),
     ),
     'meta'   => array(
         array(
-            'name'  => 'generator',
+            'name'       => 'generator',
+        ),
+        array(
+            'http-equiv' => 'refresh',
         ),
     ),
     'script' => array(),
