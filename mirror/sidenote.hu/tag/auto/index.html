@@ -232,7 +232,7 @@
                                 I was using RPi.GPIO version 0.5.3a for controlling the GPIO pins and at the moment RPi.GPIO needs root permission to do this. So I needed to run the Python scripts as root, but since lighttpd can not be run as root – which would be a sechole – I needed to hack a little bit.
                             </p>
                             <p>
-                                I found the solution in <a href="http://davstott.me.uk/index.php/2013/03/17/raspberry-pi-controlling-gpio-from-the-web/">Dav’s Raspberry Pi – Controlling GPIO from the Web</a> post: I made a copy of Python’s executable and gave it the <a href="https://en.wikipedia.org/wiki/Setuid">setuid</a> attribute.
+                                I found the solution in <a href="https://davstott.me.uk/index.php/2013/03/17/raspberry-pi-controlling-gpio-from-the-web/">Dav’s Raspberry Pi – Controlling GPIO from the Web</a> post: I made a copy of Python’s executable and gave it the <a href="https://en.wikipedia.org/wiki/Setuid">setuid</a> attribute.
                             </p>
                             <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;">
                                 <div class="bash codecolorer">
