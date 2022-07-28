@@ -71,10 +71,10 @@
                                 The other day I thought about that it would be nice to program <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life" title="Conway's Game of Life - Wikipedia">Conway’s Game of Life</a> in LaTeX and create an animated PDF output. You could say that implementing the Game of Life is pretty easy. It is. But not in LaTeX, at least not for me. After using LaTeX for years I still find it hard to understand some codes and especially writing programs in “pure LaTeX”.
                             </p>
                             <p>
-                                Since I use PGF/TikZ fairly often I decided to use <code class="codecolorer text dawn"><span class="text">pgfmath</span></code> for the implementation. Pretty soon I got stuck, I needed to assign values to array elements, and I didn’t know how to overcome this problem in LaTeX. So I decided to ask <a href="https://tex.stackexchange.com/questions/145319/programming-conways-game-of-life-in-latex" title="tikz pgf - Programming Conway's Game of Life in LaTeX - TeX - LaTeX Stack Exchange">a question on TeX.SX</a>. This is the point that things get interesting.
+                                Since I use PGF/TikZ fairly often I decided to use <code class="codecolorer text dawn"><span class="text">pgfmath</span></code> for the implementation. Pretty soon I got stuck, I needed to assign values to array elements, and I didn’t know how to overcome this problem in LaTeX. So I decided to ask <a href="https://tex.stackexchange.com/q/145319" title="tikz pgf - Programming Conway's Game of Life in LaTeX - TeX - LaTeX Stack Exchange">a question on TeX.SX</a>. This is the point that things get interesting.
                             </p>
                             <p>
-                                I asked a question with the title “Assign value to array element (PGF/TikZ)”, I also wrote that my aim was to program Conway’s Game of Life in LaTeX, and posted my initial code. Before long two answers came, and the question was renamed to “Programming Conway’s Game of Life in LaTeX”. The first answer <a href="https://tex.stackexchange.com/a/145331/8844">implemented the Game of Life in LaTeX</a>, the second <a href="https://tex.stackexchange.com/a/145336/8844">implemented it in LuaTeX</a>. I was stunned. Especially from the LaTeX implementation. I didn’t – and still don’t – understand the code. :) At the end I decided I should get acquainted with LuaTeX, and write <a href="https://tex.stackexchange.com/a/145463/8844">my own solution</a> in it:
+                                I asked a question with the title “Assign value to array element (PGF/TikZ)”, I also wrote that my aim was to program Conway’s Game of Life in LaTeX, and posted my initial code. Before long two answers came, and the question was renamed to “Programming Conway’s Game of Life in LaTeX”. The first answer <a href="https://tex.stackexchange.com/a/145331">implemented the Game of Life in LaTeX</a>, the second <a href="https://tex.stackexchange.com/a/145336">implemented it in LuaTeX</a>. I was stunned. Especially from the LaTeX implementation. I didn’t – and still don’t – understand the code. :) At the end I decided I should get acquainted with LuaTeX, and write <a href="https://tex.stackexchange.com/a/145463">my own solution</a> in it:
                             </p>
                             <p>
                                 <img src="../../../../wp-content/uploads/2013/11/glider.gif" alt="Glider" width="250" height="250" class="alignnone size-full wp-image-8506">
@@ -416,13 +416,13 @@
                                 </table>
                             </div>
                             <p>
-                                <em>Note:</em> More information about my implementation is available <a href="https://tex.stackexchange.com/a/145463/8844">in my answer on TeX.SX</a>.
+                                <em>Note:</em> More information about my implementation is available <a href="https://tex.stackexchange.com/a/145463">in my answer on TeX.SX</a>.
                             </p>
                             <p>
                                 It turned out to be pretty easy to do this in LuaTeX, however I struggled with the modulus operator (<code class="codecolorer text dawn"><span class="text">%</span></code>) and printing from Lua to TeX. Still it became a pretty nice solution, I think.
                             </p>
                             <p>
-                                Last but not least I’m very grateful for the answers on my question. Here are some nice outputs of <a href="https://tex.stackexchange.com/a/145331/8844">jfbu’s</a> and <a href="https://tex.stackexchange.com/a/145336/8844">JLDiaz’s</a> answers (if you have a <a href="https://tex.stackexchange.com/" title="TeX - LaTeX Stack Exchange">TeX.SX</a> registration then please post an upvote on them because they are really great):
+                                Last but not least I’m very grateful for the answers on my question. Here are some nice outputs of <a href="https://tex.stackexchange.com/a/145331">jfbu’s</a> and <a href="https://tex.stackexchange.com/a/145336">JLDiaz’s</a> answers (if you have a <a href="https://tex.stackexchange.com/" title="TeX - LaTeX Stack Exchange">TeX.SX</a> registration then please post an upvote on them because they are really great):
                             </p>
                             <p>
                                 <img src="../../../../wp-content/uploads/2013/11/jfbu_1.gif" alt="Gosper glider gun" width="705" height="374" class="alignnone size-full wp-image-8509"><br>
