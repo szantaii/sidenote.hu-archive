@@ -1,913 +1,720 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="hu">
+<!DOCTYPE html>
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>
-            Linux / sidenote | Oldal 3        </title>
-        <meta http-equiv="Content-language" content="hu" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <link rel="shortcut icon" href="../../../../wp-content/themes/sidenoteminimal/images/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" media="all" href="../../../../wp-content/themes/sidenoteminimal/style.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="../../../../wp-content/themes/sidenoteminimal/pagenavi-css.css" />
-        <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="http://sidenote.hu/wp-content/themes/sidenoteminimal/ie.css" /><![endif]-->
-        <link rel="pingback" href="http://sidenote.hu/xmlrpc.php" />
-        <link rel="alternate" type="text/xml" title="RSS .92" href="../../../../feed/rss/index.html"/>
-        <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="../../../../feed/atom/index.html" />
-		<link href="https://plus.google.com/sidenote/" rel="publisher" />
-                <link rel='dns-prefetch' href='http://s.w.org/' />
-<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; hírcsatorna" href="../../../../feed/rss/index.html" />
-<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; hozzászólás hírcsatorna" href="../../../../comments/feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; Linux kategória hírcsatorna" href="../../feed/index.html" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/sidenote.hu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.15"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='codecolorer-css'  href='../../../../wp-content/plugins/codecolorer/codecolorer.css%3Fver=0.9.11.css' type='text/css' media='screen' />
-<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
-<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
-<script type='text/javascript' src='../../../../wp-content/themes/sidenoteminimal/js/jquery.lazyload.mini.js%3Fver=4.8.15'></script>
-<script type='text/javascript' src='../../../../wp-content/themes/sidenoteminimal/js/script.js%3Fver=4.8.15'></script>
-<link rel='https://api.w.org/' href='../../../../wp-json/index.html' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sidenote.hu/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.8.15" />
-<script type="text/javascript" src="../../../../wp-content/plugins/si-captcha-for-wordpress/captcha/si_captcha.js%3Fver=1654938224"></script>
-<!-- begin SI CAPTCHA Anti-Spam - login/register form style -->
-<style type="text/css">
-.si_captcha_small { width:175px; height:45px; padding-top:10px; padding-bottom:10px; }
-.si_captcha_large { width:250px; height:60px; padding-top:10px; padding-bottom:10px; }
-img#si_image_com { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_reg { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_log { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_side_login { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_checkout { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_jetpack { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_bbpress_topic { border-style:none; margin:0; padding-right:5px; float:left; }
-.si_captcha_refresh { border-style:none; margin:0; vertical-align:bottom; }
-div#si_captcha_input { display:block; padding-top:15px; padding-bottom:5px; }
-label#si_captcha_code_label { margin:0; }
-input#si_captcha_code_input { width:65px; }
-p#si_captcha_code_p { clear: left; padding-top:10px; }
-.si-captcha-jetpack-error { color:#DC3232; }
-</style>
-<!-- end SI CAPTCHA Anti-Spam - login/register form style -->
-        <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-6197576-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-		</script>
-		<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
-		{lang: 'hu'}
-		</script>
-	</head>
-	<body>
+            Linux / sidenote | Oldal 3
+        </title>
+        <link rel="shortcut icon" href="../../../../wp-content/themes/sidenoteminimal/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" media="all" href="../../../../wp-content/themes/sidenoteminimal/style.css">
+        <link rel="stylesheet" type="text/css" media="all" href="../../../../wp-content/themes/sidenoteminimal/pagenavi-css.css">
+        <link rel="stylesheet" id="codecolorer-css" href="../../../../wp-content/plugins/codecolorer/codecolorer.css%3Fver=0.9.11.css" type="text/css" media="screen">
+    </head>
+    <body>
         <div class="wrapper">
             <div class="header clear">
                 <div class="logo">
-                	<a title="http://sidenote.hu/" href="../../../../index.html">http://sidenote.hu/</a>
+                    <a title="http://sidenote.hu/" href="../../../../index.html">http://sidenote.hu/</a>
                 </div>
-                                <h1><a title="sidenote" href="../../../../index.html">sidenote</a></h1>
-
-                <div class="menu"><ul id="menu-header" class="menu"><li id="menu-item-4317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4317"><a title="Címlap" href="../../../../index.html">Címlap</a></li>
-<li id="menu-item-7810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7810"><a title="Projektek" href="../../../../index.html%3Fp=7396.html">Projektek</a></li>
-<li id="menu-item-4319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4319"><a title="Rólunk" href="../../../../index.html%3Fp=1345.html">Rólunk</a></li>
-<li id="menu-item-4318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4318"><a title="Archívum" href="../../../../index.html%3Fp=284.html">Archívum</a></li>
-</ul></div>
+                <h1>
+                    <a title="sidenote" href="../../../../index.html">sidenote</a>
+                </h1>
+                <div class="menu">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-4317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4317">
+                            <a title="Címlap" href="../../../../index.html">Címlap</a>
+                        </li>
+                        <li id="menu-item-7810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7810">
+                            <a title="Projektek" href="../../../../index.html%3Fp=7396.html">Projektek</a>
+                        </li>
+                        <li id="menu-item-4319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4319">
+                            <a title="Rólunk" href="../../../../index.html%3Fp=1345.html">Rólunk</a>
+                        </li>
+                        <li id="menu-item-4318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4318">
+                            <a title="Archívum" href="../../../../index.html%3Fp=284.html">Archívum</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="search">
-    <form method="get" id="searchform" action="../../../../index.html">
-        <fieldset>
-            <input name="s" type="text" onfocus="if(this.value=='Keresés') this.value='';" onblur="if(this.value=='') this.value='Keresés';" value="Keresés" />
-            <button type="submit"></button>
-        </fieldset>
-    </form>
-</div>
-                
+                    <form id="searchform" name="searchform">
+                        <fieldset disabled>
+                            <input type="text" value="Keresés" disabled>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
             <div class="middle clear">
-
-<div id="content">
-
-    <div class="archive_title clear">
-        <div class="archive_title_meta">Archívum</div>
-
-                        <div class="archive_title_name">A(z) &bdquo;Linux&rdquo; kategória bejegyzései</div>
-        
-    </div>
-
-        
-        <div class="clear post-6841 post type-post status-publish format-standard hentry category-linux category-muveszet-dizajn category-szoftver category-zene tag-ubuntu" id="post_6841">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=6841.html" title="Ubuntu Sound Theme" rel="bookmark">Ubuntu Sound Theme</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2012. február 19. 11:51</div>
-                    <div class="post_categories"><a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../muveszet-dizajn/index.html" rel="category tag">művészet, dizájn</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>, <a href="../../../zene/index.html" rel="category tag">zene</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <blockquote>
-<p>As Ubuntu expands onto new form factors, with an increasingly definitive visual identity and brand, it is important to ensure that the theme of Ubuntu is reflected in all aspects of the experience. The auditory experience of Ubuntu must be included in this theme to maintain an immersive environment and consistency with the brand.</p>
-</blockquote>
-<p><a href="http://design.canonical.com/2012/02/ubuntu-sound-theme-design/">Ubuntu sound theme design &laquo;  Canonical Design</a></p>
-<p>Röviden, tömören arról van szó, hogy a Canonicalnél végre nekiláttak az Ubuntu hangok tervezésének, hogy a majd&#8217; <a href="../../../../index.html%3Fp=2932.html" title="Az Ubuntu új arca / sidenote">két éve megújított brandjük</a> még profibb, egységesebb legyen.</p>
-<p>Ideje volt már, hogy ezt meglépjék, mert az Ubuntu Sound Theméje eléggé le van maradva a vizuális dizájn mögött. Kérdés, hogy lesz-e még elég idő a következő kiadás előtt befejezni a hangok megújítását, mert a 12.04, kódnevén Precise Pangolin ugye április végén érkezik.</p>
-<p><a href="http://design.canonical.com/category/design/sound/"><img src="../../../../wp-content/uploads/2012/02/ubuntu_sound_theme.png" alt="" title="Ubuntu Sound Theme" width="656" height="523" class="alignnone size-full wp-image-6844" srcset="../../../../wp-content/uploads/2012/02/ubuntu_sound_theme.png 656w, ../../../../wp-content/uploads/2012/02/ubuntu_sound_theme-225x179.png 225w, ../../../../wp-content/uploads/2012/02/ubuntu_sound_theme-350x279.png 350w" sizes="(max-width: 656px) 100vw, 656px" /></a></p>
-<p>Mindenesetre a február 7-én meghirdetett <a href="http://design.canonical.com/2012/02/ubuntu-sound-theme-design/" title="Ubuntu sound theme design &laquo;  Canonical Design">első hangokra vonatkozó kiírásra</a> <a href="http://design.canonical.com/2012/02/sound-theme-update/" title="Sound theme update &laquo;  Canonical Design">rengeteg pályamunka érkezett</a>. Ezeket érdemes meghallgatni, és kitölteni a hozzájuk tartozó kérdőívet. Egy kis feedback senkinek sem árt meg, aki szeretné, hogy az Ubuntu 12.04 ne csak stabil legyen, hanem szépen is szóljon.</p>
-<blockquote>
-<p>[B:]Other rappers dis me<br />
-Say my rhymes are sissy.<br />
-Why?<br />
-[J:]Why?<br />
-[J&#038;B:]Why?<br />
-[B:]What?<br />
-[J:]Why exactly?<br />
-[B:]What? Why?<br />
-[J:]Be more constructive with your feedback, please. Why?<br />
-[B:]Why?</p>
-</blockquote>
-<p><a href="http://www.youtube.com/watch?v=FArZxLj6DLk">Flight of the Conchords &ndash; Hiphopopotamus Vs. Rhymenoceros</a></p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F19%2Fubuntu-sound-theme%2F&amp;t=Ubuntu+Sound+Theme">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F19%2Fubuntu-sound-theme%2F&amp;t=Ubuntu+Sound+Theme">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F02%2F19%2Fubuntu-sound-theme%2F&amp;name=Ubuntu+Sound+Theme&amp;description=As+Ubuntu+expands+onto+new+form+factors%2C+with+an+increasingly+definitive+visual+identity+and+brand%2C+it+is+important+to+ensure+that+the+theme+of+Ubuntu%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/02/19/ubuntu-sound-theme/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2012/02/19/ubuntu-sound-theme/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Ubuntu&#32;Sound&#32;Theme&amp;url=http://sidenote.hu/2012/02/19/ubuntu-sound-theme/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/02/19/ubuntu-sound-theme/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-6781 post type-post status-publish format-standard hentry category-gizmo category-linux category-szoftver tag-ubuntu" id="post_6781">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=6781.html" title="Ubuntu HUD" rel="bookmark">Ubuntu HUD</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2012. január 24. 18:35</div>
-                    <div class="post_categories"><a href="../../../gizmo/index.html" rel="category tag">gizmó</a>, <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <p>Itt az újabb magic! Még a héten lecsekkolom, de most legyen elég egy screenshot és egy videó Mark Shuttleworth-től.</p>
-<p><a href="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e.png"><img src="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-705x440.png" alt="" title="Say hello to the Head-Up Display, or HUD." width="705" height="440" class="alignnone size-large wp-image-6782" srcset="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-705x440.png 705w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-225x140.png 225w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-350x218.png 350w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e.png 1280w" sizes="(max-width: 705px) 100vw, 705px" /></a></p>
-<blockquote>
-<p>This is the HUD. It’s a way for you to express your intent and have the application respond appropriately. We think of it as “beyond interface”, it’s the “intenterface”.  This concept of “intent-driven interface” has been a primary theme of our work in the Unity shell, with dash search as a first class experience pioneered in Unity. Now we are bringing the same vision to the application, in a way which is completely compatible with existing applications and menus.</p>
-</blockquote>
-<p><a href="http://www.markshuttleworth.com/archives/939">Mark Shuttleworth  &raquo; Introducing the HUD. Say hello to the future of the menu.</a></p>
-<p><iframe width="705" height="388" src="http://www.youtube.com/embed/w_WW-DHqR3c?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p>Nem tudom, hogy sírjak-e vagy nevessek, mindenesetre egy 720p-s videónak jobban örültem volna.</p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F24%2Fubuntu-hud%2F&amp;t=Ubuntu+HUD">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F24%2Fubuntu-hud%2F&amp;t=Ubuntu+HUD">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2012%2F01%2F24%2Fubuntu-hud%2F&amp;name=Ubuntu+HUD&amp;description=Itt+az+%C3%BAjabb+magic%21+M%C3%A9g+a+h%C3%A9ten+lecsekkolom%2C+de+most+legyen+el%C3%A9g+egy+screenshot+%C3%A9s+egy+vide%C3%B3+Mark+Shuttleworth-t%C5%91l.+This+is+the+HUD.+It%E2%80%99s+a%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2012/01/24/ubuntu-hud/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2012/01/24/ubuntu-hud/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Ubuntu&#32;HUD&amp;url=http://sidenote.hu/2012/01/24/ubuntu-hud/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2012/01/24/ubuntu-hud/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-6706 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu" id="post_6706">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=6706.html" title="Apró figyelmesség" rel="bookmark">Apró figyelmesség</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2011. december 17. 8:56</div>
-                    <div class="post_categories"><a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <p><img src="../../../../wp-content/uploads/2011/12/like_ubuntu_update.png" alt="" title="It's safer to connect the computer to AC power before updating." width="600" height="91" class="alignnone size-full wp-image-6707" srcset="../../../../wp-content/uploads/2011/12/like_ubuntu_update.png 600w, ../../../../wp-content/uploads/2011/12/like_ubuntu_update-225x34.png 225w, ../../../../wp-content/uploads/2011/12/like_ubuntu_update-350x53.png 350w" sizes="(max-width: 600px) 100vw, 600px" /></p>
-<blockquote>
-<p>It&#8217;s safer to connect the computer to AC power before updating.</p>
-</blockquote>
-<p>Az ilyet szeretem.</p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F17%2Fapro-figyelmesseg%2F&amp;t=Apr%C3%B3+figyelmess%C3%A9g">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F17%2Fapro-figyelmesseg%2F&amp;t=Apr%C3%B3+figyelmess%C3%A9g">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F12%2F17%2Fapro-figyelmesseg%2F&amp;name=Apr%C3%B3+figyelmess%C3%A9g&amp;description=It%26%238217%3Bs+safer+to+connect+the+computer+to+AC+power+before+updating.+Az+ilyet+szeretem.">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/12/17/apro-figyelmesseg/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2011/12/17/apro-figyelmesseg/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Apr%C3%B3%20figyelmess%C3%A9g&amp;url=http://sidenote.hu/2011/12/17/apro-figyelmesseg/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/12/17/apro-figyelmesseg/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-6578 post type-post status-publish format-standard hentry category-ismeretterjeszto category-linux category-szoftver tag-android tag-konferencia tag-libreoffice tag-tipografia tag-ubuntu" id="post_6578">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=6578.html" title="Szabad Szoftver Konferencia és Kiállítás 2011, Budapest" rel="bookmark">Szabad Szoftver Konferencia és Kiállítás 2011, Budapest</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2011. október 6. 12:25</div>
-                    <div class="post_categories"><a href="../../../ismeretterjeszto/index.html" rel="category tag">ismeretterjesztő</a>, <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <blockquote>
-<p><em>2011. november 12., Budapest, Infopark, BME Informatikai épülete<br />
-A részvétel a látogatók számára ingyenes, de regisztrációhoz kötött</em></p>
-<p>Az FSF.hu Alapítvány 2011-ben újra megrendezi a Szabad Szoftver Konferenciát és Kiállítást Budapesten.</p>
-<p>A rendezvény Budapesten, a <a href="http://www.google.com/search?client=ubuntu&#038;channel=fs&#038;q=47.472654%2C+19.059653">BME épületében, az Infoparkban</a> kerül megrendezésre, az időpont <em>2011. november 12-e.</em> A konferencia reggel kilenc órától délután negyed hatig tart. Előadói szekciói és a kiállítás párhuzamosan zajlanak, így minden látogató találhat számára érdekes előadásokat, megfelelő elfoglaltságot.</p>
-<p>A konferencia programja hamarosan kikerül a honlapra. Amint véglegessé válik, a regisztráltak értesítést kapnak róla. </p>
-<p><em>A konferencia kiemelt előadói</em></p>
-<p><em>Kadlecsik József,</em> a Linux kernel csomagszűrő alrendszerének, a netfilter-nek egyik vezető fejlesztője, <em>Tímár András,</em> a Firefox és a LibreOffice magyar honosításának lelke és a LibreOffice Engineering Steering Comittee tagja, valamint <em>Torma László (Toros),</em> a hazai Ubuntu közösség egyik vezéralakja, fáradhatatlan blogger és szervező. Ők fogják a jelentkező előadók közül kiválasztani azokat, akik várhatóan érdekes és hasznos előadásokat fognak tartani.</p>
-<p>A konferenciára Magyarország legjobb előadóit, kiállítóként pedig minél több szabad szoftverekkel foglalkozó civil, szakmai szervezeteket valamint cégeket hívunk meg. A részvétel látogatók számára ingyenes lesz, de regisztrációhoz kötött. Az előadások anyagából konferenciakiadvány készül, melynek ISBN számot is fogunk kérni.</p>
-<p>Amennyiben szívesen látogatnál el, adnál elő vagy állítanál ki a konferencián, akkor kérjük regisztráld magad a bal oldalon található regisztrációs menüpontok valamelyikénél!</p>
-<p>A potenciális kiállítók és támogatók az egyszerűség kedvéért küldhetnek azonnal levelet a konf2011@fsf.hu címre, és megkezdjük velük az egyeztetést.</p>
-<p>Üdvözlettel:<br />
-<em>Konferenciaszervező csapat, <a href="http://fsf.hu/" title="FSF.hu">FSF.hu Alapítvány</a></em></p>
-</blockquote>
-<p><a href="http://konf.fsf.hu/cgis/ossc" title="Szabad Szoftver Konferencia és Kiállítás 2011, Budapest">Szabad Szoftver Konferencia és Kiállítás 2011, Budapest</a></p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/android/index.html" rel="tag">Android</a></li><li><a href="../../../../tag/konferencia/index.html" rel="tag">konferencia</a></li><li><a href="../../../../tag/libreoffice/index.html" rel="tag">LibreOffice</a></li><li><a href="../../../../tag/tipografia/index.html" rel="tag">tipográfia</a></li><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F10%2F06%2Fszabad-szoftver-konferencia-es-kiallitas-2011-budapest%2F&amp;t=Szabad+Szoftver+Konferencia+%C3%A9s+Ki%C3%A1ll%C3%ADt%C3%A1s+2011%2C+Budapest">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F10%2F06%2Fszabad-szoftver-konferencia-es-kiallitas-2011-budapest%2F&amp;t=Szabad+Szoftver+Konferencia+%C3%A9s+Ki%C3%A1ll%C3%ADt%C3%A1s+2011%2C+Budapest">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F10%2F06%2Fszabad-szoftver-konferencia-es-kiallitas-2011-budapest%2F&amp;name=Szabad+Szoftver+Konferencia+%C3%A9s+Ki%C3%A1ll%C3%ADt%C3%A1s+2011%2C+Budapest&amp;description=2011.+november+12.%2C+Budapest%2C+Infopark%2C+BME+Informatikai+%C3%A9p%C3%BClete+A+r%C3%A9szv%C3%A9tel+a+l%C3%A1togat%C3%B3k+sz%C3%A1m%C3%A1ra+ingyenes%2C+de+regisztr%C3%A1ci%C3%B3hoz+k%C3%B6t%C3%B6tt+Az+FSF.hu+Alap%C3%ADtv%C3%A1ny+2011-ben+%C3%BAjra+megrendezi+a+Szabad%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Szabad%20Szoftver%20Konferencia%20%C3%A9s%20Ki%C3%A1ll%C3%ADt%C3%A1s%202011,%20Budapest&amp;url=http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/10/06/szabad-szoftver-konferencia-es-kiallitas-2011-budapest/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-5787 post type-post status-publish format-standard hentry category-linux category-szoftver" id="post_5787">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=5787.html" title="20 éves a Linux" rel="bookmark">20 éves a Linux</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2011. augusztus 25. 20:00</div>
-                    <div class="post_categories"><a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <blockquote><p>From: torva&#8230;@klaava.Helsinki.FI (Linus Benedict Torvalds)<br />
-Newsgroups: comp.os.minix<br />
-Subject: What would you like to see most in minix?<br />
-Summary: small poll for my new operating system<br />
-Keywords: 386, preferences<br />
-Message-ID: <1991Aug25.205708.9541@klaava.Helsinki.FI><br />
-Date: 25 Aug 91 20:57:08 GMT<br />
-Organization: University of Helsinki</p>
-<p>Hello everybody out there using minix &#8211;</p>
-<p>I&#8217;m doing a (free) operating system (just a hobby, won&#8217;t be big and<br />
-professional like gnu) for 386(486) AT clones.  This has been brewing<br />
-since april, and is starting to get ready.  I&#8217;d like any feedback on<br />
-things people like/dislike in minix, as my OS resembles it somewhat<br />
-(same physical layout of the file-system (due to practical reasons)<br />
-among other things). </p>
-<p>I&#8217;ve currently ported bash(1.08) and gcc(1.40), and things seem to work.<br />
-This implies that I&#8217;ll get something practical within a few months, and<br />
-I&#8217;d like to know what features most people would want.  Any suggestions<br />
-are welcome, but I won&#8217;t promise I&#8217;ll implement them :-)</p>
-<p>Linus (torva&#8230;@kruuna.helsinki.fi)</p>
-<p>PS.  Yes &#8211; it&#8217;s free of any minix code, and it has a multi-threaded fs.<br />
-It is NOT protable (uses 386 task switching etc), and it probably never<br />
-will support anything other than AT-harddisks, as that&#8217;s all I have :-(.</p></blockquote>
-<p>Már-már vicces ez a húsz éves levél. Történelem.</p>
-                                <div class="post_tags clear">
-                                    </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F08%2F25%2F20-eves-a-linux%2F&amp;t=20+%C3%A9ves+a+Linux">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F08%2F25%2F20-eves-a-linux%2F&amp;t=20+%C3%A9ves+a+Linux">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F08%2F25%2F20-eves-a-linux%2F&amp;name=20+%C3%A9ves+a+Linux&amp;description=From%3A+torva%26%238230%3B%40klaava.Helsinki.FI+%28Linus+Benedict+Torvalds%29+Newsgroups%3A+comp.os.minix+Subject%3A+What+would+you+like+to+see+most+in+minix%3F+Summary%3A+small+poll+for+my+new+operating+system%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/08/25/20-eves-a-linux/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2011/08/25/20-eves-a-linux/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=20%20%C3%A9ves%20a%20Linux&amp;url=http://sidenote.hu/2011/08/25/20-eves-a-linux/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/08/25/20-eves-a-linux/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-5719 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu" id="post_5719">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=5719.html" title="GNOME 3" rel="bookmark">GNOME 3</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2011. július 26. 10:45</div>
-                    <div class="post_categories"><a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <p>Tegnap PPA-ból feltettem a <a href="http://gnome3.org/">GNOME 3</a>-at. Egy napig bírtam, szoptam vele rendesen. Elég volt. :)</p>
-<p><img src="../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox.png" alt="" title="GNOME 3 Error in VirtualBox" width="640" height="480" class="alignnone size-full wp-image-5720" srcset="../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox.png 640w, ../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox-225x168.png 225w, ../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox-350x262.png 350w" sizes="(max-width: 640px) 100vw, 640px" /></p>
-<p>A fenti képpel elég sokszor találkoztam tegnap és ma reggel, többször &bdquo;vakon&rdquo; kellett leállítanom és elindítanom a GNOME-ot.</p>
-<p>Nem akarom én leszólni, de egy nap alatt nem sikerült megszokni, sokat kellett tweakelni, és a fontjaimat is tökrevágta, azt pedig nem tűröm! Azt hiszem, várok őszig, vagy kipróbálom más disztrón, még nem tudom. Valószínűleg csak én voltam türelmetlen, de egyelőre elég volt.</p>
-<p><em>Tanács:</em> először VirtualBoxon próbáljátok ki, és használjátok a <a href="http://www.virtualbox.org/manual/ch01.html#snapshots">Snapshot funkciót</a>! Hasznos.</p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F07%2F26%2Fgnome-3%2F&amp;t=GNOME+3">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F07%2F26%2Fgnome-3%2F&amp;t=GNOME+3">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F07%2F26%2Fgnome-3%2F&amp;name=GNOME+3&amp;description=Tegnap+PPA-b%C3%B3l+feltettem+a+GNOME+3-at.+Egy+napig+b%C3%ADrtam%2C+szoptam+vele+rendesen.+El%C3%A9g+volt.+%3A%29+A+fenti+k%C3%A9ppel+el%C3%A9g+sokszor+tal%C3%A1lkoztam+tegnap+%C3%A9s+ma+reggel%2C%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/07/26/gnome-3/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2011/07/26/gnome-3/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=GNOME&#32;3&amp;url=http://sidenote.hu/2011/07/26/gnome-3/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/07/26/gnome-3/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-5663 post type-post status-publish format-standard hentry category-alkotunk category-gizmo category-linux category-szoftver" id="post_5663">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=5663.html" title="Hajnalban írtam" rel="bookmark">Hajnalban írtam</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2011. július 15. 8:20</div>
-                    <div class="post_categories"><a href="../../../alkotunk/index.html" rel="category tag">alkotunk</a>, <a href="../../../gizmo/index.html" rel="category tag">gizmó</a>, <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <p>Mert nem tudtam aludni.</p>
-<p><iframe width="705" height="500" src="http://www.youtube.com/embed/cfgfmyZ5myY?rel=0" frameborder="0" allowfullscreen></iframe></p>
-                                <div class="post_tags clear">
-                                    </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F07%2F15%2Fhajnalban-irtam%2F&amp;t=Hajnalban+%C3%ADrtam">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F07%2F15%2Fhajnalban-irtam%2F&amp;t=Hajnalban+%C3%ADrtam">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F07%2F15%2Fhajnalban-irtam%2F&amp;name=Hajnalban+%C3%ADrtam&amp;description=Mert+nem+tudtam+aludni.">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/07/15/hajnalban-irtam/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2011/07/15/hajnalban-irtam/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Hajnalban%20%C3%ADrtam&amp;url=http://sidenote.hu/2011/07/15/hajnalban-irtam/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/07/15/hajnalban-irtam/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-4889 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu tag-video" id="post_4889">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=4889.html" title="Unity" rel="bookmark">Unity</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2011. március 9. 11:32</div>
-                    <div class="post_categories"><a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <p><img src="../../../../wp-content/uploads/2011/03/what_is_unity.png" alt="" title="What is Unity?" width="705" height="245" class="alignnone size-full wp-image-4909" srcset="../../../../wp-content/uploads/2011/03/what_is_unity.png 705w, ../../../../wp-content/uploads/2011/03/what_is_unity-225x78.png 225w, ../../../../wp-content/uploads/2011/03/what_is_unity-350x121.png 350w" sizes="(max-width: 705px) 100vw, 705px" /></p>
-<p>Meglátjuk, mit sikerül a Canonicalnak alkotni. Magáról a Unity-ről nem írok, a <a title="unity &laquo; Mogorva Mormota" href="http://mogorvamormota.hu/tag/unity/">Mogorva Mormotán</a> már megtették helyettem.</p>
-</p>
-<p>Kényelmes megoldást választok, videókat és képeket teszek be, egyrészt mert így megkímélem magam az írástól, másrészt mert a videókat és a képeket mindenki szereti. :) Az első egy rövid bemutató a <a title="Introducing Overlay Scrollbars in Unity &laquo; Canonical Design" href="http://design.canonical.com/2011/03/introducing-overlay-scrollbars-in-unity/">Canonical Designtól</a>, a második pedig egy screencast, amit tegnap este készítettem.</p>
-<p><iframe src="http://player.vimeo.com/video/20523493?portrait=0&amp;color=ffffff" width="705" height="529" frameborder="0"></iframe></p>
-<p><iframe src="http://player.vimeo.com/video/20821732?byline=0&amp;portrait=0&amp;color=ffffff" width="705" height="529" frameborder="0"></iframe></p>
-<p><a title="YouTube - Ubuntu 11.04 Natty Narwhal Alpha 3 Unity Preview" href="http://www.youtube.com/watch?v=sh9JEyQtBBA">YouTube</a></p>
-</p>
-<p>Nagyon ígéretes cucc ez a Unity, az <a title="Netbook | Ubuntu" href="http://www.ubuntu.com/netbook">Ubuntu 10.10 (Maverick Meerkat) Netbook Edition</a> már a Unity egy korábbi verziójával volt szerelve, de azóta persze sok minden változott. Úgy látom, hogy az új <a title="Ubuntu font / sidenote" href="../../../../index.html%3Fp=3453.html">Ubuntu fontcsalád</a> és a <a title="Az Ubuntu új arca / sidenote" href="../../../../index.html%3Fp=2932.html">tavalyi frissítés</a> nagyon jót tett a brandnek. Sokkal egységesebb, profibb megjelenést kölcsönöz.</p>
-<p>Pár órás használat után azt kell mondjam, nagyon tetszik a Unity, bár nekem kicsit túl színes. Egyáltalán nem kellett semmit megtanulni, kényelmes és egészen szép. Ha rágyúrnak a <a title="uTouch" href="http://unity.ubuntu.com/projects/utouch/">uTouch</a> fejlesztésére, akár még tableteken is lehet létjogosultsága. Disztró upgrade után azt hiszem ezt fogom majd használni, ha nem jön be, akkor visszaváltok a már jól bevált Gnome-ra.</p>
-<p><img src="../../../../wp-content/uploads/2011/03/ubuntu_font.jpg" alt="" title="Ubuntu font" width="705" height="470" class="alignnone size-full wp-image-4910" srcset="../../../../wp-content/uploads/2011/03/ubuntu_font.jpg 705w, ../../../../wp-content/uploads/2011/03/ubuntu_font-225x150.jpg 225w, ../../../../wp-content/uploads/2011/03/ubuntu_font-350x233.jpg 350w" sizes="(max-width: 705px) 100vw, 705px" /></p>
-<p>Az Ubuntu 11.04 jelenlegi változata (Alpha 3) kifejezetten fejlesztőknek és tesztelőknek szánt előzetes, ezért a használata éles rendszeren nem ajánlott.</p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li><li><a href="../../../../tag/video/index.html" rel="tag">videó</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2011%2F03%2F09%2Funity%2F&amp;t=Unity">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2011%2F03%2F09%2Funity%2F&amp;t=Unity">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2011%2F03%2F09%2Funity%2F&amp;name=Unity&amp;description=Megl%C3%A1tjuk%2C+mit+siker%C3%BCl+a+Canonicalnak+alkotni.+Mag%C3%A1r%C3%B3l+a+Unity-r%C5%91l+nem+%C3%ADrok%2C+a+Mogorva+Mormot%C3%A1n+m%C3%A1r+megtett%C3%A9k+helyettem.+K%C3%A9nyelmes+megold%C3%A1st+v%C3%A1lasztok%2C+vide%C3%B3kat+%C3%A9s+k%C3%A9peket+teszek+be%2C%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2011/03/09/unity/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2011/03/09/unity/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Unity&amp;url=http://sidenote.hu/2011/03/09/unity/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2011/03/09/unity/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-2932 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu" id="post_2932">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=2932.html" title="Az Ubuntu új arca" rel="bookmark">Az Ubuntu új arca</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2010. március 9. 18:43</div>
-                    <div class="post_categories"><a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <p>Múlt héten jelentette be a Canonical, hogy változtat az Ubuntu branden. Megváltozott a logó, a három színből álló kör egyszínű lett, ami szerintem szebb így. Jobb lett az Ubuntu felirat betűtípusa, végre nem az az idétlen, lekerekített vacak van, ami eddig. Aztán mutattak még néhány logót, themét, meg miegymást.</p>
-<p align="center"><img src="../../../../wp-content/uploads/2010/03/blackeubuntulogo.png" alt="" title="Új Ubuntu logó" width="600" height="158" class="alignnone size-full wp-image-2935" /></p>
-<p>Nagyjából végére is jutottam a pozitívumoknak, mivel a bemutatott themék véleményem szerint ocsmányak, nem mintha nem lenne az mindegyik, de a 9.10-es kinézete az összes eddigi közül a legjobb. Jó hír, hogy tovább finomítottak Gnome panel ikonjain, ezáltal konzisztensebb kinézetet nyújtva a felhasználó számára. Az új default theméktől viszont kifordul a belem. Sajnálom, ez van. Direkt fel is tettem virtuális gépre tegnap egy daily buildet a 10.04-esből, hogy jobban lássam miket is újítottak. Visszatérve a themékre (Ambiance, Radiance), borzalmasak:</p>
-<p align="center"><a href="../../../../wp-content/uploads/2010/03/darktheme.png"><img src="../../../../wp-content/uploads/2010/03/darktheme-305x228.png" alt="" title="Ambiance theme" width="305" height="228" class="alignnone size-medium wp-image-2937" border="1" /></a>&nbsp;<a href="../../../../wp-content/uploads/2010/03/lighttheme.png"><img src="../../../../wp-content/uploads/2010/03/lighttheme-305x228.png" alt="" title="Radiance theme" width="305" height="228" class="alignnone size-medium wp-image-2938" border="1" /></a></p>
-<p>Aztán ott van természetesen az új kiadás default háttere, ami lilás lett, erősen hasonlítva a Mac OS X Aurora hátterére (engem legalábbis arra elékeztet). A háttér oké, tetszik. Ha valakit érdekel, akkor találtam egy <a href="http://www.omgubuntu.co.uk/2010/03/look-back-at-ubuntu-and-its-default.html">visszatekintést</a> az Ubuntu eddigi összes kiadásának alapértelmezett hátteréről.</p>
-<p>Kérdés, hogy feltétlenül örülni kell-e az új kinézetnek. Összességében nekem tetszenek a változtatások, de szokni kell a címsorban balra került min, max, bezáró gombokat, a themét meg úgyis lecserélem majd. :)</p>
-<p>Nem volt kedvem minden apró részletre kitérni, most ennyi jutott eszembe. Persze lesz microblogging kliens, pár trendi (utálom ezt a szót) hülyeség is az új kiadásban, de ezt el kell viselni, aztán meg úgyis testre szabja magának a disztrót az ember, ha akarja. A brandváltásról teljes egészében az <a href="https://wiki.ubuntu.com/Brand">Ubuntu wiki oldalán</a> lehet olvasni. Kösz a figyelmet.</p>
-<p>Ti mit gondoltok?</p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2010%2F03%2F09%2Faz-ubuntu-uj-arca%2F&amp;t=Az+Ubuntu+%C3%BAj+arca">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2010%2F03%2F09%2Faz-ubuntu-uj-arca%2F&amp;t=Az+Ubuntu+%C3%BAj+arca">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2010%2F03%2F09%2Faz-ubuntu-uj-arca%2F&amp;name=Az+Ubuntu+%C3%BAj+arca&amp;description=M%C3%BAlt+h%C3%A9ten+jelentette+be+a+Canonical%2C+hogy+v%C3%A1ltoztat+az+Ubuntu+branden.+Megv%C3%A1ltozott+a+log%C3%B3%2C+a+h%C3%A1rom+sz%C3%ADnb%C5%91l+%C3%A1ll%C3%B3+k%C3%B6r+egysz%C3%ADn%C5%B1+lett%2C+ami+szerintem+szebb+%C3%ADgy.%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2010/03/09/az-ubuntu-uj-arca/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2010/03/09/az-ubuntu-uj-arca/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Az%20Ubuntu%20%C3%BAj%20arca&amp;url=http://sidenote.hu/2010/03/09/az-ubuntu-uj-arca/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2010/03/09/az-ubuntu-uj-arca/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-        <div class="clear post-1211 post type-post status-publish format-standard hentry category-humor category-japan category-linux tag-manga tag-ubuntu" id="post_1211">
-            <div class="post_meta">
-                				<h2><a href="../../../../index.html%3Fp=1211.html" title="Ubunchu! – Az Ubuntu manga" rel="bookmark">Ubunchu! – Az Ubuntu manga</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2009. május 3. 9:26</div>
-                    <div class="post_categories"><a href="../../../humor/index.html" rel="category tag">humor</a>, <a href="../../../japan/index.html" rel="category tag">Japán</a>, <a href="../../index.html" rel="category tag">Linux</a></div>
-                                    </div>
-            </div>
-            <div class="post_content">
-                <p>Hajnalban a HUP Fun fórumát olvasgattam, mikor felfigyeltem egy mangára. Kérdeztem is magamtól, hogy milyen kocka manga lehet a HUP fórumon? Klikkeltem, olvastam, röhögtem. Kellemesen csalódtam az <em><a href="http://seotch.wordpress.com/ubunchu/">Ubunchu!</a></em> mangában.</p>
-<p align="center"><img src='../../../../wp-content/uploads/2009/05/ubunchu.jpg' alt='Ubunchu!' border='0' /></p>
-<p>Ez a rövid, mindössze tíz oldalas manga igazi japán humorral meséli el egy iskolai számítógépes klub oprendszer választási mizériáját. Garantált nevetés. Szerencsére nem csak japánul érhető el, <a href="http://doctormo.wordpress.com/2009/04/02/ubunchu-the-ubuntu-manga-is-now-in-english/">ezen a linken</a> kb. tíz nyelven olvasható a manga, köztük magyarul is.</p>
-                                <div class="post_tags clear">
-                    <ul><li><a href="../../../../tag/manga/index.html" rel="tag">manga</a></li><li><a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a></li></ul>                </div>
-                                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2009%2F05%2F03%2Fubunchu-az-ubuntu-manga%2F&amp;t=Ubunchu%21+%E2%80%93+Az+Ubuntu+manga">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2009%2F05%2F03%2Fubunchu-az-ubuntu-manga%2F&amp;t=Ubunchu%21+%E2%80%93+Az+Ubuntu+manga">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2009%2F05%2F03%2Fubunchu-az-ubuntu-manga%2F&amp;name=Ubunchu%21+%E2%80%93+Az+Ubuntu+manga&amp;description=Hajnalban+a+HUP+Fun+f%C3%B3rum%C3%A1t+olvasgattam%2C+mikor+felfigyeltem+egy+mang%C3%A1ra.+K%C3%A9rdeztem+is+magamt%C3%B3l%2C+hogy+milyen+kocka+manga+lehet+a+HUP+f%C3%B3rumon%3F+Klikkeltem%2C+olvastam%2C+r%C3%B6h%C3%B6gtem.+Kellemesen%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2009/05/03/ubunchu-az-ubuntu-manga/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2009/05/03/ubunchu-az-ubuntu-manga/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Ubunchu!%20%E2%80%93%20Az%20Ubuntu%20manga&amp;url=http://sidenote.hu/2009/05/03/ubunchu-az-ubuntu-manga/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2009/05/03/ubunchu-az-ubuntu-manga/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-    <div class="pagination">
-    <a href="../2/index.html" class="previouspostslink">Következő oldal</a><a href="../4/index.html" class="nextpostslink">Előző oldal</a></div>
-
-</div>
-
-<div class="sidebar">
-    
-        <div class="widget">
-            <h3>Személyes</h3>
-            <div class="widget_body">
-                <ul>
-                                        <li><a href="../../../../wp-login.php.html">Bejelentkezés</a></li>
-                    <li><a href="../../../../feed/rss/index.html" title="Syndicate this site using RSS 2.0"><abbr title="Really Simple Syndication">RSS</abbr> (bejegyzés)</a></li>
-                    <li><a href="../../../../comments/feed/index.html" title="The latest comments to all posts in RSS"><acronym title="Really Simple Syndication">RSS</acronym> (hozzászólás)</a></li>
-                                    </ul>
-            </div>
-        </div>
-
-        <div class="widget">
-            <h3>Quick Access</h3>
-            <div class="widget_body">
-                <ul>
-                    <li><a href="../../../../dev/null.html" title="/dev/null">/dev/null</a></li>
-                    <li><a href="../../../../dev/zero.html" title="/dev/zero">/dev/zero</a></li>
-                    <li><a href="../../../../index.html%3Frandom.html" title="Random bejegyzés">Random bejegyzés</a></li>
-                    <li><select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'><option value="">Hónap kiválasztása</option>	<option value='http://sidenote.hu/2015/03/'> 2015. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2015/01/'> 2015. január &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2014/10/'> 2014. október &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2014/09/'> 2014. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2014/08/'> 2014. augusztus &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2014/07/'> 2014. július &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2014/01/'> 2014. január &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/11/'> 2013. november &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2013/10/'> 2013. október &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/09/'> 2013. szeptember &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/08/'> 2013. augusztus &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/07/'> 2013. július &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2013/06/'> 2013. június &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2013/05/'> 2013. május &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2013/04/'> 2013. április &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2013/03/'> 2013. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/02/'> 2013. február &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/01/'> 2013. január &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/12/'> 2012. december &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2012/11/'> 2012. november &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/10/'> 2012. október &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/09/'> 2012. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/07/'> 2012. július &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/06/'> 2012. június &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/05/'> 2012. május &nbsp;(8)</option>
-	<option value='http://sidenote.hu/2012/04/'> 2012. április &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2012/03/'> 2012. március &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2012/02/'> 2012. február &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2012/01/'> 2012. január &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2011/12/'> 2011. december &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2011/11/'> 2011. november &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2011/10/'> 2011. október &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2011/09/'> 2011. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2011/08/'> 2011. augusztus &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2011/07/'> 2011. július &nbsp;(10)</option>
-	<option value='http://sidenote.hu/2011/06/'> 2011. június &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2011/04/'> 2011. április &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2011/03/'> 2011. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2011/02/'> 2011. február &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2011/01/'> 2011. január &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2010/12/'> 2010. december &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2010/11/'> 2010. november &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/10/'> 2010. október &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/09/'> 2010. szeptember &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/08/'> 2010. augusztus &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2010/07/'> 2010. július &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2010/06/'> 2010. június &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2010/05/'> 2010. május &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/04/'> 2010. április &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/03/'> 2010. március &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2010/02/'> 2010. február &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2010/01/'> 2010. január &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2009/12/'> 2009. december &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2009/11/'> 2009. november &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/10/'> 2009. október &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2009/09/'> 2009. szeptember &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/08/'> 2009. augusztus &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/07/'> 2009. július &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2009/06/'> 2009. június &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/05/'> 2009. május &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2009/04/'> 2009. április &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2009/03/'> 2009. március &nbsp;(8)</option>
-	<option value='http://sidenote.hu/2009/02/'> 2009. február &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/01/'> 2009. január &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2008/12/'> 2008. december &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2008/11/'> 2008. november &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/10/'> 2008. október &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2008/09/'> 2008. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2008/08/'> 2008. augusztus &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2008/07/'> 2008. július &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/06/'> 2008. június &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/05/'> 2008. május &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2008/04/'> 2008. április &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/03/'> 2008. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2008/02/'> 2008. február &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2008/01/'> 2008. január &nbsp;(2)</option>
-</select></li>
-                    <li><form action="../../../../index.html" method="get"><select  name='cat' id='cat' class='postform'  onchange='return this.form.submit()'>
-	<option value='-1'>Kategória kiválasztása</option>
-	<option class="level-0" value="3">a blog&nbsp;&nbsp;(10)</option>
-	<option class="level-0" value="4">alkotunk&nbsp;&nbsp;(37)</option>
-	<option class="level-0" value="6">animáció&nbsp;&nbsp;(16)</option>
-	<option class="level-0" value="7">anime&nbsp;&nbsp;(9)</option>
-	<option class="level-0" value="8">Apple&nbsp;&nbsp;(2)</option>
-	<option class="level-0" value="15">film&nbsp;&nbsp;(36)</option>
-	<option class="level-0" value="17">fotó&nbsp;&nbsp;(18)</option>
-	<option class="level-0" value="18">gizmó&nbsp;&nbsp;(48)</option>
-	<option class="level-0" value="20">hardver&nbsp;&nbsp;(16)</option>
-	<option class="level-0" value="21">holiday&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="36">humor&nbsp;&nbsp;(14)</option>
-	<option class="level-0" value="26">ismeretterjesztő&nbsp;&nbsp;(31)</option>
-	<option class="level-0" value="28">Japán&nbsp;&nbsp;(22)</option>
-	<option class="level-0" value="29">játék&nbsp;&nbsp;(35)</option>
-	<option class="level-0" value="34">könyv&nbsp;&nbsp;(15)</option>
-	<option class="level-0" value="35" selected="selected">Linux&nbsp;&nbsp;(38)</option>
-	<option class="level-0" value="43">munka&nbsp;&nbsp;(8)</option>
-	<option class="level-0" value="44">művészet, dizájn&nbsp;&nbsp;(34)</option>
-	<option class="level-0" value="46">para&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="52">sport&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="54">szoftver&nbsp;&nbsp;(88)</option>
-	<option class="level-0" value="99">TV&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="67">void *&nbsp;&nbsp;(22)</option>
-	<option class="level-0" value="68">web2&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="70">zene&nbsp;&nbsp;(25)</option>
-</select>
- <noscript><div><input type="submit" value="View" /></div></noscript></form></li>
-                    <select name="tag-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;"><option value="#">Címke kiválasztása</option>	<option value='http://sidenote.hu/tag/android/'>Android (2)</option>
-	<option value='http://sidenote.hu/tag/auto/'>autó (3)</option>
-	<option value='http://sidenote.hu/tag/bash/'>Bash (10)</option>
-	<option value='http://sidenote.hu/tag/basic/'>Basic (2)</option>
-	<option value='http://sidenote.hu/tag/batch/'>Batch (1)</option>
-	<option value='http://sidenote.hu/tag/bond/'>Bond (1)</option>
-	<option value='http://sidenote.hu/tag/cyberpunk/'>cyberpunk (4)</option>
-	<option value='http://sidenote.hu/tag/del-korea/'>Dél-Korea (2)</option>
-	<option value='http://sidenote.hu/tag/egeszseg/'>egészség (1)</option>
-	<option value='http://sidenote.hu/tag/filmklub/'>filmklub (1)</option>
-	<option value='http://sidenote.hu/tag/google/'>Google (2)</option>
-	<option value='http://sidenote.hu/tag/ikea/'>IKEA (1)</option>
-	<option value='http://sidenote.hu/tag/indie/'>indie (14)</option>
-	<option value='http://sidenote.hu/tag/jazz/'>jazz (3)</option>
-	<option value='http://sidenote.hu/tag/kiallitas/'>kiállítás (5)</option>
-	<option value='http://sidenote.hu/tag/konferencia/'>konferencia (3)</option>
-	<option value='http://sidenote.hu/tag/kepregeny/'>képregény (2)</option>
-	<option value='http://sidenote.hu/tag/libreoffice/'>LibreOffice (1)</option>
-	<option value='http://sidenote.hu/tag/manga/'>manga (2)</option>
-	<option value='http://sidenote.hu/tag/mirror-pi/'>Mirror&nbsp;π (1)</option>
-	<option value='http://sidenote.hu/tag/mit-olvasunk/'>Mit&nbsp;olvasunk? (2)</option>
-	<option value='http://sidenote.hu/tag/mozi/'>mozi (4)</option>
-	<option value='http://sidenote.hu/tag/os-x/'>OS&nbsp;X (1)</option>
-	<option value='http://sidenote.hu/tag/philip-k-dick/'>Philip&nbsp;K.&nbsp;Dick (9)</option>
-	<option value='http://sidenote.hu/tag/powershell/'>PowerShell (1)</option>
-	<option value='http://sidenote.hu/tag/rajz/'>rajz (7)</option>
-	<option value='http://sidenote.hu/tag/raspberry-pi/'>Raspberry&nbsp;Pi (11)</option>
-	<option value='http://sidenote.hu/tag/reklam/'>reklám (5)</option>
-	<option value='http://sidenote.hu/tag/retro/'>retro (2)</option>
-	<option value='http://sidenote.hu/tag/sci-fi/'>sci-fi (12)</option>
-	<option value='http://sidenote.hu/tag/star-trek/'>Star&nbsp;Trek (1)</option>
-	<option value='http://sidenote.hu/tag/telefon/'>telefon (2)</option>
-	<option value='http://sidenote.hu/tag/termeszet/'>természet (7)</option>
-	<option value='http://sidenote.hu/tag/tex-latex/'>TeX/LaTeX (13)</option>
-	<option value='http://sidenote.hu/tag/tipografia/'>tipográfia (23)</option>
-	<option value='http://sidenote.hu/tag/tokio/'>Tokió (7)</option>
-	<option value='http://sidenote.hu/tag/ubuntu/'>Ubuntu (17)</option>
-	<option value='http://sidenote.hu/tag/valve/'>Valve (4)</option>
-	<option value='http://sidenote.hu/tag/video/'>videó (47)</option>
-	<option value='http://sidenote.hu/tag/vilagur/'>világűr (6)</option>
-	<option value='http://sidenote.hu/tag/webcam/'>webcam (1)</option>
-	<option value='http://sidenote.hu/tag/allat/'>állat (3)</option></select>
-                </ul>
-            </div>
-        </div>
-
-        <div class="widget">
-            <h3>Közösség</h3>
-            <div class="widget_body">
-                <ul>
-                    <li><a title="sidenote a Facebookon" href="http://www.facebook.com/pages/sidenotehu/112718384668">Facebook</a></li>
-                    <li><a title="sidenote a Google Plus-on"  href="https://plus.google.com/108693717971418449096/">Google+</a></li>
-                    <li><a title="sidenote a Tumblren" href="http://sidenotehu.tumblr.com/">Tumblr</a></li>
-                    <li><a title="sidenote a Twitteren" href="https://twitter.com/#!/sidenotehu">Twitter</a></li>
-                    <li><a title="sidenote a Vimeon" href="http://vimeo.com/sidenote">Vimeo</a></li>
-                    <li><a title="sidenote a YouTube-on" href="http://www.youtube.com/sidenotehu">YouTube</a></li>
-                </ul>
-            </div>
-        </div>
-
-        		
-		
-		
-        <div class="widget">
-		<h3>Mit olvasunk?</h3>
-            <div class="widget_body">
-                <ul>
-                    <li><a href="http://www.boingboing.net/">Boing Boing</a></li>
-<li><a href="http://design.canonical.com/" title="Canonical Design">Canonical Design</a></li>
-<li><a href="http://www.dannychoo.com/" title="Culture Japan &ndash; Your portal to Japan">Culture Japan</a></li>
-<li><a href="http://www.engadget.com/" title="Engadget">Engadget</a></li>
-<li><a href="http://fat-pie.com/" title="Fat-Pie.com :: Animation and stuff by David Firth">Fat-Pie.com</a></li>
-<li><a href="http://freegamer.blogspot.com/" title="Free Gamer &#8211; Open Source Games">Free Gamer</a></li>
-<li><a href="http://handras.hu/" title="Handras">Handras</a></li>
-<li><a href="http://hup.hu/" title="Hungarian Unix Portal">Hungarian Unix Portal</a></li>
-<li><a href="http://www.ikeahackers.net/" title="IKEA Hackers">IKEA Hackers</a></li>
-<li><a href="http://www.jupiterbroadcasting.com/" title="Jupiter Broadcasting">Jupiter Broadcasting</a></li>
-<li><a href="http://asiafan.hu/" title="Keleti Szél ">Keleti Szél</a></li>
-<li><a href="http://napirajz.hu/" title="Napirajz &ndash; Súlyosbítva azt, ami amúgy is.">Napirajz</a></li>
-<li><a href="http://plastik.hu/" title="plastik media">Plastik média</a></li>
-<li><a href="http://prohardver.hu/" title="PROHARDVER! &ndash; Az Online PC Magazin">PROHARDVER!</a></li>
-<li><a href="http://tokyotimes.org/" title="Tokyo Times &ndash; Photographs from a small group of islands">Tokyo Times</a></li>
-<li><a href="http://twitchfilm.com/" title="Twitch">Twitch</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="widget">
-            <h3>Kategóriák</h3>
-            <div class="widget_body">
-                <ul>
-                    	<li class="cat-item cat-item-3"><a href="../../../a-blog/index.html" >a blog</a> (10)
-</li>
-	<li class="cat-item cat-item-4"><a href="../../../alkotunk/index.html" >alkotunk</a> (37)
-</li>
-	<li class="cat-item cat-item-6"><a href="../../../animacio/index.html" >animáció</a> (16)
-</li>
-	<li class="cat-item cat-item-7"><a href="../../../anime/index.html" >anime</a> (9)
-</li>
-	<li class="cat-item cat-item-8"><a href="../../../apple/index.html" >Apple</a> (2)
-</li>
-	<li class="cat-item cat-item-15"><a href="../../../film/index.html" >film</a> (36)
-</li>
-	<li class="cat-item cat-item-17"><a href="../../../foto/index.html" >fotó</a> (18)
-</li>
-	<li class="cat-item cat-item-18"><a href="../../../gizmo/index.html" >gizmó</a> (48)
-</li>
-	<li class="cat-item cat-item-20"><a href="../../../hardver/index.html" >hardver</a> (16)
-</li>
-	<li class="cat-item cat-item-21"><a href="../../../holiday/index.html" >holiday</a> (3)
-</li>
-	<li class="cat-item cat-item-36"><a href="../../../humor/index.html" >humor</a> (14)
-</li>
-	<li class="cat-item cat-item-26"><a href="../../../ismeretterjeszto/index.html" >ismeretterjesztő</a> (31)
-</li>
-	<li class="cat-item cat-item-28"><a href="../../../japan/index.html" >Japán</a> (22)
-</li>
-	<li class="cat-item cat-item-29"><a href="../../../jatek/index.html" >játék</a> (35)
-</li>
-	<li class="cat-item cat-item-34"><a href="../../../konyv/index.html" >könyv</a> (15)
-</li>
-	<li class="cat-item cat-item-35 current-cat"><a href="../../index.html" >Linux</a> (38)
-</li>
-	<li class="cat-item cat-item-43"><a href="../../../munka/index.html" >munka</a> (8)
-</li>
-	<li class="cat-item cat-item-44"><a href="../../../muveszet-dizajn/index.html" >művészet, dizájn</a> (34)
-</li>
-	<li class="cat-item cat-item-46"><a href="../../../para/index.html" >para</a> (3)
-</li>
-	<li class="cat-item cat-item-52"><a href="../../../sport/index.html" >sport</a> (3)
-</li>
-	<li class="cat-item cat-item-54"><a href="../../../szoftver/index.html" >szoftver</a> (88)
-</li>
-	<li class="cat-item cat-item-99"><a href="../../../tv/index.html" >TV</a> (1)
-</li>
-	<li class="cat-item cat-item-67"><a href="../../../void/index.html" >void *</a> (22)
-</li>
-	<li class="cat-item cat-item-68"><a href="../../../web2/index.html" >web2</a> (3)
-</li>
-	<li class="cat-item cat-item-70"><a href="../../../zene/index.html" >zene</a> (25)
-</li>
-                </ul>
-            </div>
-        </div>
-
-        
-        
-        <div class="widget">
-            <h3>Friss kommentek</h3>
-            <div class="widget_body">
-                <ul>
-	<li><a href="../../../../index.html%3Fp=1575.html#li-comment-1149" title="Hozzászólás a(z) Neo Tokyo (1987) bejegyzéshez">Kadmon</a>: Alapos leírás! Linkeltem az animéről&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=1344.html#li-comment-1148" title="Hozzászólás a(z) Memories (1995) bejegyzéshez">Kadmon</a>: Hasznos ismertető volt, köszönöm! Li&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=8680.html#li-comment-1147" title="Hozzászólás a(z) bash-weather update bejegyzéshez">Pecsét Józsi</a>: magyarul elfelejtettünk?</li>
-	<li><a href="../../../../index.html%3Fp=8674.html#li-comment-1146" title="Hozzászólás a(z) Introducing Mirror π bejegyzéshez">The TA master</a>: Le a kalappal előttetek! 
-Most már cs&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=7603.html#li-comment-1135" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">Miki</a>: rrel hosszabb a k BASH-ben expr-t haszn�&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=7603.html#li-comment-1124" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">szantaii</a>: Kösz!</li>
-	<li><a href="../../../../index.html%3Fp=7603.html#li-comment-1123" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">Miki</a>: Ha rövidségre törekedik az ember, pow&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1121" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">szantaii</a>: Örülök, hogy sikerült, de az azért&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1120" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">Simon János Bálint</a>: Szia!
-
-Nagyon köszi!
-
-12.04-et hasz&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1119" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">szantaii</a>: Szia!
-Ha a legújabb Ubuntut használod&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=7189.html#li-comment-1118" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">Simon János Bálint</a>: Szia!
-
-Teljesen új nekem a Linux / Ub&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1116" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">szantaii</a>: 4&thinsp;db 1.2&thinsp;V-os 2500&thinsp;&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1115" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">Róbert</a>: Szia !
-
-Érdeklődnék, hogy több ele&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1114" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">szantaii</a>: Kedves József!
-
-Örülök a megkeres�&hellip;</li>
-	<li><a href="../../../../index.html%3Fp=8363.html#li-comment-1113" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">Kövecses József</a>: Tiszteletem!
-
-Érdeklődnék a készü&hellip;</li>
-</ul>            </div>
-        </div>
-
-</div>
-
-
-    </div>
-
+                <div id="content">
+                    <div class="archive_title clear">
+                        <div class="archive_title_meta">
+                            Archívum
+                        </div>
+                        <div class="archive_title_name">
+                            A(z) „Linux” kategória bejegyzései
+                        </div>
+                    </div>
+                    <div class="clear post-6841 post type-post status-publish format-standard hentry category-linux category-muveszet-dizajn category-szoftver category-zene tag-ubuntu" id="post_6841">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=6841.html" title="Ubuntu Sound Theme" rel="bookmark">Ubuntu Sound Theme</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2012. február 19. 11:51
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../muveszet-dizajn/index.html" rel="category tag">művészet, dizájn</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>, <a href="../../../zene/index.html" rel="category tag">zene</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <blockquote>
+                                <p>
+                                    As Ubuntu expands onto new form factors, with an increasingly definitive visual identity and brand, it is important to ensure that the theme of Ubuntu is reflected in all aspects of the experience. The auditory experience of Ubuntu must be included in this theme to maintain an immersive environment and consistency with the brand.
+                                </p>
+                            </blockquote>
+                            <p>
+                                <a href="#">Ubuntu sound theme design « Canonical Design</a>
+                            </p>
+                            <p>
+                                Röviden, tömören arról van szó, hogy a Canonicalnél végre nekiláttak az Ubuntu hangok tervezésének, hogy a majd’ <a href="../../../../index.html%3Fp=2932.html" title="Az Ubuntu új arca / sidenote">két éve megújított brandjük</a> még profibb, egységesebb legyen.
+                            </p>
+                            <p>
+                                Ideje volt már, hogy ezt meglépjék, mert az Ubuntu Sound Theméje eléggé le van maradva a vizuális dizájn mögött. Kérdés, hogy lesz-e még elég idő a következő kiadás előtt befejezni a hangok megújítását, mert a 12.04, kódnevén Precise Pangolin ugye április végén érkezik.
+                            </p>
+                            <p>
+                                <a href="#"><img src="../../../../wp-content/uploads/2012/02/ubuntu_sound_theme.png" alt="" title="Ubuntu Sound Theme" width="656" height="523" class="alignnone size-full wp-image-6844" srcset="../../../../wp-content/uploads/2012/02/ubuntu_sound_theme.png 656w, ../../../../wp-content/uploads/2012/02/ubuntu_sound_theme-225x179.png 225w, ../../../../wp-content/uploads/2012/02/ubuntu_sound_theme-350x279.png 350w" sizes="(max-width: 656px) 100vw, 656px"></a>
+                            </p>
+                            <p>
+                                Mindenesetre a február 7-én meghirdetett <a href="#" title="Ubuntu sound theme design «  Canonical Design">első hangokra vonatkozó kiírásra</a> <a href="#" title="Sound theme update «  Canonical Design">rengeteg pályamunka érkezett</a>. Ezeket érdemes meghallgatni, és kitölteni a hozzájuk tartozó kérdőívet. Egy kis feedback senkinek sem árt meg, aki szeretné, hogy az Ubuntu 12.04 ne csak stabil legyen, hanem szépen is szóljon.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    [B:]Other rappers dis me<br>
+                                    Say my rhymes are sissy.<br>
+                                    Why?<br>
+                                    [J:]Why?<br>
+                                    [J&amp;B:]Why?<br>
+                                    [B:]What?<br>
+                                    [J:]Why exactly?<br>
+                                    [B:]What? Why?<br>
+                                    [J:]Be more constructive with your feedback, please. Why?<br>
+                                    [B:]Why?
+                                </p>
+                            </blockquote>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=FArZxLj6DLk">Flight of the Conchords – Hiphopopotamus Vs. Rhymenoceros</a>
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear post-6781 post type-post status-publish format-standard hentry category-gizmo category-linux category-szoftver tag-ubuntu" id="post_6781">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=6781.html" title="Ubuntu HUD" rel="bookmark">Ubuntu HUD</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2012. január 24. 18:35
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../../gizmo/index.html" rel="category tag">gizmó</a>, <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                Itt az újabb magic! Még a héten lecsekkolom, de most legyen elég egy screenshot és egy videó Mark Shuttleworth-től.
+                            </p>
+                            <p>
+                                <a href="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e.png"><img src="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-705x440.png" alt="" title="Say hello to the Head-Up Display, or HUD." width="705" height="440" class="alignnone size-large wp-image-6782" srcset="../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-705x440.png 705w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-225x140.png 225w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e-350x218.png 350w, ../../../../wp-content/uploads/2012/01/Pangolin_matrix_v1-3e.png 1280w" sizes="(max-width: 705px) 100vw, 705px"></a>
+                            </p>
+                            <blockquote>
+                                <p>
+                                    This is the HUD. It’s a way for you to express your intent and have the application respond appropriately. We think of it as “beyond interface”, it’s the “intenterface”. This concept of “intent-driven interface” has been a primary theme of our work in the Unity shell, with dash search as a first class experience pioneered in Unity. Now we are bringing the same vision to the application, in a way which is completely compatible with existing applications and menus.
+                                </p>
+                            </blockquote>
+                            <p>
+                                <a href="https://www.markshuttleworth.com/archives/939">Mark Shuttleworth » Introducing the HUD. Say hello to the future of the menu.</a>
+                            </p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=w_WW-DHqR3c">https://www.youtube.com/watch?v=w_WW-DHqR3c</a>
+                            </p>
+                            <p>
+                                Nem tudom, hogy sírjak-e vagy nevessek, mindenesetre egy 720p-s videónak jobban örültem volna.
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear post-6706 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu" id="post_6706">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=6706.html" title="Apró figyelmesség" rel="bookmark">Apró figyelmesség</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2011. december 17. 8:56
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                <img src="../../../../wp-content/uploads/2011/12/like_ubuntu_update.png" alt="" title="It's safer to connect the computer to AC power before updating." width="600" height="91" class="alignnone size-full wp-image-6707" srcset="../../../../wp-content/uploads/2011/12/like_ubuntu_update.png 600w, ../../../../wp-content/uploads/2011/12/like_ubuntu_update-225x34.png 225w, ../../../../wp-content/uploads/2011/12/like_ubuntu_update-350x53.png 350w" sizes="(max-width: 600px) 100vw, 600px">
+                            </p>
+                            <blockquote>
+                                <p>
+                                    It’s safer to connect the computer to AC power before updating.
+                                </p>
+                            </blockquote>
+                            <p>
+                                Az ilyet szeretem.
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear post-6578 post type-post status-publish format-standard hentry category-ismeretterjeszto category-linux category-szoftver tag-android tag-konferencia tag-libreoffice tag-tipografia tag-ubuntu" id="post_6578">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=6578.html" title="Szabad Szoftver Konferencia és Kiállítás 2011, Budapest" rel="bookmark">Szabad Szoftver Konferencia és Kiállítás 2011, Budapest</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2011. október 6. 12:25
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../../ismeretterjeszto/index.html" rel="category tag">ismeretterjesztő</a>, <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <blockquote>
+                                <p>
+                                    <em>2011. november 12., Budapest, Infopark, BME Informatikai épülete<br>
+                                    A részvétel a látogatók számára ingyenes, de regisztrációhoz kötött</em>
+                                </p>
+                                <p>
+                                    Az FSF.hu Alapítvány 2011-ben újra megrendezi a Szabad Szoftver Konferenciát és Kiállítást Budapesten.
+                                </p>
+                                <p>
+                                    A rendezvény Budapesten, a <a href="#">BME épületében, az Infoparkban</a> kerül megrendezésre, az időpont <em>2011. november 12-e.</em> A konferencia reggel kilenc órától délután negyed hatig tart. Előadói szekciói és a kiállítás párhuzamosan zajlanak, így minden látogató találhat számára érdekes előadásokat, megfelelő elfoglaltságot.
+                                </p>
+                                <p>
+                                    A konferencia programja hamarosan kikerül a honlapra. Amint véglegessé válik, a regisztráltak értesítést kapnak róla.
+                                </p>
+                                <p>
+                                    <em>A konferencia kiemelt előadói</em>
+                                </p>
+                                <p>
+                                    <em>Kadlecsik József,</em> a Linux kernel csomagszűrő alrendszerének, a netfilter-nek egyik vezető fejlesztője, <em>Tímár András,</em> a Firefox és a LibreOffice magyar honosításának lelke és a LibreOffice Engineering Steering Comittee tagja, valamint <em>Torma László (Toros),</em> a hazai Ubuntu közösség egyik vezéralakja, fáradhatatlan blogger és szervező. Ők fogják a jelentkező előadók közül kiválasztani azokat, akik várhatóan érdekes és hasznos előadásokat fognak tartani.
+                                </p>
+                                <p>
+                                    A konferenciára Magyarország legjobb előadóit, kiállítóként pedig minél több szabad szoftverekkel foglalkozó civil, szakmai szervezeteket valamint cégeket hívunk meg. A részvétel látogatók számára ingyenes lesz, de regisztrációhoz kötött. Az előadások anyagából konferenciakiadvány készül, melynek ISBN számot is fogunk kérni.
+                                </p>
+                                <p>
+                                    Amennyiben szívesen látogatnál el, adnál elő vagy állítanál ki a konferencián, akkor kérjük regisztráld magad a bal oldalon található regisztrációs menüpontok valamelyikénél!
+                                </p>
+                                <p>
+                                    A potenciális kiállítók és támogatók az egyszerűség kedvéért küldhetnek azonnal levelet a konf2011@fsf.hu címre, és megkezdjük velük az egyeztetést.
+                                </p>
+                                <p>
+                                    Üdvözlettel:<br>
+                                    <em>Konferenciaszervező csapat, <a href="https://fsf.hu/" title="FSF.hu">FSF.hu Alapítvány</a></em>
+                                </p>
+                            </blockquote>
+                            <p>
+                                <a href="#" title="Szabad Szoftver Konferencia és Kiállítás 2011, Budapest">Szabad Szoftver Konferencia és Kiállítás 2011, Budapest</a>
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/android/index.html" rel="tag">Android</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../../../tag/konferencia/index.html" rel="tag">konferencia</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../../../tag/libreoffice/index.html" rel="tag">LibreOffice</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../../../tag/tipografia/index.html" rel="tag">tipográfia</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear post-5787 post type-post status-publish format-standard hentry category-linux category-szoftver" id="post_5787">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=5787.html" title="20 éves a Linux" rel="bookmark">20 éves a Linux</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2011. augusztus 25. 20:00
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <blockquote>
+                                <p>
+                                    From: torva…@klaava.Helsinki.FI (Linus Benedict Torvalds)<br>
+                                    Newsgroups: comp.os.minix<br>
+                                    Subject: What would you like to see most in minix?<br>
+                                    Summary: small poll for my new operating system<br>
+                                    Keywords: 386, preferences<br>
+                                    Message-ID: &lt;1991Aug25.205708.9541@klaava.Helsinki.FI&gt;<br>
+                                    Date: 25 Aug 91 20:57:08 GMT<br>
+                                    Organization: University of Helsinki
+                                </p>
+                                <p>
+                                    Hello everybody out there using minix –
+                                </p>
+                                <p>
+                                    I’m doing a (free) operating system (just a hobby, won’t be big and<br>
+                                    professional like gnu) for 386(486) AT clones. This has been brewing<br>
+                                    since april, and is starting to get ready. I’d like any feedback on<br>
+                                    things people like/dislike in minix, as my OS resembles it somewhat<br>
+                                    (same physical layout of the file-system (due to practical reasons)<br>
+                                    among other things).
+                                </p>
+                                <p>
+                                    I’ve currently ported bash(1.08) and gcc(1.40), and things seem to work.<br>
+                                    This implies that I’ll get something practical within a few months, and<br>
+                                    I’d like to know what features most people would want. Any suggestions<br>
+                                    are welcome, but I won’t promise I’ll implement them :-)
+                                </p>
+                                <p>
+                                    Linus (torva…@kruuna.helsinki.fi)
+                                </p>
+                                <p>
+                                    PS. Yes – it’s free of any minix code, and it has a multi-threaded fs.<br>
+                                    It is NOT protable (uses 386 task switching etc), and it probably never<br>
+                                    will support anything other than AT-harddisks, as that’s all I have :-(.
+                                </p>
+                            </blockquote>
+                            <p>
+                                Már-már vicces ez a húsz éves levél. Történelem.
+                            </p>
+                            <div class="post_tags clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear post-5719 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu" id="post_5719">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=5719.html" title="GNOME 3" rel="bookmark">GNOME 3</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2011. július 26. 10:45
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                Tegnap PPA-ból feltettem a <a href="https://www.gnome.org/">GNOME 3</a>-at. Egy napig bírtam, szoptam vele rendesen. Elég volt. :)
+                            </p>
+                            <p>
+                                <img src="../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox.png" alt="" title="GNOME 3 Error in VirtualBox" width="640" height="480" class="alignnone size-full wp-image-5720" srcset="../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox.png 640w, ../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox-225x168.png 225w, ../../../../wp-content/uploads/2011/07/gnome3_in_virtualbox-350x262.png 350w" sizes="(max-width: 640px) 100vw, 640px">
+                            </p>
+                            <p>
+                                A fenti képpel elég sokszor találkoztam tegnap és ma reggel, többször „vakon” kellett leállítanom és elindítanom a GNOME-ot.
+                            </p>
+                            <p>
+                                Nem akarom én leszólni, de egy nap alatt nem sikerült megszokni, sokat kellett tweakelni, és a fontjaimat is tökrevágta, azt pedig nem tűröm! Azt hiszem, várok őszig, vagy kipróbálom más disztrón, még nem tudom. Valószínűleg csak én voltam türelmetlen, de egyelőre elég volt.
+                            </p>
+                            <p>
+                                <em>Tanács:</em> először VirtualBoxon próbáljátok ki, és használjátok a <a href="https://www.virtualbox.org/manual/ch01.html#snapshots">Snapshot funkciót</a>! Hasznos.
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear post-5663 post type-post status-publish format-standard hentry category-alkotunk category-gizmo category-linux category-szoftver" id="post_5663">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=5663.html" title="Hajnalban írtam" rel="bookmark">Hajnalban írtam</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2011. július 15. 8:20
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../../alkotunk/index.html" rel="category tag">alkotunk</a>, <a href="../../../gizmo/index.html" rel="category tag">gizmó</a>, <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                Mert nem tudtam aludni.
+                            </p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=cfgfmyZ5myY">https://www.youtube.com/watch?v=cfgfmyZ5myY</a>
+                            </p>
+                            <div class="post_tags clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear post-4889 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu tag-video" id="post_4889">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=4889.html" title="Unity" rel="bookmark">Unity</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2011. március 9. 11:32
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                <img src="../../../../wp-content/uploads/2011/03/what_is_unity.png" alt="" title="What is Unity?" width="705" height="245" class="alignnone size-full wp-image-4909" srcset="../../../../wp-content/uploads/2011/03/what_is_unity.png 705w, ../../../../wp-content/uploads/2011/03/what_is_unity-225x78.png 225w, ../../../../wp-content/uploads/2011/03/what_is_unity-350x121.png 350w" sizes="(max-width: 705px) 100vw, 705px">
+                            </p>
+                            <p>
+                                Meglátjuk, mit sikerül a Canonicalnak alkotni. Magáról a Unity-ről nem írok, a <a title="unity « Mogorva Mormota" href="#">Mogorva Mormotán</a> már megtették helyettem.
+                            </p>
+                            <p>
+                                Kényelmes megoldást választok, videókat és képeket teszek be, egyrészt mert így megkímélem magam az írástól, másrészt mert a videókat és a képeket mindenki szereti. :) Az első egy rövid bemutató a <a title="Introducing Overlay Scrollbars in Unity « Canonical Design" href="#">Canonical Designtól</a>, a második pedig egy screencast, amit tegnap este készítettem.
+                            </p>
+                            <p>
+                                <a href="https://vimeo.com/20523493">https://vimeo.com/20523493</a>
+                            </p>
+                            <p>
+                                <a href="#">https://vimeo.com/20821732</a>
+                            </p>
+                            <p>
+                                <a title="YouTube - Ubuntu 11.04 Natty Narwhal Alpha 3 Unity Preview" href="#">YouTube</a>
+                            </p>
+                            <p>
+                                Nagyon ígéretes cucc ez a Unity, az <a title="Netbook | Ubuntu" href="#">Ubuntu 10.10 (Maverick Meerkat) Netbook Edition</a> már a Unity egy korábbi verziójával volt szerelve, de azóta persze sok minden változott. Úgy látom, hogy az új <a title="Ubuntu font / sidenote" href="../../../../index.html%3Fp=3453.html">Ubuntu fontcsalád</a> és a <a title="Az Ubuntu új arca / sidenote" href="../../../../index.html%3Fp=2932.html">tavalyi frissítés</a> nagyon jót tett a brandnek. Sokkal egységesebb, profibb megjelenést kölcsönöz.
+                            </p>
+                            <p>
+                                Pár órás használat után azt kell mondjam, nagyon tetszik a Unity, bár nekem kicsit túl színes. Egyáltalán nem kellett semmit megtanulni, kényelmes és egészen szép. Ha rágyúrnak a <a title="uTouch" href="#">uTouch</a> fejlesztésére, akár még tableteken is lehet létjogosultsága. Disztró upgrade után azt hiszem ezt fogom majd használni, ha nem jön be, akkor visszaváltok a már jól bevált Gnome-ra.
+                            </p>
+                            <p>
+                                <img src="../../../../wp-content/uploads/2011/03/ubuntu_font.jpg" alt="" title="Ubuntu font" width="705" height="470" class="alignnone size-full wp-image-4910" srcset="../../../../wp-content/uploads/2011/03/ubuntu_font.jpg 705w, ../../../../wp-content/uploads/2011/03/ubuntu_font-225x150.jpg 225w, ../../../../wp-content/uploads/2011/03/ubuntu_font-350x233.jpg 350w" sizes="(max-width: 705px) 100vw, 705px">
+                            </p>
+                            <p>
+                                Az Ubuntu 11.04 jelenlegi változata (Alpha 3) kifejezetten fejlesztőknek és tesztelőknek szánt előzetes, ezért a használata éles rendszeren nem ajánlott.
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../../../tag/video/index.html" rel="tag">videó</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear post-2932 post type-post status-publish format-standard hentry category-linux category-szoftver tag-ubuntu" id="post_2932">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=2932.html" title="Az Ubuntu új arca" rel="bookmark">Az Ubuntu új arca</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2010. március 9. 18:43
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../index.html" rel="category tag">Linux</a>, <a href="../../../szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                Múlt héten jelentette be a Canonical, hogy változtat az Ubuntu branden. Megváltozott a logó, a három színből álló kör egyszínű lett, ami szerintem szebb így. Jobb lett az Ubuntu felirat betűtípusa, végre nem az az idétlen, lekerekített vacak van, ami eddig. Aztán mutattak még néhány logót, themét, meg miegymást.
+                            </p>
+                            <p>
+                                <img src="../../../../wp-content/uploads/2010/03/blackeubuntulogo.png" alt="" title="Új Ubuntu logó" width="600" height="158" class="alignnone size-full wp-image-2935">
+                            </p>
+                            <p>
+                                Nagyjából végére is jutottam a pozitívumoknak, mivel a bemutatott themék véleményem szerint ocsmányak, nem mintha nem lenne az mindegyik, de a 9.10-es kinézete az összes eddigi közül a legjobb. Jó hír, hogy tovább finomítottak Gnome panel ikonjain, ezáltal konzisztensebb kinézetet nyújtva a felhasználó számára. Az új default theméktől viszont kifordul a belem. Sajnálom, ez van. Direkt fel is tettem virtuális gépre tegnap egy daily buildet a 10.04-esből, hogy jobban lássam miket is újítottak. Visszatérve a themékre (Ambiance, Radiance), borzalmasak:
+                            </p>
+                            <p>
+                                <a href="../../../../wp-content/uploads/2010/03/darktheme.png"><img src="../../../../wp-content/uploads/2010/03/darktheme-305x228.png" alt="" title="Ambiance theme" width="305" height="228" class="alignnone size-medium wp-image-2937" border="1"></a>&nbsp;<a href="../../../../wp-content/uploads/2010/03/lighttheme.png"><img src="../../../../wp-content/uploads/2010/03/lighttheme-305x228.png" alt="" title="Radiance theme" width="305" height="228" class="alignnone size-medium wp-image-2938" border="1"></a>
+                            </p>
+                            <p>
+                                Aztán ott van természetesen az új kiadás default háttere, ami lilás lett, erősen hasonlítva a Mac OS X Aurora hátterére (engem legalábbis arra elékeztet). A háttér oké, tetszik. Ha valakit érdekel, akkor találtam egy <a href="#">visszatekintést</a> az Ubuntu eddigi összes kiadásának alapértelmezett hátteréről.
+                            </p>
+                            <p>
+                                Kérdés, hogy feltétlenül örülni kell-e az új kinézetnek. Összességében nekem tetszenek a változtatások, de szokni kell a címsorban balra került min, max, bezáró gombokat, a themét meg úgyis lecserélem majd. :)
+                            </p>
+                            <p>
+                                Nem volt kedvem minden apró részletre kitérni, most ennyi jutott eszembe. Persze lesz microblogging kliens, pár trendi (utálom ezt a szót) hülyeség is az új kiadásban, de ezt el kell viselni, aztán meg úgyis testre szabja magának a disztrót az ember, ha akarja. A brandváltásról teljes egészében az <a href="https://wiki.ubuntu.com/Brand">Ubuntu wiki oldalán</a> lehet olvasni. Kösz a figyelmet.
+                            </p>
+                            <p>
+                                Ti mit gondoltok?
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear post-1211 post type-post status-publish format-standard hentry category-humor category-japan category-linux tag-manga tag-ubuntu" id="post_1211">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="../../../../index.html%3Fp=1211.html" title="Ubunchu! – Az Ubuntu manga" rel="bookmark">Ubunchu! – Az Ubuntu manga</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="../../../../index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2009. május 3. 9:26
+                                </div>
+                                <div class="post_categories">
+                                    <a href="../../../humor/index.html" rel="category tag">humor</a>, <a href="../../../japan/index.html" rel="category tag">Japán</a>, <a href="../../index.html" rel="category tag">Linux</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                Hajnalban a HUP Fun fórumát olvasgattam, mikor felfigyeltem egy mangára. Kérdeztem is magamtól, hogy milyen kocka manga lehet a HUP fórumon? Klikkeltem, olvastam, röhögtem. Kellemesen csalódtam az <em><a href="https://seotch.wordpress.com/ubunchu/">Ubunchu!</a></em> mangában.
+                            </p>
+                            <p>
+                                <img src="../../../../wp-content/uploads/2009/05/ubunchu.jpg" alt="Ubunchu!" border="0">
+                            </p>
+                            <p>
+                                Ez a rövid, mindössze tíz oldalas manga igazi japán humorral meséli el egy iskolai számítógépes klub oprendszer választási mizériáját. Garantált nevetés. Szerencsére nem csak japánul érhető el, <a href="#">ezen a linken</a> kb. tíz nyelven olvasható a manga, köztük magyarul is.
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="../../../../tag/manga/index.html" rel="tag">manga</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../../../tag/ubuntu/index.html" rel="tag">Ubuntu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="../2/index.html" class="previouspostslink">Következő oldal</a><a href="../4/index.html" class="nextpostslink">Előző oldal</a>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="widget">
+                        <h3>
+                            Mit olvasunk?
+                        </h3>
+                        <div class="widget_body">
+                            <ul>
+                                <li>
+                                    <a href="#">Boing Boing</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Canonical Design">Canonical Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Culture Japan – Your portal to Japan">Culture Japan</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Engadget">Engadget</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Fat-Pie.com :: Animation and stuff by David Firth">Fat-Pie.com</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Free Gamer – Open Source Games">Free Gamer</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Handras">Handras</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Hungarian Unix Portal">Hungarian Unix Portal</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="IKEA Hackers">IKEA Hackers</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Jupiter Broadcasting">Jupiter Broadcasting</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Keleti Szél">Keleti Szél</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Napirajz – Súlyosbítva azt, ami amúgy is.">Napirajz</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="plastik media">Plastik média</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="PROHARDVER! – Az Online PC Magazin">PROHARDVER!</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tokyo Times – Photographs from a small group of islands">Tokyo Times</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitch">Twitch</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <h3>
+                            Kategóriák
+                        </h3>
+                        <div class="widget_body">
+                            <ul>
+                                <li class="cat-item cat-item-3">
+                                    <a href="../../../a-blog/index.html">a blog</a> (10)
+                                </li>
+                                <li class="cat-item cat-item-4">
+                                    <a href="../../../alkotunk/index.html">alkotunk</a> (37)
+                                </li>
+                                <li class="cat-item cat-item-6">
+                                    <a href="../../../animacio/index.html">animáció</a> (16)
+                                </li>
+                                <li class="cat-item cat-item-7">
+                                    <a href="../../../anime/index.html">anime</a> (9)
+                                </li>
+                                <li class="cat-item cat-item-8">
+                                    <a href="../../../apple/index.html">Apple</a> (2)
+                                </li>
+                                <li class="cat-item cat-item-15">
+                                    <a href="../../../film/index.html">film</a> (36)
+                                </li>
+                                <li class="cat-item cat-item-17">
+                                    <a href="../../../foto/index.html">fotó</a> (18)
+                                </li>
+                                <li class="cat-item cat-item-18">
+                                    <a href="../../../gizmo/index.html">gizmó</a> (48)
+                                </li>
+                                <li class="cat-item cat-item-20">
+                                    <a href="../../../hardver/index.html">hardver</a> (16)
+                                </li>
+                                <li class="cat-item cat-item-21">
+                                    <a href="../../../holiday/index.html">holiday</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-36">
+                                    <a href="../../../humor/index.html">humor</a> (14)
+                                </li>
+                                <li class="cat-item cat-item-26">
+                                    <a href="../../../ismeretterjeszto/index.html">ismeretterjesztő</a> (31)
+                                </li>
+                                <li class="cat-item cat-item-28">
+                                    <a href="../../../japan/index.html">Japán</a> (22)
+                                </li>
+                                <li class="cat-item cat-item-29">
+                                    <a href="../../../jatek/index.html">játék</a> (35)
+                                </li>
+                                <li class="cat-item cat-item-34">
+                                    <a href="../../../konyv/index.html">könyv</a> (15)
+                                </li>
+                                <li class="cat-item cat-item-35 current-cat">
+                                    <a href="../../index.html">Linux</a> (38)
+                                </li>
+                                <li class="cat-item cat-item-43">
+                                    <a href="../../../munka/index.html">munka</a> (8)
+                                </li>
+                                <li class="cat-item cat-item-44">
+                                    <a href="../../../muveszet-dizajn/index.html">művészet, dizájn</a> (34)
+                                </li>
+                                <li class="cat-item cat-item-46">
+                                    <a href="../../../para/index.html">para</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-52">
+                                    <a href="../../../sport/index.html">sport</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-54">
+                                    <a href="../../../szoftver/index.html">szoftver</a> (88)
+                                </li>
+                                <li class="cat-item cat-item-99">
+                                    <a href="../../../tv/index.html">TV</a> (1)
+                                </li>
+                                <li class="cat-item cat-item-67">
+                                    <a href="../../../void/index.html">void *</a> (22)
+                                </li>
+                                <li class="cat-item cat-item-68">
+                                    <a href="../../../web2/index.html">web2</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-70">
+                                    <a href="../../../zene/index.html">zene</a> (25)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
-                        <p class="copy">Minden itt található tartalomra a <a title="Creative Commons &mdash; Attribution-NonCommercial-ShareAlike 2.5 Hungary" href="http://creativecommons.org/licenses/by-nc-sa/2.5/hu/" rel="copyright">Creative<br />Commons 2.5</a> licencfeltételek érvényesek.</p>
-            <p class="credits">Dizájn: <a href="http://wpshower.com/" title="WPSHOWER - Free wordpress themes">Wpshower</a> &amp; <a href="http://www.google.com/recaptcha/mailhide/d?k=01-eS1OVupYM1Ym0ghoHG98w==&amp;c=uIaPdoIEI5zPDUMR-YI8hSgN4JHjcYZBqtigR7VOzcQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501-eS1OVupYM1Ym0ghoHG98w\75\75\46c\75uIaPdoIEI5zPDUMR-YI8hSgN4JHjcYZBqtigR7VOzcQ\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">szantaii</a>.</p>
+            <p class="copy">
+                Minden itt található tartalomra a <a title="Creative Commons — Attribution-NonCommercial-ShareAlike 2.5 Hungary" href="#" rel="copyright">Creative<br>
+                Commons 2.5</a> licencfeltételek érvényesek.
+            </p>
+            <p class="credits">
+                Dizájn: <a href="#" title="WPSHOWER - Free wordpress themes">Wpshower</a> & <a href="#" title="Reveal this e-mail address">szantaii</a>.
+            </p>
         </div>
-
-        <!-- Page generated: 0,248 s, 56 queries -->
-<script type='text/javascript' src='../../../../wp-includes/js/wp-embed.min.js%3Fver=4.8.15'></script>
-		<script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
-	</body>
+    </body>
 </html>

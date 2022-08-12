@@ -1,750 +1,831 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="hu">
+<!DOCTYPE html>
+<html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>
-            Experimenting with font outlines / sidenote        </title>
-        <meta http-equiv="Content-language" content="hu" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <link rel="shortcut icon" href="wp-content/themes/sidenoteminimal/images/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/sidenoteminimal/style.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/sidenoteminimal/pagenavi-css.css" />
-        <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="http://sidenote.hu/wp-content/themes/sidenoteminimal/ie.css" /><![endif]-->
-        <link rel="pingback" href="http://sidenote.hu/xmlrpc.php" />
-        <link rel="alternate" type="text/xml" title="RSS .92" href="feed/rss/index.html"/>
-        <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="feed/atom/index.html" />
-		<link href="https://plus.google.com/sidenote/" rel="publisher" />
-                <link rel='dns-prefetch' href='http://s.w.org/' />
-<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; hírcsatorna" href="feed/rss/index.html" />
-<link rel="alternate" type="application/rss+xml" title="sidenote &raquo; hozzászólás hírcsatorna" href="comments/feed/index.html" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/sidenote.hu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.15"}};
-			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='codecolorer-css'  href='wp-content/plugins/codecolorer/codecolorer.css%3Fver=0.9.11.css' type='text/css' media='screen' />
-<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
-<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
-<script type='text/javascript' src='wp-content/themes/sidenoteminimal/js/jquery.lazyload.mini.js%3Fver=4.8.15'></script>
-<script type='text/javascript' src='wp-content/themes/sidenoteminimal/js/script.js%3Fver=4.8.15'></script>
-<link rel='https://api.w.org/' href='wp-json/index.html' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sidenote.hu/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='A könyvember' href='index.html%3Fp=8600.html' />
-<link rel='next' title='Another font outline animation experiment' href='index.html%3Fp=8638.html' />
-<meta name="generator" content="WordPress 4.8.15" />
-<link rel="canonical" href="index.html%3Fp=8617.html" />
-<link rel='shortlink' href='index.html%3Fp=8617.html' />
-<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fsidenote.hu%252F2014%252F09%252F15%252Fexperimenting-with-font-outlines%252F" />
-<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fsidenote.hu%252F2014%252F09%252F15%252Fexperimenting-with-font-outlines%252F&amp;format=xml" />
-<script type="text/javascript" src="wp-content/plugins/si-captcha-for-wordpress/captcha/si_captcha.js%3Fver=1654937991"></script>
-<!-- begin SI CAPTCHA Anti-Spam - login/register form style -->
-<style type="text/css">
-.si_captcha_small { width:175px; height:45px; padding-top:10px; padding-bottom:10px; }
-.si_captcha_large { width:250px; height:60px; padding-top:10px; padding-bottom:10px; }
-img#si_image_com { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_reg { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_log { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_side_login { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_checkout { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_jetpack { border-style:none; margin:0; padding-right:5px; float:left; }
-img#si_image_bbpress_topic { border-style:none; margin:0; padding-right:5px; float:left; }
-.si_captcha_refresh { border-style:none; margin:0; vertical-align:bottom; }
-div#si_captcha_input { display:block; padding-top:15px; padding-bottom:5px; }
-label#si_captcha_code_label { margin:0; }
-input#si_captcha_code_input { width:65px; }
-p#si_captcha_code_p { clear: left; padding-top:10px; }
-.si-captcha-jetpack-error { color:#DC3232; }
-</style>
-<!-- end SI CAPTCHA Anti-Spam - login/register form style -->
-        <script type="text/javascript">
-
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-6197576-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
-		</script>
-		<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
-		{lang: 'hu'}
-		</script>
-	</head>
-	<body>
+            Experimenting with font outlines / sidenote
+        </title>
+        <link rel="shortcut icon" href="wp-content/themes/sidenoteminimal/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/sidenoteminimal/style.css">
+        <link rel="stylesheet" type="text/css" media="all" href="wp-content/themes/sidenoteminimal/pagenavi-css.css">
+        <link rel="stylesheet" id="codecolorer-css" href="wp-content/plugins/codecolorer/codecolorer.css%3Fver=0.9.11.css" type="text/css" media="screen">
+        <link rel="prev" title="A könyvember" href="index.html%3Fp=8600.html">
+        <link rel="next" title="Another font outline animation experiment" href="index.html%3Fp=8638.html">
+        <link rel="canonical" href="index.html%3Fp=8617.html">
+        <link rel="shortlink" href="index.html%3Fp=8617.html">
+    </head>
+    <body>
         <div class="wrapper">
             <div class="header clear">
                 <div class="logo">
-                	<a title="http://sidenote.hu/" href="index.html">http://sidenote.hu/</a>
+                    <a title="http://sidenote.hu/" href="index.html">http://sidenote.hu/</a>
                 </div>
-                                <h1><a title="sidenote" href="index.html">sidenote</a></h1>
-
-                <div class="menu"><ul id="menu-header" class="menu"><li id="menu-item-4317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4317"><a title="Címlap" href="index.html">Címlap</a></li>
-<li id="menu-item-7810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7810"><a title="Projektek" href="index.html%3Fp=7396.html">Projektek</a></li>
-<li id="menu-item-4319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4319"><a title="Rólunk" href="index.html%3Fp=1345.html">Rólunk</a></li>
-<li id="menu-item-4318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4318"><a title="Archívum" href="index.html%3Fp=284.html">Archívum</a></li>
-</ul></div>
+                <h1>
+                    <a title="sidenote" href="index.html">sidenote</a>
+                </h1>
+                <div class="menu">
+                    <ul id="menu-header" class="menu">
+                        <li id="menu-item-4317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4317">
+                            <a title="Címlap" href="index.html">Címlap</a>
+                        </li>
+                        <li id="menu-item-7810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7810">
+                            <a title="Projektek" href="index.html%3Fp=7396.html">Projektek</a>
+                        </li>
+                        <li id="menu-item-4319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4319">
+                            <a title="Rólunk" href="index.html%3Fp=1345.html">Rólunk</a>
+                        </li>
+                        <li id="menu-item-4318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4318">
+                            <a title="Archívum" href="index.html%3Fp=284.html">Archívum</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="search">
-    <form method="get" id="searchform" action="index.html">
-        <fieldset>
-            <input name="s" type="text" onfocus="if(this.value=='Keresés') this.value='';" onblur="if(this.value=='') this.value='Keresés';" value="Keresés" />
-            <button type="submit"></button>
-        </fieldset>
-    </form>
-</div>
-                
+                    <form id="searchform" name="searchform">
+                        <fieldset disabled>
+                            <input type="text" value="Keresés" disabled>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
             <div class="middle clear">
-
-<div id="content">
-
-        
-        <div class="single clear post-8617 post type-post status-publish format-standard hentry category-alkotunk category-animacio category-muveszet-dizajn category-szoftver tag-tex-latex tag-tipografia tag-video" id="post_8617">
-            <div class="post_meta">
-                				<h2><a href="index.html%3Fp=8617.html" title="Experimenting with font outlines" rel="chapter">Experimenting with font outlines</a></h2>
-                <div class="post_data">
-                    <div class="post_author">Írta: <a href="index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a></div>
-                                        <div class="post_date">2014. szeptember 15. 18:23</div>
-                    <div class="post_categories"><a href="category/alkotunk/index.html" rel="category tag">alkotunk</a>, <a href="category/animacio/index.html" rel="category tag">animáció</a>, <a href="category/muveszet-dizajn/index.html" rel="category tag">művészet, dizájn</a>, <a href="category/szoftver/index.html" rel="category tag">szoftver</a></div>
+                <div id="content">
+                    <div class="single clear post-8617 post type-post status-publish format-standard hentry category-alkotunk category-animacio category-muveszet-dizajn category-szoftver tag-tex-latex tag-tipografia tag-video" id="post_8617">
+                        <div class="post_meta">
+                            <h2>
+                                <a href="index.html%3Fp=8617.html" title="Experimenting with font outlines" rel="chapter">Experimenting with font outlines</a>
+                            </h2>
+                            <div class="post_data">
+                                <div class="post_author">
+                                    Írta: <a href="index.html" title="szantaii honlapjának megtekintése" rel="author external">szantaii</a>
+                                </div>
+                                <div class="post_date">
+                                    2014. szeptember 15. 18:23
+                                </div>
+                                <div class="post_categories">
+                                    <a href="category/alkotunk/index.html" rel="category tag">alkotunk</a>, <a href="category/animacio/index.html" rel="category tag">animáció</a>, <a href="category/muveszet-dizajn/index.html" rel="category tag">művészet, dizájn</a>, <a href="category/szoftver/index.html" rel="category tag">szoftver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                In <a href="index.html%3Fp=8571.html" title="Font outline animation / sidenote">one of my latest posts</a> I mentioned a question about <a href="https://tex.stackexchange.com/q/161920" title="typography - Randomized drawing of individual glyphs - TeX - LaTeX Stack Exchange">how to draw individual glyphs with randomized paths</a> on <a href="https://tex.stackexchange.com/" title="TeX - LaTeX Stack Exchange">TeX.SX</a>. Today I want to share <a href="https://tex.stackexchange.com/a/197677" title="typography - Randomized drawing of individual glyphs - TeX - LaTeX Stack Exchange">the answer I posted</a> about two weeks ago, and some related stuff which I’ve made during and after working on the answer.
+                            </p>
+                            <p>
+                                Let’s see the question first. It is quoting Donald Knuth’s article, <a href="https://projecteuclid.org/journals/bulletin-of-the-american-mathematical-society-new-series/volume-1/issue-2/Mathematical-typography/bams/1183544082.full" title="Knuth: Mathematical typography">Mathematical typography</a> from the Bulletin of the American Mathematical Society.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    <img src="wp-content/uploads/2014/09/knuth_math_typo_fig21.png" alt="Knuth: Mathematical typography, Figure 21" width="510" height="459" class="alignnone size-full wp-image-8625" srcset="wp-content/uploads/2014/09/knuth_math_typo_fig21.png 510w, wp-content/uploads/2014/09/knuth_math_typo_fig21-225x202.png 225w, wp-content/uploads/2014/09/knuth_math_typo_fig21-350x315.png 350w" sizes="(max-width: 510px) 100vw, 510px">
+                                </p>
+                                <p>
+                                    <strong>Randomization.</strong> I’d like to report on a little experiment I did with random numbers. One might complain that the letters I have designed are too perfect, too much like a computer, so they lack “character”. In order to counteract this, we can build a certain amount of randomness into the choices of where to put the pen when drawing each letter, and Figure 21 shows what happens. The coordinates of the key pen positions where chosen independently with a normal distribution and with increasing standard deviation, so that the third example has twice as much standard deviation as the second, the fourth has three times as much, and so on. Note that the two m’s on each line (except the first) are different, and so are the a’s and the t’s, since each letter is drawn randomly.
+                                </p>
+                            </blockquote>
+                            <p>
+                                The question was how to achieve a similar effect in LaTeX without using MetaFont. You can read the answer below, but if you feel tl;dr skip below the long quote for my related works.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    I have been thinking about this question for weeks now, and finally I think I came really close to a result you may also like. I have even tried to use Processing to solve this problem, which resulted in a nice animation as a byproduct, but it didn’t lead me closer to the solution. But back to the point…
+                                </p>
+                                <p>
+                                    Unfortunately the solution I’m posting, which is my best and only shot, does not support drawing the distorted glyphs as text but as drawings. Also there is some work to be done outside the context of LaTeX, but most of it is done in LaTeX (LuaTeX + TikZ).
+                                </p>
+                                <p>
+                                    <img src="wp-content/uploads/2014/09/texsx_distortion_ans.png" alt="Randomized drawing of individual glyphs" width="629" height="504" class="alignnone size-full wp-image-8621" srcset="wp-content/uploads/2014/09/texsx_distortion_ans.png 629w, wp-content/uploads/2014/09/texsx_distortion_ans-225x180.png 225w, wp-content/uploads/2014/09/texsx_distortion_ans-350x280.png 350w" sizes="(max-width: 629px) 100vw, 629px">
+                                </p>
+                                <p>
+                                    The picture above shows an undistorted glyph (character “a” on the left in the line at the top), a distorted glyph (character “a” on the right in the line at the top), a word consisting of distorted glyphs (middle line), and a special character (Omega), all these can be found in the code at the end of the answer.
+                                </p>
+                                <p>
+                                    Now I will describe the process I have followed to achieve these distortions. I mentioned that there is some work to be done outside of LaTeX, that is to convert a font file into SVG using FontForge. I found the solution how to do this in an answer to the question: Can we extract the points making the character from the font file?
+                                </p>
+                                <p>
+                                    Copy the following into a file named <code class="codecolorer text dawn"><span class="text">font2svg.pe</span></code> into your “project” folder.
+                                </p>
+                                <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;">
+                                    <table cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="line-numbers">
+                                                    <div>
+                                                        1<br>
+                                                        2<br>
+                                                        3<br>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="bash codecolorer">
+                                                        <span class="co0">#!/usr/bin/env fontforge</span><br>
+                                                        Open<span class="br0">(</span><span class="re4">$1</span><span class="br0">)</span><br>
+                                                        Generate<span class="br0">(</span><span class="re4">$1</span>:t:r + <span class="st0">".svg"</span><span class="br0">)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>
+                                    And make a SVG file from the font you want to use (I chose cmr10) with the following command.
+                                </p>
+                                <div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;">
+                                    <div class="bash codecolorer">
+                                        fontforge font2svg.pe <span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>texlive<span class="sy0">/</span><span class="nu0">2014</span><span class="sy0">/</span>texmf-dist<span class="sy0">/</span>fonts<span class="sy0">/</span>type1<span class="sy0">/</span>public<span class="sy0">/</span>amsfonts<span class="sy0">/</span>cm<span class="sy0">/</span>cmr10.pfb
                                     </div>
-            </div>
-            <div class="post_content">
-                                <p>In <a href="index.html%3Fp=8571.html" title="Font outline animation / sidenote">one of my latest posts</a> I mentioned a question about <a href="http://tex.stackexchange.com/questions/161920/randomized-drawing-of-individual-glyphs" title="typography - Randomized drawing of individual glyphs - TeX - LaTeX Stack Exchange">how to draw individual glyphs with randomized paths</a> on <a href="http://tex.stackexchange.com/" title="TeX - LaTeX Stack Exchange">TeX.SX</a>. Today I want to share <a href="http://tex.stackexchange.com/a/197677/8844" title="typography - Randomized drawing of individual glyphs - TeX - LaTeX Stack Exchange">the answer I posted</a> about two weeks ago, and some related stuff which I&#8217;ve made during and after working on the answer.</p>
-<p>Let&#8217;s see the question first. It is quoting Donald Knuth&#8217;s article, <a href="http://projecteuclid.org/euclid.bams/1183544082" title="Knuth: Mathematical typography">Mathematical typography</a> from the Bulletin of the American Mathematical Society.</p>
-<blockquote>
-<p><img src="wp-content/uploads/2014/09/knuth_math_typo_fig21.png" alt="Knuth: Mathematical typography, Figure 21" width="510" height="459" class="alignnone size-full wp-image-8625" srcset="wp-content/uploads/2014/09/knuth_math_typo_fig21.png 510w, wp-content/uploads/2014/09/knuth_math_typo_fig21-225x202.png 225w, wp-content/uploads/2014/09/knuth_math_typo_fig21-350x315.png 350w" sizes="(max-width: 510px) 100vw, 510px" /></p>
-<p><strong>Randomization.</strong> I&#8217;d like to report on a little experiment I did with random numbers. One might complain that the letters I have designed are too perfect, too much like a computer, so they lack &ldquo;character&rdquo;. In order to counteract this, we can build a certain amount of randomness into the choices of where to put the pen when drawing each letter, and Figure 21 shows what happens. The coordinates of the key pen positions where chosen independently with a normal distribution and with increasing standard deviation, so that the third example has twice as much standard deviation as the second, the fourth has three times as much, and so on. Note that the two m&#8217;s on each line (except the first) are different, and so are the a&#8217;s and the t&#8217;s, since each letter is drawn randomly.</p>
-</blockquote>
-<p>The question was how to achieve a similar effect in LaTeX without using MetaFont. You can read the answer below, but if you feel tl;dr skip below the long quote for my related works.</p>
-<blockquote>
-<p>I have been thinking about this question for weeks now, and finally I think I came really close to a result you may also like. I have even tried to use Processing to solve this problem, which resulted in a nice animation as a byproduct, but it didn&#8217;t lead me closer to the solution. But back to the point&hellip;</p>
-<p>Unfortunately the solution I&#8217;m posting, which is my best and only shot, does not support drawing the distorted glyphs as text but as drawings. Also there is some work to be done outside the context of LaTeX, but most of it is done in LaTeX (LuaTeX + TikZ).</p>
-<p><img src="wp-content/uploads/2014/09/texsx_distortion_ans.png" alt="Randomized drawing of individual glyphs" width="629" height="504" class="alignnone size-full wp-image-8621" srcset="wp-content/uploads/2014/09/texsx_distortion_ans.png 629w, wp-content/uploads/2014/09/texsx_distortion_ans-225x180.png 225w, wp-content/uploads/2014/09/texsx_distortion_ans-350x280.png 350w" sizes="(max-width: 629px) 100vw, 629px" /></p>
-<p>The picture above shows an undistorted glyph (character &ldquo;a&rdquo; on the left in the line at the top), a distorted glyph (character &ldquo;a&rdquo; on the right in the line at the top), a word consisting of distorted glyphs (middle line), and a special character (Omega), all these can be found in the code at the end of the answer.</p>
-<p>Now I will describe the process I have followed to achieve these distortions. I mentioned that there is some work to be done outside of LaTeX, that is to convert a font file into SVG using FontForge. I found the solution how to do this in an answer to the question: Can we extract the points making the character from the font file?</p>
-<p>Copy the following into a file named <code class="codecolorer text dawn"><span class="text">font2svg.pe</span></code> into your &ldquo;project&rdquo; folder.</p>
-<div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br />2<br />3<br /></div></td><td><div class="bash codecolorer"><span class="co0">#!/usr/bin/env fontforge</span><br />
-Open<span class="br0">&#40;</span><span class="re4">$1</span><span class="br0">&#41;</span><br />
-Generate<span class="br0">&#40;</span><span class="re4">$1</span>:t:r + <span class="st0">&quot;.svg&quot;</span><span class="br0">&#41;</span></div></td></tr></tbody></table></div>
-<p>And make a SVG file from the font you want to use (I chose cmr10) with the following command.</p>
-<div class="codecolorer-container bash dawn" style="overflow:auto;white-space:nowrap;"><div class="bash codecolorer">fontforge font2svg.pe <span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>texlive<span class="sy0">/</span><span class="nu0">2014</span><span class="sy0">/</span>texmf-dist<span class="sy0">/</span>fonts<span class="sy0">/</span>type1<span class="sy0">/</span>public<span class="sy0">/</span>amsfonts<span class="sy0">/</span>cm<span class="sy0">/</span>cmr10.pfb</div></div>
-<p>Note that the location of the font on the filesystem may vary based on your LaTeX installation and operating system you use, but this will generate an SVG file into your project folder. All is left to process the generated SVG file which contains the data (name, unicode code, width, and outline) of the glyphs, which I will describe below.</p>
-<p>The function function <code class="codecolorer text dawn"><span class="text">read_font_data(file)</span></code> takes a file name as an argument (the generated SVG file), and extracts the data of the glyphs into an associative array which can be addressed with the unicode code and contains the width and outline data of the specific character. Note that not all glyphs have width or outline data, some basic error checking is done but the code is not foolproof.</p>
-<p>The function <code class="codecolorer text dawn"><span class="text">random_in_interval(lower_boundary, upper_boundary)</span></code> takes two float arguments, and will return a random float between them. The more the boundaries converge to 1 the smaller the randomization will be. This will be used when the time comes to randomize the outline of a glyph.</p>
-<p>The function <code class="codecolorer text dawn"><span class="text">scale_and_randomize(glyph, scale_factor, lower_boundary, upper_boundary)</span></code> will take a glyph, a scale factor, a lower and upper boundary, the latter two will be used for the randomization. Scaling is needed because the default measurement unit of TikZ is centimeters (I think) and the outline data of a glyph may contain large values, which TikZ interprets as centimeters. Note that the scale factor may vary depending the font you use, and size you want.</p>
-<p>The functions <code class="codecolorer text dawn"><span class="text">print_glyph(glyph, scale_factor, lower_boundary, upper_boundary)</span></code> and <code class="codecolorer text dawn"><span class="text">return_glyph</span></code> (the latter takes the same arguments) only differ in that <code class="codecolorer text dawn"><span class="text">print_glyph</span></code> will pass the TikZ drawing command (using svg.path library) used to print the glyph to LaTeX, while <code class="codecolorer text dawn"><span class="text">return_glyph</span></code> only returns the drawing command as a string which can be further used in Lua before passing it to LaTeX.</p>
-<p>The remaining functions only use the previously described <code class="codecolorer text dawn"><span class="text">print_glyph</span></code> and <code class="codecolorer text dawn"><span class="text">return_glyph</span></code> functions to print the picture above.</p>
-<p>That&#8217;s it. I hope this would fit your needs.</p>
-<div class="codecolorer-container lua dawn" style="overflow:auto;white-space:nowrap;height:400px;"><table cellspacing="0" cellpadding="0"><tbody><tr><td class="line-numbers"><div>1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />21<br />22<br />23<br />24<br />25<br />26<br />27<br />28<br />29<br />30<br />31<br />32<br />33<br />34<br />35<br />36<br />37<br />38<br />39<br />40<br />41<br />42<br />43<br />44<br />45<br />46<br />47<br />48<br />49<br />50<br />51<br />52<br />53<br />54<br />55<br />56<br />57<br />58<br />59<br />60<br />61<br />62<br />63<br />64<br />65<br />66<br />67<br />68<br />69<br />70<br />71<br />72<br />73<br />74<br />75<br />76<br />77<br />78<br />79<br />80<br />81<br />82<br />83<br />84<br />85<br />86<br />87<br />88<br />89<br />90<br />91<br />92<br />93<br />94<br />95<br />96<br />97<br />98<br />99<br />100<br />101<br />102<br />103<br />104<br />105<br />106<br />107<br />108<br />109<br />110<br />111<br />112<br />113<br />114<br />115<br />116<br />117<br />118<br />119<br />120<br />121<br />122<br />123<br />124<br />125<br />126<br />127<br />128<br />129<br />130<br />131<br />132<br />133<br />134<br />135<br />136<br />137<br />138<br />139<br />140<br />141<br />142<br />143<br />144<br />145<br />146<br />147<br />148<br />149<br />150<br />151<br />152<br />153<br />154<br />155<br />156<br />157<br />158<br />159<br />160<br />161<br />162<br />163<br />164<br />165<br />166<br />167<br />168<br />169<br />170<br />171<br />172<br />173<br />174<br />175<br />176<br />177<br />178<br />179<br />180<br />181<br />182<br />183<br />184<br />185<br />186<br />187<br />188<br />189<br />190<br />191<br />192<br />193<br />194<br />195<br />196<br />197<br />198<br />199<br />200<br />201<br />202<br />203<br />204<br />205<br />206<br />207<br />208<br />209<br />210<br />211<br />212<br />213<br />214<br />215<br />216<br />217<br />218<br />219<br />220<br />221<br />222<br />223<br />224<br />225<br />226<br />227<br />228<br />229<br />230<br />231<br /></div></td><td><div class="lua codecolorer"><span class="sy0">%</span> Randomized drawing of individual glyphs<br />
-<span class="sy0">%</span> Author<span class="sy0">:</span> István Szántai <span class="br0">&#40;</span>szantaii<span class="br0">&#41;</span><br />
-<span class="sy0">%</span> Original at<span class="sy0">:</span> http<span class="sy0">://</span>tex<span class="sy0">.</span>stackexchange<span class="sy0">.</span>com<span class="sy0">/</span>a<span class="sy0">/</span><span class="nu0">197677</span><span class="sy0">/</span><span class="nu0">8844</span><br />
-\documentclass<span class="br0">&#91;</span>10pt<span class="sy0">,</span> a4paper<span class="br0">&#93;</span><span class="br0">&#123;</span>article<span class="br0">&#125;</span><br />
-<br />
-\usepackage<span class="br0">&#91;</span>T1<span class="br0">&#93;</span><span class="br0">&#123;</span>fontenc<span class="br0">&#125;</span><br />
-<br />
-\usepackage<span class="br0">&#123;</span>luacode<span class="br0">&#125;</span><br />
-<br />
-\usepackage<span class="br0">&#123;</span>tikz<span class="br0">&#125;</span><br />
-\usetikzlibrary<span class="br0">&#123;</span>svg<span class="sy0">.</span>path<span class="sy0">,</span> positioning<span class="br0">&#125;</span><br />
-<br />
-\pagestyle<span class="br0">&#123;</span>empty<span class="br0">&#125;</span><br />
-<br />
-\tikzset<span class="br0">&#123;</span><span class="sy0">%</span><br />
-&nbsp; &nbsp; glyph node<span class="sy0">/.</span>style<span class="sy0">=</span><span class="br0">&#123;</span><span class="sy0">%</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; inner sep<span class="sy0">=</span>0pt<span class="sy0">,%</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; outer sep<span class="sy0">=</span>0pt<span class="sy0">%</span><br />
-&nbsp; &nbsp; <span class="br0">&#125;</span><span class="sy0">,%</span><br />
-&nbsp; &nbsp; glyph outline<span class="sy0">/.</span>style<span class="sy0">=</span><span class="br0">&#123;</span><span class="sy0">%</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; line width<span class="sy0">=</span>0pt<span class="sy0">%</span><br />
-&nbsp; &nbsp; <span class="br0">&#125;</span><span class="sy0">%</span><br />
-<span class="br0">&#125;</span><br />
-<br />
-\begin<span class="br0">&#123;</span>luacode<span class="sy0">*</span><span class="br0">&#125;</span><br />
-&nbsp; &nbsp; <span class="kw1">function</span> read_font_data<span class="br0">&#40;</span>file<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> glyphs <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> fd <span class="sy0">=</span> <span class="kw3">io.open</span><span class="br0">&#40;</span>file<span class="sy0">,</span> <span class="st0">&quot;r&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> content <span class="sy0">=</span> fd<span class="sy0">:</span><span class="kw3">read</span><span class="br0">&#40;</span><span class="st0">&quot;*all&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; fd<span class="sy0">.</span>close<span class="br0">&#40;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> glyph <span class="kw2">in</span> <span class="kw3">string</span><span class="sy0">.</span>gmatch<span class="br0">&#40;</span>content<span class="sy0">,</span> <span class="st0">&quot;&lt;glyph[^/&gt;]*&quot;</span><span class="br0">&#41;</span> <span class="kw1">do</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> glyph_tag <span class="sy0">=</span> <span class="kw3">string.gsub</span><span class="br0">&#40;</span>glyph<span class="sy0">,</span> <span class="st0">&quot;<span class="es1">\n</span>&quot;</span><span class="sy0">,</span> <span class="st0">&quot; &quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> unicode <span class="sy0">=</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">&#40;</span>glyph_tag<span class="sy0">,</span> <span class="st0">&quot;unicode=&quot;</span><span class="br0">&#91;</span><span class="sy0">^</span><span class="st0">&quot;]*&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">&#40;</span>glyph_tag<span class="sy0">,</span> <span class="st0">&quot;d=&quot;</span><span class="br0">&#91;</span><span class="sy0">^</span><span class="st0">&quot;]*&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">&#40;</span>glyph_tag<span class="sy0">,</span> <span class="st0">&quot;horiz%-adv%-x=&quot;</span><span class="br0">&#91;</span><span class="sy0">^</span><span class="st0">&quot;]*&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> unicode <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">and</span> <span class="sy0">#</span>unicode <span class="sy0">&gt;=</span> <span class="nu0">10</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; unicode <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">&#40;</span>unicode<span class="sy0">,</span> <span class="nu0">10</span><span class="sy0">,</span> <span class="sy0">#</span>unicode<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">and</span> <span class="sy0">#</span>outline <span class="sy0">&gt;</span> <span class="nu0">4</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; outline <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">&#40;</span>outline<span class="sy0">,</span> <span class="nu0">4</span><span class="sy0">,</span> <span class="sy0">#</span>outline<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> width <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">and</span> <span class="sy0">#</span>width <span class="sy0">&gt;=</span> <span class="nu0">14</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">&#40;</span>width<span class="sy0">,</span> <span class="nu0">14</span><span class="sy0">,</span> <span class="sy0">#</span>width<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> unicode <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; glyphs<span class="br0">&#91;</span>unicode<span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#123;</span>width<span class="sy0">,</span> outline<span class="br0">&#125;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> glyphs<br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="co1">-- returns a random float number between the specified boundaries (floats)</span><br />
-&nbsp; &nbsp; <span class="kw1">function</span> random_in_interval<span class="br0">&#40;</span>lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">math.random</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">*</span> <span class="br0">&#40;</span>upper_boundary <span class="sy0">-</span> lower_boundary<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="sy0">+</span> lower_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="co1">-- note: scaling is applied before randomization</span><br />
-&nbsp; &nbsp; <span class="kw1">function</span> scale_and_randomize<span class="br0">&#40;</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> glyph<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> glyph<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> previous_was_number <span class="sy0">=</span> <span class="kw4">false</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> processed_outline <span class="sy0">=</span> <span class="st0">&quot;&quot;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> number <span class="sy0">=</span> <span class="st0">&quot;&quot;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> width <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width <span class="sy0">=</span> width <span class="sy0">*</span> scale_factor<br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="sy0">#</span>outline<span class="sy0">,</span> <span class="nu0">1</span> <span class="kw1">do</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> char <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">&#40;</span>outline<span class="sy0">,</span> i<span class="sy0">,</span> i<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> previous_was_number <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">&#40;</span>char<span class="sy0">,</span> <span class="st0">'%d'</span><span class="br0">&#41;</span> <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">or</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; char <span class="sy0">==</span> <span class="st0">&quot;.&quot;</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">..</span> char<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">-- scale and randomize</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">*</span> scale_factor<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">*</span> random_in_interval<span class="br0">&#40;</span>lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> <span class="kw3">string.format</span><span class="br0">&#40;</span><span class="st0">&quot;%.3f&quot;</span><span class="sy0">,</span> number<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; processed_outline <span class="sy0">=</span> processed_outline <span class="sy0">..</span> number <span class="sy0">..</span> char<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> <span class="st0">&quot;&quot;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; previous_was_number <span class="sy0">=</span> <span class="kw4">false</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">&#40;</span>char<span class="sy0">,</span> <span class="st0">'%d'</span><span class="br0">&#41;</span> <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">or</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; char <span class="sy0">==</span> <span class="st0">&quot;-&quot;</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">..</span> char<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; previous_was_number <span class="sy0">=</span> <span class="kw4">true</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; processed_outline <span class="sy0">=</span> processed_outline <span class="sy0">..</span> char<br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; previous_was_number <span class="sy0">=</span> <span class="kw4">false</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="br0">&#123;</span>width<span class="sy0">,</span> processed_outline<span class="br0">&#125;</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="kw1">function</span> print_glyph<span class="br0">&#40;</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> randomized_glyph <span class="sy0">=</span> scale_and_randomize<span class="br0">&#40;</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> randomized_glyph<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> randomized_glyph<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><br />
-<br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>filldraw[glyph outline] svg &quot;</span><span class="st0">&quot; .. outline .. &quot;</span><span class="st0">&quot;;&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="kw1">function</span> return_glyph<span class="br0">&#40;</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> randomized_glyph <span class="sy0">=</span> scale_and_randomize<span class="br0">&#40;</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> randomized_glyph<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> randomized_glyph<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="st0">&quot;<span class="es1">\\</span>filldraw[glyph outline] svg &quot;</span><span class="st0">&quot; .. outline .. &quot;</span><span class="st0">&quot;;&quot;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="st0">&quot;&quot;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="kw1">function</span> draw_sample_glyphs<span class="br0">&#40;</span>glyphs<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>begin{tikzpicture}&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, anchor=south west] (a1) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="nu0">0.05</span><span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">1</span><span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, anchor=south west, right=7.5mm of a1] (a2) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="nu0">0.05</span><span class="sy0">,</span> <span class="nu0">0.8</span><span class="sy0">,</span> <span class="nu0">1.2</span><span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>end{tikzpicture}&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="kw1">function</span> draw_sample_text<span class="br0">&#40;</span>glyphs<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> horizontal_space <span class="sy0">=</span> <span class="st0">&quot;0.5mm&quot;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> vertical_space <span class="sy0">=</span> <span class="st0">&quot;1.25mm&quot;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> scale <span class="sy0">=</span> <span class="nu0">0.05</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> lower_boundary <span class="sy0">=</span> <span class="nu0">0.9</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> upper_boundary <span class="sy0">=</span> <span class="nu0">1.1</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>begin{tikzpicture}&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix] (m1) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;m&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of m1] (a1) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of a1] (t1) {&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span>raisebox{&quot;</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">&quot;}{&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;t&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;}&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of t1] (h1) {&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span>raisebox{&quot;</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">&quot;}{&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;h&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;}&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of h1] (e1) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;e&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of e1] (m2) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;m&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of m2] (a2) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of a2] (t2) {&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span>raisebox{&quot;</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">&quot;}{&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;t&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;}&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of t2] (i1) {&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span>raisebox{&quot;</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">&quot;}{&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;i&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;}&quot;</span> <span class="sy0">..</span> <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of i1] (c1) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;c&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>node[glyph node, matrix, right=&quot;</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot; of c1] (s1) {&quot;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;s&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">&#41;</span> <span class="sy0">..</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>};&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>end{tikzpicture}&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="kw1">function</span> draw_sample_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>begin{tikzpicture}&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; print_glyph<span class="br0">&#40;</span>glyphs<span class="br0">&#91;</span><span class="st0">&quot;&amp;#x3a9;&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="nu0">0.05</span><span class="sy0">,</span> <span class="nu0">0.95</span><span class="sy0">,</span> <span class="nu0">1.05</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>end{tikzpicture}&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-&nbsp; &nbsp; <br />
-&nbsp; &nbsp; <span class="kw1">function</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> cmr10_glyphs <span class="sy0">=</span> <span class="br0">&#123;</span><span class="br0">&#125;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">math.randomseed</span><span class="br0">&#40;</span><span class="kw3">os.time</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; cmr10_glyphs <span class="sy0">=</span> read_font_data<span class="br0">&#40;</span><span class="st0">&quot;cmr10.svg&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; <br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span>noindent&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; draw_sample_glyphs<span class="br0">&#40;</span>cmr10_glyphs<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>[2cm]&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; draw_sample_text<span class="br0">&#40;</span>cmr10_glyphs<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">&#40;</span><span class="st0">&quot;<span class="es1">\\</span><span class="es1">\\</span>[2cm]&quot;</span><span class="br0">&#41;</span><br />
-&nbsp; &nbsp; &nbsp; &nbsp; draw_sample_glyph<span class="br0">&#40;</span>cmr10_glyphs<span class="br0">&#41;</span><br />
-&nbsp; &nbsp; <span class="kw1">end</span><br />
-\<span class="kw1">end</span><span class="br0">&#123;</span>luacode<span class="sy0">*</span><span class="br0">&#125;</span><br />
-<br />
-\begin<span class="br0">&#123;</span>document<span class="br0">&#125;</span><br />
-\luadirect<span class="br0">&#123;</span>main<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#125;</span><br />
-\<span class="kw1">end</span><span class="br0">&#123;</span>document<span class="br0">&#125;</span></div></td></tr></tbody></table></div>
-</blockquote>
-<p>Nice, isn&#8217;t it?</p>
-<p>I&#8217;ve created an animation in LaTeX (clarification later) using this code, which  makes the letter &ldquo;a&rdquo; wibbly-wobbly. There is also a video which shows the same letter but only the outline is drawn, but in my opinion it doesn&#8217;t look that good: <a href="https://www.youtube.com/watch?v=ysNP5T-SeJE">Glyph distortion &#8211; YouTube</a>.</p>
-<p><iframe width="705" height="397" src="http://www.youtube.com/embed/qd7i83b6DjI?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p>These videos are also available on Vimeo: <a href="https://vimeo.com/104436884" title="Glyph distortion on Vimeo">Glyph distortion on Vimeo</a>, <a href="https://vimeo.com/104437031" title="Glyph distortion #2 on Vimeo">Glyph distortion #2 on Vimeo</a>.</p>
-<p>The second animation (also made in LaTeX) draws a big letter &ldquo;a&rdquo; stacking only outlines of it on top of each other which it gives a hollow like look.</p>
-<p><iframe width="705" height="397" src="http://www.youtube.com/embed/eTM3fKI5W6Y?rel=0" frameborder="0" allowfullscreen></iframe></p>
-<p>This video is also available on Vimeo: <a href="https://vimeo.com/104798780" title="Font outline animation #2 on Vimeo">Font outline animation #2 on Vimeo</a>.</p>
-<p>Only one question remains, how did I made these animations in LaTeX? I just built upon the code above, and rendered a long PDF which&#8217;s each page is a frame of the animation. After that I only followed some steps <a href="index.html%3Fp=8571.html" title="Font outline animation / sidenote">I&#8217;ve described before</a>.</p>
-                <div class="post_tags clear">
-                    <ul><li><a href="tag/tex-latex/index.html" rel="tag">TeX/LaTeX</a></li><li><a href="tag/tipografia/index.html" rel="tag">tipográfia</a></li><li><a href="tag/video/index.html" rel="tag">videó</a></li></ul>                </div>
-                <div class="post_share">
-	<a href="javascript: void(0);" class="sharethis">Megosztás, like stb.</a>
-	<div class="sharelist">
-		<div class="sharelist_list">
-			<ul>
-				<li class="share_fb"><a title="Megosztás Facebookon" href="http://facebook.com/share.php?u=http%3A%2F%2Fsidenote.hu%2F2014%2F09%2F15%2Fexperimenting-with-font-outlines%2F&amp;t=Experimenting+with+font+outlines">Facebook</a></li>
-				<li class="share_iwiw"><a title="Megosztás iWiWen" href="http://iwiw.hu/pages/share/share.jsp?u=http%3A%2F%2Fsidenote.hu%2F2014%2F09%2F15%2Fexperimenting-with-font-outlines%2F&amp;t=Experimenting+with+font+outlines">iWiW</a></li>
-				<li class="share_tumblr"><a title="Megosztás Tumblrön" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fsidenote.hu%2F2014%2F09%2F15%2Fexperimenting-with-font-outlines%2F&amp;name=Experimenting+with+font+outlines&amp;description=In+one+of+my+latest+posts+I+mentioned+a+question+about+how+to+draw+individual+glyphs+with+randomized+paths+on+TeX.SX.+Today+I+want+to%26hellip%3B">Tumblr</a></li>
-			</ul>
-		</div>
-		<div class="facebook_like_button">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http://sidenote.hu/2014/09/15/experimenting-with-font-outlines/&amp;locale=hu_HU&amp;layout=button_count&amp;show_faces=false&amp;width=66&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:66px; height:60px;"></iframe>
-		</div>
-		<div class="plusone_button">
-			<g:plusone size="medium" href="http://sidenote.hu/2014/09/15/experimenting-with-font-outlines/"></g:plusone>
-		</div>
-		<div class="tweet_button">
-			<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Experimenting&#32;with&#32;font&#32;outlines&amp;url=http://sidenote.hu/2014/09/15/experimenting-with-font-outlines/&amp;via=sidenotehu&amp;counturl=http://sidenote.hu/2014/09/15/experimenting-with-font-outlines/" style="width: 78px; height: 20px;"></iframe>
-					</div>
-	</div>
-</div>            </div>
-        </div>
-
-    
-<!-- #comments -->
-
-</div>
-
-<div class="sidebar">
-    
-        <div class="widget">
-            <h3>Személyes</h3>
-            <div class="widget_body">
-                <ul>
-                                        <li><a href="wp-login.php.html">Bejelentkezés</a></li>
-                    <li><a href="feed/rss/index.html" title="Syndicate this site using RSS 2.0"><abbr title="Really Simple Syndication">RSS</abbr> (bejegyzés)</a></li>
-                    <li><a href="comments/feed/index.html" title="The latest comments to all posts in RSS"><acronym title="Really Simple Syndication">RSS</acronym> (hozzászólás)</a></li>
-                                    </ul>
-            </div>
-        </div>
-
-        <div class="widget">
-            <h3>Quick Access</h3>
-            <div class="widget_body">
-                <ul>
-                    <li><a href="dev/null.html" title="/dev/null">/dev/null</a></li>
-                    <li><a href="dev/zero.html" title="/dev/zero">/dev/zero</a></li>
-                    <li><a href="index.html%3Frandom.html" title="Random bejegyzés">Random bejegyzés</a></li>
-                    <li><select name="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'><option value="">Hónap kiválasztása</option>	<option value='http://sidenote.hu/2015/03/'> 2015. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2015/01/'> 2015. január &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2014/10/'> 2014. október &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2014/09/'> 2014. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2014/08/'> 2014. augusztus &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2014/07/'> 2014. július &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2014/01/'> 2014. január &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/11/'> 2013. november &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2013/10/'> 2013. október &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/09/'> 2013. szeptember &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/08/'> 2013. augusztus &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/07/'> 2013. július &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2013/06/'> 2013. június &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2013/05/'> 2013. május &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2013/04/'> 2013. április &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2013/03/'> 2013. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/02/'> 2013. február &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2013/01/'> 2013. január &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/12/'> 2012. december &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2012/11/'> 2012. november &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/10/'> 2012. október &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/09/'> 2012. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/07/'> 2012. július &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/06/'> 2012. június &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2012/05/'> 2012. május &nbsp;(8)</option>
-	<option value='http://sidenote.hu/2012/04/'> 2012. április &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2012/03/'> 2012. március &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2012/02/'> 2012. február &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2012/01/'> 2012. január &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2011/12/'> 2011. december &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2011/11/'> 2011. november &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2011/10/'> 2011. október &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2011/09/'> 2011. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2011/08/'> 2011. augusztus &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2011/07/'> 2011. július &nbsp;(10)</option>
-	<option value='http://sidenote.hu/2011/06/'> 2011. június &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2011/04/'> 2011. április &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2011/03/'> 2011. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2011/02/'> 2011. február &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2011/01/'> 2011. január &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2010/12/'> 2010. december &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2010/11/'> 2010. november &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/10/'> 2010. október &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/09/'> 2010. szeptember &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/08/'> 2010. augusztus &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2010/07/'> 2010. július &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2010/06/'> 2010. június &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2010/05/'> 2010. május &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/04/'> 2010. április &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2010/03/'> 2010. március &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2010/02/'> 2010. február &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2010/01/'> 2010. január &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2009/12/'> 2009. december &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2009/11/'> 2009. november &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/10/'> 2009. október &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2009/09/'> 2009. szeptember &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/08/'> 2009. augusztus &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/07/'> 2009. július &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2009/06/'> 2009. június &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/05/'> 2009. május &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2009/04/'> 2009. április &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2009/03/'> 2009. március &nbsp;(8)</option>
-	<option value='http://sidenote.hu/2009/02/'> 2009. február &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2009/01/'> 2009. január &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2008/12/'> 2008. december &nbsp;(6)</option>
-	<option value='http://sidenote.hu/2008/11/'> 2008. november &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/10/'> 2008. október &nbsp;(4)</option>
-	<option value='http://sidenote.hu/2008/09/'> 2008. szeptember &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2008/08/'> 2008. augusztus &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2008/07/'> 2008. július &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/06/'> 2008. június &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/05/'> 2008. május &nbsp;(2)</option>
-	<option value='http://sidenote.hu/2008/04/'> 2008. április &nbsp;(3)</option>
-	<option value='http://sidenote.hu/2008/03/'> 2008. március &nbsp;(1)</option>
-	<option value='http://sidenote.hu/2008/02/'> 2008. február &nbsp;(5)</option>
-	<option value='http://sidenote.hu/2008/01/'> 2008. január &nbsp;(2)</option>
-</select></li>
-                    <li><form action="index.html" method="get"><select  name='cat' id='cat' class='postform'  onchange='return this.form.submit()'>
-	<option value='-1'>Kategória kiválasztása</option>
-	<option class="level-0" value="3">a blog&nbsp;&nbsp;(10)</option>
-	<option class="level-0" value="4">alkotunk&nbsp;&nbsp;(37)</option>
-	<option class="level-0" value="6">animáció&nbsp;&nbsp;(16)</option>
-	<option class="level-0" value="7">anime&nbsp;&nbsp;(9)</option>
-	<option class="level-0" value="8">Apple&nbsp;&nbsp;(2)</option>
-	<option class="level-0" value="15">film&nbsp;&nbsp;(36)</option>
-	<option class="level-0" value="17">fotó&nbsp;&nbsp;(18)</option>
-	<option class="level-0" value="18">gizmó&nbsp;&nbsp;(48)</option>
-	<option class="level-0" value="20">hardver&nbsp;&nbsp;(16)</option>
-	<option class="level-0" value="21">holiday&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="36">humor&nbsp;&nbsp;(14)</option>
-	<option class="level-0" value="26">ismeretterjesztő&nbsp;&nbsp;(31)</option>
-	<option class="level-0" value="28">Japán&nbsp;&nbsp;(22)</option>
-	<option class="level-0" value="29">játék&nbsp;&nbsp;(35)</option>
-	<option class="level-0" value="34">könyv&nbsp;&nbsp;(15)</option>
-	<option class="level-0" value="35">Linux&nbsp;&nbsp;(38)</option>
-	<option class="level-0" value="43">munka&nbsp;&nbsp;(8)</option>
-	<option class="level-0" value="44">művészet, dizájn&nbsp;&nbsp;(34)</option>
-	<option class="level-0" value="46">para&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="52">sport&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="54">szoftver&nbsp;&nbsp;(88)</option>
-	<option class="level-0" value="99">TV&nbsp;&nbsp;(1)</option>
-	<option class="level-0" value="67">void *&nbsp;&nbsp;(22)</option>
-	<option class="level-0" value="68">web2&nbsp;&nbsp;(3)</option>
-	<option class="level-0" value="70">zene&nbsp;&nbsp;(25)</option>
-</select>
- <noscript><div><input type="submit" value="View" /></div></noscript></form></li>
-                    <select name="tag-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;"><option value="#">Címke kiválasztása</option>	<option value='http://sidenote.hu/tag/android/'>Android (2)</option>
-	<option value='http://sidenote.hu/tag/auto/'>autó (3)</option>
-	<option value='http://sidenote.hu/tag/bash/'>Bash (10)</option>
-	<option value='http://sidenote.hu/tag/basic/'>Basic (2)</option>
-	<option value='http://sidenote.hu/tag/batch/'>Batch (1)</option>
-	<option value='http://sidenote.hu/tag/bond/'>Bond (1)</option>
-	<option value='http://sidenote.hu/tag/cyberpunk/'>cyberpunk (4)</option>
-	<option value='http://sidenote.hu/tag/del-korea/'>Dél-Korea (2)</option>
-	<option value='http://sidenote.hu/tag/egeszseg/'>egészség (1)</option>
-	<option value='http://sidenote.hu/tag/filmklub/'>filmklub (1)</option>
-	<option value='http://sidenote.hu/tag/google/'>Google (2)</option>
-	<option value='http://sidenote.hu/tag/ikea/'>IKEA (1)</option>
-	<option value='http://sidenote.hu/tag/indie/'>indie (14)</option>
-	<option value='http://sidenote.hu/tag/jazz/'>jazz (3)</option>
-	<option value='http://sidenote.hu/tag/kiallitas/'>kiállítás (5)</option>
-	<option value='http://sidenote.hu/tag/konferencia/'>konferencia (3)</option>
-	<option value='http://sidenote.hu/tag/kepregeny/'>képregény (2)</option>
-	<option value='http://sidenote.hu/tag/libreoffice/'>LibreOffice (1)</option>
-	<option value='http://sidenote.hu/tag/manga/'>manga (2)</option>
-	<option value='http://sidenote.hu/tag/mirror-pi/'>Mirror&nbsp;π (1)</option>
-	<option value='http://sidenote.hu/tag/mit-olvasunk/'>Mit&nbsp;olvasunk? (2)</option>
-	<option value='http://sidenote.hu/tag/mozi/'>mozi (4)</option>
-	<option value='http://sidenote.hu/tag/os-x/'>OS&nbsp;X (1)</option>
-	<option value='http://sidenote.hu/tag/philip-k-dick/'>Philip&nbsp;K.&nbsp;Dick (9)</option>
-	<option value='http://sidenote.hu/tag/powershell/'>PowerShell (1)</option>
-	<option value='http://sidenote.hu/tag/rajz/'>rajz (7)</option>
-	<option value='http://sidenote.hu/tag/raspberry-pi/'>Raspberry&nbsp;Pi (11)</option>
-	<option value='http://sidenote.hu/tag/reklam/'>reklám (5)</option>
-	<option value='http://sidenote.hu/tag/retro/'>retro (2)</option>
-	<option value='http://sidenote.hu/tag/sci-fi/'>sci-fi (12)</option>
-	<option value='http://sidenote.hu/tag/star-trek/'>Star&nbsp;Trek (1)</option>
-	<option value='http://sidenote.hu/tag/telefon/'>telefon (2)</option>
-	<option value='http://sidenote.hu/tag/termeszet/'>természet (7)</option>
-	<option value='http://sidenote.hu/tag/tex-latex/'>TeX/LaTeX (13)</option>
-	<option value='http://sidenote.hu/tag/tipografia/'>tipográfia (23)</option>
-	<option value='http://sidenote.hu/tag/tokio/'>Tokió (7)</option>
-	<option value='http://sidenote.hu/tag/ubuntu/'>Ubuntu (17)</option>
-	<option value='http://sidenote.hu/tag/valve/'>Valve (4)</option>
-	<option value='http://sidenote.hu/tag/video/'>videó (47)</option>
-	<option value='http://sidenote.hu/tag/vilagur/'>világűr (6)</option>
-	<option value='http://sidenote.hu/tag/webcam/'>webcam (1)</option>
-	<option value='http://sidenote.hu/tag/allat/'>állat (3)</option></select>
-                </ul>
-            </div>
-        </div>
-
-        <div class="widget">
-            <h3>Közösség</h3>
-            <div class="widget_body">
-                <ul>
-                    <li><a title="sidenote a Facebookon" href="http://www.facebook.com/pages/sidenotehu/112718384668">Facebook</a></li>
-                    <li><a title="sidenote a Google Plus-on"  href="https://plus.google.com/108693717971418449096/">Google+</a></li>
-                    <li><a title="sidenote a Tumblren" href="http://sidenotehu.tumblr.com/">Tumblr</a></li>
-                    <li><a title="sidenote a Twitteren" href="https://twitter.com/#!/sidenotehu">Twitter</a></li>
-                    <li><a title="sidenote a Vimeon" href="http://vimeo.com/sidenote">Vimeo</a></li>
-                    <li><a title="sidenote a YouTube-on" href="http://www.youtube.com/sidenotehu">YouTube</a></li>
-                </ul>
-            </div>
-        </div>
-
-        		
-		
-		
-        <div class="widget">
-		<h3>Mit olvasunk?</h3>
-            <div class="widget_body">
-                <ul>
-                    <li><a href="http://www.boingboing.net/">Boing Boing</a></li>
-<li><a href="http://design.canonical.com/" title="Canonical Design">Canonical Design</a></li>
-<li><a href="http://www.dannychoo.com/" title="Culture Japan &ndash; Your portal to Japan">Culture Japan</a></li>
-<li><a href="http://www.engadget.com/" title="Engadget">Engadget</a></li>
-<li><a href="http://fat-pie.com/" title="Fat-Pie.com :: Animation and stuff by David Firth">Fat-Pie.com</a></li>
-<li><a href="http://freegamer.blogspot.com/" title="Free Gamer &#8211; Open Source Games">Free Gamer</a></li>
-<li><a href="http://handras.hu/" title="Handras">Handras</a></li>
-<li><a href="http://hup.hu/" title="Hungarian Unix Portal">Hungarian Unix Portal</a></li>
-<li><a href="http://www.ikeahackers.net/" title="IKEA Hackers">IKEA Hackers</a></li>
-<li><a href="http://www.jupiterbroadcasting.com/" title="Jupiter Broadcasting">Jupiter Broadcasting</a></li>
-<li><a href="http://asiafan.hu/" title="Keleti Szél ">Keleti Szél</a></li>
-<li><a href="http://napirajz.hu/" title="Napirajz &ndash; Súlyosbítva azt, ami amúgy is.">Napirajz</a></li>
-<li><a href="http://plastik.hu/" title="plastik media">Plastik média</a></li>
-<li><a href="http://prohardver.hu/" title="PROHARDVER! &ndash; Az Online PC Magazin">PROHARDVER!</a></li>
-<li><a href="http://tokyotimes.org/" title="Tokyo Times &ndash; Photographs from a small group of islands">Tokyo Times</a></li>
-<li><a href="http://twitchfilm.com/" title="Twitch">Twitch</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="widget">
-            <h3>Kategóriák</h3>
-            <div class="widget_body">
-                <ul>
-                    	<li class="cat-item cat-item-3"><a href="category/a-blog/index.html" >a blog</a> (10)
-</li>
-	<li class="cat-item cat-item-4"><a href="category/alkotunk/index.html" >alkotunk</a> (37)
-</li>
-	<li class="cat-item cat-item-6"><a href="category/animacio/index.html" >animáció</a> (16)
-</li>
-	<li class="cat-item cat-item-7"><a href="category/anime/index.html" >anime</a> (9)
-</li>
-	<li class="cat-item cat-item-8"><a href="category/apple/index.html" >Apple</a> (2)
-</li>
-	<li class="cat-item cat-item-15"><a href="category/film/index.html" >film</a> (36)
-</li>
-	<li class="cat-item cat-item-17"><a href="category/foto/index.html" >fotó</a> (18)
-</li>
-	<li class="cat-item cat-item-18"><a href="category/gizmo/index.html" >gizmó</a> (48)
-</li>
-	<li class="cat-item cat-item-20"><a href="category/hardver/index.html" >hardver</a> (16)
-</li>
-	<li class="cat-item cat-item-21"><a href="category/holiday/index.html" >holiday</a> (3)
-</li>
-	<li class="cat-item cat-item-36"><a href="category/humor/index.html" >humor</a> (14)
-</li>
-	<li class="cat-item cat-item-26"><a href="category/ismeretterjeszto/index.html" >ismeretterjesztő</a> (31)
-</li>
-	<li class="cat-item cat-item-28"><a href="category/japan/index.html" >Japán</a> (22)
-</li>
-	<li class="cat-item cat-item-29"><a href="category/jatek/index.html" >játék</a> (35)
-</li>
-	<li class="cat-item cat-item-34"><a href="category/konyv/index.html" >könyv</a> (15)
-</li>
-	<li class="cat-item cat-item-35"><a href="category/linux/index.html" >Linux</a> (38)
-</li>
-	<li class="cat-item cat-item-43"><a href="category/munka/index.html" >munka</a> (8)
-</li>
-	<li class="cat-item cat-item-44"><a href="category/muveszet-dizajn/index.html" >művészet, dizájn</a> (34)
-</li>
-	<li class="cat-item cat-item-46"><a href="category/para/index.html" >para</a> (3)
-</li>
-	<li class="cat-item cat-item-52"><a href="category/sport/index.html" >sport</a> (3)
-</li>
-	<li class="cat-item cat-item-54"><a href="category/szoftver/index.html" >szoftver</a> (88)
-</li>
-	<li class="cat-item cat-item-99"><a href="category/tv/index.html" >TV</a> (1)
-</li>
-	<li class="cat-item cat-item-67"><a href="category/void/index.html" >void *</a> (22)
-</li>
-	<li class="cat-item cat-item-68"><a href="category/web2/index.html" >web2</a> (3)
-</li>
-	<li class="cat-item cat-item-70"><a href="category/zene/index.html" >zene</a> (25)
-</li>
-                </ul>
-            </div>
-        </div>
-
-        
-        
-        <div class="widget">
-            <h3>Friss kommentek</h3>
-            <div class="widget_body">
-                <ul>
-	<li><a href="index.html%3Fp=1575.html#li-comment-1149" title="Hozzászólás a(z) Neo Tokyo (1987) bejegyzéshez">Kadmon</a>: Alapos leírás! Linkeltem az animéről&hellip;</li>
-	<li><a href="index.html%3Fp=1344.html#li-comment-1148" title="Hozzászólás a(z) Memories (1995) bejegyzéshez">Kadmon</a>: Hasznos ismertető volt, köszönöm! Li&hellip;</li>
-	<li><a href="index.html%3Fp=8680.html#li-comment-1147" title="Hozzászólás a(z) bash-weather update bejegyzéshez">Pecsét Józsi</a>: magyarul elfelejtettünk?</li>
-	<li><a href="index.html%3Fp=8674.html#li-comment-1146" title="Hozzászólás a(z) Introducing Mirror π bejegyzéshez">The TA master</a>: Le a kalappal előttetek! 
-Most már cs&hellip;</li>
-	<li><a href="index.html%3Fp=7603.html#li-comment-1135" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">Miki</a>: rrel hosszabb a k BASH-ben expr-t haszn�&hellip;</li>
-	<li><a href="index.html%3Fp=7603.html#li-comment-1124" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">szantaii</a>: Kösz!</li>
-	<li><a href="index.html%3Fp=7603.html#li-comment-1123" title="Hozzászólás a(z) Re: 10 PRINT CHR$(205.5+RND(1)); : GOTO 10 bejegyzéshez">Miki</a>: Ha rövidségre törekedik az ember, pow&hellip;</li>
-	<li><a href="index.html%3Fp=7189.html#li-comment-1121" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">szantaii</a>: Örülök, hogy sikerült, de az azért&hellip;</li>
-	<li><a href="index.html%3Fp=7189.html#li-comment-1120" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">Simon János Bálint</a>: Szia!
-
-Nagyon köszi!
-
-12.04-et hasz&hellip;</li>
-	<li><a href="index.html%3Fp=7189.html#li-comment-1119" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">szantaii</a>: Szia!
-Ha a legújabb Ubuntut használod&hellip;</li>
-	<li><a href="index.html%3Fp=7189.html#li-comment-1118" title="Hozzászólás a(z) exFAT Linux támogatás bejegyzéshez">Simon János Bálint</a>: Szia!
-
-Teljesen új nekem a Linux / Ub&hellip;</li>
-	<li><a href="index.html%3Fp=8363.html#li-comment-1116" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">szantaii</a>: 4&thinsp;db 1.2&thinsp;V-os 2500&thinsp;&hellip;</li>
-	<li><a href="index.html%3Fp=8363.html#li-comment-1115" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">Róbert</a>: Szia !
-
-Érdeklődnék, hogy több ele&hellip;</li>
-	<li><a href="index.html%3Fp=8363.html#li-comment-1114" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">szantaii</a>: Kedves József!
-
-Örülök a megkeres�&hellip;</li>
-	<li><a href="index.html%3Fp=8363.html#li-comment-1113" title="Hozzászólás a(z) Ezen &bdquo;dolgozom&rdquo; mostanában bejegyzéshez">Kövecses József</a>: Tiszteletem!
-
-Érdeklődnék a készü&hellip;</li>
-</ul>            </div>
-        </div>
-
-</div>
-
-
-    </div>
-
-
+                                </div>
+                                <p>
+                                    Note that the location of the font on the filesystem may vary based on your LaTeX installation and operating system you use, but this will generate an SVG file into your project folder. All is left to process the generated SVG file which contains the data (name, unicode code, width, and outline) of the glyphs, which I will describe below.
+                                </p>
+                                <p>
+                                    The function function <code class="codecolorer text dawn"><span class="text">read_font_data(file)</span></code> takes a file name as an argument (the generated SVG file), and extracts the data of the glyphs into an associative array which can be addressed with the unicode code and contains the width and outline data of the specific character. Note that not all glyphs have width or outline data, some basic error checking is done but the code is not foolproof.
+                                </p>
+                                <p>
+                                    The function <code class="codecolorer text dawn"><span class="text">random_in_interval(lower_boundary, upper_boundary)</span></code> takes two float arguments, and will return a random float between them. The more the boundaries converge to 1 the smaller the randomization will be. This will be used when the time comes to randomize the outline of a glyph.
+                                </p>
+                                <p>
+                                    The function <code class="codecolorer text dawn"><span class="text">scale_and_randomize(glyph, scale_factor, lower_boundary, upper_boundary)</span></code> will take a glyph, a scale factor, a lower and upper boundary, the latter two will be used for the randomization. Scaling is needed because the default measurement unit of TikZ is centimeters (I think) and the outline data of a glyph may contain large values, which TikZ interprets as centimeters. Note that the scale factor may vary depending the font you use, and size you want.
+                                </p>
+                                <p>
+                                    The functions <code class="codecolorer text dawn"><span class="text">print_glyph(glyph, scale_factor, lower_boundary, upper_boundary)</span></code> and <code class="codecolorer text dawn"><span class="text">return_glyph</span></code> (the latter takes the same arguments) only differ in that <code class="codecolorer text dawn"><span class="text">print_glyph</span></code> will pass the TikZ drawing command (using svg.path library) used to print the glyph to LaTeX, while <code class="codecolorer text dawn"><span class="text">return_glyph</span></code> only returns the drawing command as a string which can be further used in Lua before passing it to LaTeX.
+                                </p>
+                                <p>
+                                    The remaining functions only use the previously described <code class="codecolorer text dawn"><span class="text">print_glyph</span></code> and <code class="codecolorer text dawn"><span class="text">return_glyph</span></code> functions to print the picture above.
+                                </p>
+                                <p>
+                                    That’s it. I hope this would fit your needs.
+                                </p>
+                                <div class="codecolorer-container lua dawn" style="overflow:auto;white-space:nowrap;height:400px;">
+                                    <table cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="line-numbers">
+                                                    <div>
+                                                        1<br>
+                                                        2<br>
+                                                        3<br>
+                                                        4<br>
+                                                        5<br>
+                                                        6<br>
+                                                        7<br>
+                                                        8<br>
+                                                        9<br>
+                                                        10<br>
+                                                        11<br>
+                                                        12<br>
+                                                        13<br>
+                                                        14<br>
+                                                        15<br>
+                                                        16<br>
+                                                        17<br>
+                                                        18<br>
+                                                        19<br>
+                                                        20<br>
+                                                        21<br>
+                                                        22<br>
+                                                        23<br>
+                                                        24<br>
+                                                        25<br>
+                                                        26<br>
+                                                        27<br>
+                                                        28<br>
+                                                        29<br>
+                                                        30<br>
+                                                        31<br>
+                                                        32<br>
+                                                        33<br>
+                                                        34<br>
+                                                        35<br>
+                                                        36<br>
+                                                        37<br>
+                                                        38<br>
+                                                        39<br>
+                                                        40<br>
+                                                        41<br>
+                                                        42<br>
+                                                        43<br>
+                                                        44<br>
+                                                        45<br>
+                                                        46<br>
+                                                        47<br>
+                                                        48<br>
+                                                        49<br>
+                                                        50<br>
+                                                        51<br>
+                                                        52<br>
+                                                        53<br>
+                                                        54<br>
+                                                        55<br>
+                                                        56<br>
+                                                        57<br>
+                                                        58<br>
+                                                        59<br>
+                                                        60<br>
+                                                        61<br>
+                                                        62<br>
+                                                        63<br>
+                                                        64<br>
+                                                        65<br>
+                                                        66<br>
+                                                        67<br>
+                                                        68<br>
+                                                        69<br>
+                                                        70<br>
+                                                        71<br>
+                                                        72<br>
+                                                        73<br>
+                                                        74<br>
+                                                        75<br>
+                                                        76<br>
+                                                        77<br>
+                                                        78<br>
+                                                        79<br>
+                                                        80<br>
+                                                        81<br>
+                                                        82<br>
+                                                        83<br>
+                                                        84<br>
+                                                        85<br>
+                                                        86<br>
+                                                        87<br>
+                                                        88<br>
+                                                        89<br>
+                                                        90<br>
+                                                        91<br>
+                                                        92<br>
+                                                        93<br>
+                                                        94<br>
+                                                        95<br>
+                                                        96<br>
+                                                        97<br>
+                                                        98<br>
+                                                        99<br>
+                                                        100<br>
+                                                        101<br>
+                                                        102<br>
+                                                        103<br>
+                                                        104<br>
+                                                        105<br>
+                                                        106<br>
+                                                        107<br>
+                                                        108<br>
+                                                        109<br>
+                                                        110<br>
+                                                        111<br>
+                                                        112<br>
+                                                        113<br>
+                                                        114<br>
+                                                        115<br>
+                                                        116<br>
+                                                        117<br>
+                                                        118<br>
+                                                        119<br>
+                                                        120<br>
+                                                        121<br>
+                                                        122<br>
+                                                        123<br>
+                                                        124<br>
+                                                        125<br>
+                                                        126<br>
+                                                        127<br>
+                                                        128<br>
+                                                        129<br>
+                                                        130<br>
+                                                        131<br>
+                                                        132<br>
+                                                        133<br>
+                                                        134<br>
+                                                        135<br>
+                                                        136<br>
+                                                        137<br>
+                                                        138<br>
+                                                        139<br>
+                                                        140<br>
+                                                        141<br>
+                                                        142<br>
+                                                        143<br>
+                                                        144<br>
+                                                        145<br>
+                                                        146<br>
+                                                        147<br>
+                                                        148<br>
+                                                        149<br>
+                                                        150<br>
+                                                        151<br>
+                                                        152<br>
+                                                        153<br>
+                                                        154<br>
+                                                        155<br>
+                                                        156<br>
+                                                        157<br>
+                                                        158<br>
+                                                        159<br>
+                                                        160<br>
+                                                        161<br>
+                                                        162<br>
+                                                        163<br>
+                                                        164<br>
+                                                        165<br>
+                                                        166<br>
+                                                        167<br>
+                                                        168<br>
+                                                        169<br>
+                                                        170<br>
+                                                        171<br>
+                                                        172<br>
+                                                        173<br>
+                                                        174<br>
+                                                        175<br>
+                                                        176<br>
+                                                        177<br>
+                                                        178<br>
+                                                        179<br>
+                                                        180<br>
+                                                        181<br>
+                                                        182<br>
+                                                        183<br>
+                                                        184<br>
+                                                        185<br>
+                                                        186<br>
+                                                        187<br>
+                                                        188<br>
+                                                        189<br>
+                                                        190<br>
+                                                        191<br>
+                                                        192<br>
+                                                        193<br>
+                                                        194<br>
+                                                        195<br>
+                                                        196<br>
+                                                        197<br>
+                                                        198<br>
+                                                        199<br>
+                                                        200<br>
+                                                        201<br>
+                                                        202<br>
+                                                        203<br>
+                                                        204<br>
+                                                        205<br>
+                                                        206<br>
+                                                        207<br>
+                                                        208<br>
+                                                        209<br>
+                                                        210<br>
+                                                        211<br>
+                                                        212<br>
+                                                        213<br>
+                                                        214<br>
+                                                        215<br>
+                                                        216<br>
+                                                        217<br>
+                                                        218<br>
+                                                        219<br>
+                                                        220<br>
+                                                        221<br>
+                                                        222<br>
+                                                        223<br>
+                                                        224<br>
+                                                        225<br>
+                                                        226<br>
+                                                        227<br>
+                                                        228<br>
+                                                        229<br>
+                                                        230<br>
+                                                        231<br>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="lua codecolorer">
+                                                        <span class="sy0">%</span> Randomized drawing of individual glyphs<br>
+                                                        <span class="sy0">%</span> Author<span class="sy0">:</span> István Szántai <span class="br0">(</span>szantaii<span class="br0">)</span><br>
+                                                        <span class="sy0">%</span> Original at<span class="sy0">:</span> http<span class="sy0">://</span>tex<span class="sy0">.</span>stackexchange<span class="sy0">.</span>com<span class="sy0">/</span>a<span class="sy0">/</span><span class="nu0">197677</span><span class="sy0">/</span><span class="nu0">8844</span><br>
+                                                        \documentclass<span class="br0">[</span>10pt<span class="sy0">,</span> a4paper<span class="br0">]</span><span class="br0">{</span>article<span class="br0">}</span><br>
+                                                        <br>
+                                                        \usepackage<span class="br0">[</span>T1<span class="br0">]</span><span class="br0">{</span>fontenc<span class="br0">}</span><br>
+                                                        <br>
+                                                        \usepackage<span class="br0">{</span>luacode<span class="br0">}</span><br>
+                                                        <br>
+                                                        \usepackage<span class="br0">{</span>tikz<span class="br0">}</span><br>
+                                                        \usetikzlibrary<span class="br0">{</span>svg<span class="sy0">.</span>path<span class="sy0">,</span> positioning<span class="br0">}</span><br>
+                                                        <br>
+                                                        \pagestyle<span class="br0">{</span>empty<span class="br0">}</span><br>
+                                                        <br>
+                                                        \tikzset<span class="br0">{</span><span class="sy0">%</span><br>
+                                                        &nbsp; &nbsp; glyph node<span class="sy0">/.</span>style<span class="sy0">=</span><span class="br0">{</span><span class="sy0">%</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; inner sep<span class="sy0">=</span>0pt<span class="sy0">,%</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; outer sep<span class="sy0">=</span>0pt<span class="sy0">%</span><br>
+                                                        &nbsp; &nbsp; <span class="br0">}</span><span class="sy0">,%</span><br>
+                                                        &nbsp; &nbsp; glyph outline<span class="sy0">/.</span>style<span class="sy0">=</span><span class="br0">{</span><span class="sy0">%</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; line width<span class="sy0">=</span>0pt<span class="sy0">%</span><br>
+                                                        &nbsp; &nbsp; <span class="br0">}</span><span class="sy0">%</span><br>
+                                                        <span class="br0">}</span><br>
+                                                        <br>
+                                                        \begin<span class="br0">{</span>luacode<span class="sy0">*</span><span class="br0">}</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> read_font_data<span class="br0">(</span>file<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> glyphs <span class="sy0">=</span> <span class="br0">{</span><span class="br0">}</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> fd <span class="sy0">=</span> <span class="kw3">io.open</span><span class="br0">(</span>file<span class="sy0">,</span> <span class="st0">"r"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> content <span class="sy0">=</span> fd<span class="sy0">:</span><span class="kw3">read</span><span class="br0">(</span><span class="st0">"*all"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; fd<span class="sy0">.</span>close<span class="br0">(</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> glyph <span class="kw2">in</span> <span class="kw3">string</span><span class="sy0">.</span>gmatch<span class="br0">(</span>content<span class="sy0">,</span> <span class="st0">"&lt;glyph[^/&gt;]*"</span><span class="br0">)</span> <span class="kw1">do</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> glyph_tag <span class="sy0">=</span> <span class="kw3">string.gsub</span><span class="br0">(</span>glyph<span class="sy0">,</span> <span class="st0">"<span class="es1">\n</span>"</span><span class="sy0">,</span> <span class="st0">" "</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> unicode <span class="sy0">=</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">(</span>glyph_tag<span class="sy0">,</span> <span class="st0">"unicode="</span><span class="br0">[</span><span class="sy0">^</span><span class="st0">"]*"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">(</span>glyph_tag<span class="sy0">,</span> <span class="st0">"d="</span><span class="br0">[</span><span class="sy0">^</span><span class="st0">"]*"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">(</span>glyph_tag<span class="sy0">,</span> <span class="st0">"horiz%-adv%-x="</span><span class="br0">[</span><span class="sy0">^</span><span class="st0">"]*"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> unicode <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">and</span> <span class="sy0">#</span>unicode <span class="sy0">&gt;=</span> <span class="nu0">10</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; unicode <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">(</span>unicode<span class="sy0">,</span> <span class="nu0">10</span><span class="sy0">,</span> <span class="sy0">#</span>unicode<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">and</span> <span class="sy0">#</span>outline <span class="sy0">&gt;</span> <span class="nu0">4</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; outline <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">(</span>outline<span class="sy0">,</span> <span class="nu0">4</span><span class="sy0">,</span> <span class="sy0">#</span>outline<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> width <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">and</span> <span class="sy0">#</span>width <span class="sy0">&gt;=</span> <span class="nu0">14</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">(</span>width<span class="sy0">,</span> <span class="nu0">14</span><span class="sy0">,</span> <span class="sy0">#</span>width<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> unicode <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; glyphs<span class="br0">[</span>unicode<span class="br0">]</span> <span class="sy0">=</span> <span class="br0">{</span>width<span class="sy0">,</span> outline<span class="br0">}</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> glyphs<br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="co1">-- returns a random float number between the specified boundaries (floats)</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> random_in_interval<span class="br0">(</span>lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="br0">(</span><span class="br0">(</span><span class="kw3">math.random</span><span class="br0">(</span><span class="br0">)</span> <span class="sy0">*</span> <span class="br0">(</span>upper_boundary <span class="sy0">-</span> lower_boundary<span class="br0">)</span><span class="br0">)</span> <span class="sy0">+</span> lower_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="co1">-- note: scaling is applied before randomization</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> scale_and_randomize<span class="br0">(</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> glyph<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> glyph<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> previous_was_number <span class="sy0">=</span> <span class="kw4">false</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> processed_outline <span class="sy0">=</span> <span class="st0">""</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> number <span class="sy0">=</span> <span class="st0">""</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> width <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width <span class="sy0">=</span> width <span class="sy0">*</span> scale_factor<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">for</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="sy0">#</span>outline<span class="sy0">,</span> <span class="nu0">1</span> <span class="kw1">do</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> char <span class="sy0">=</span> <span class="kw3">string.sub</span><span class="br0">(</span>outline<span class="sy0">,</span> i<span class="sy0">,</span> i<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> previous_was_number <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">(</span>char<span class="sy0">,</span> <span class="st0">'%d'</span><span class="br0">)</span> <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">or</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; char <span class="sy0">==</span> <span class="st0">"."</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">..</span> char<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="co1">-- scale and randomize</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">*</span> scale_factor<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">*</span> random_in_interval<span class="br0">(</span>lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> <span class="kw3">string.format</span><span class="br0">(</span><span class="st0">"%.3f"</span><span class="sy0">,</span> number<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; processed_outline <span class="sy0">=</span> processed_outline <span class="sy0">..</span> number <span class="sy0">..</span> char<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> <span class="st0">""</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; previous_was_number <span class="sy0">=</span> <span class="kw4">false</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="kw3">string</span><span class="sy0">.</span>match<span class="br0">(</span>char<span class="sy0">,</span> <span class="st0">'%d'</span><span class="br0">)</span> <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw2">or</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; char <span class="sy0">==</span> <span class="st0">"-"</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; number <span class="sy0">=</span> number <span class="sy0">..</span> char<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; previous_was_number <span class="sy0">=</span> <span class="kw4">true</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; processed_outline <span class="sy0">=</span> processed_outline <span class="sy0">..</span> char<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; previous_was_number <span class="sy0">=</span> <span class="kw4">false</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="br0">{</span>width<span class="sy0">,</span> processed_outline<span class="br0">}</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> print_glyph<span class="br0">(</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> randomized_glyph <span class="sy0">=</span> scale_and_randomize<span class="br0">(</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> randomized_glyph<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> randomized_glyph<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><br>
+                                                        <br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>filldraw[glyph outline] svg "</span><span class="st0">" .. outline .. "</span><span class="st0">";"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> return_glyph<span class="br0">(</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> randomized_glyph <span class="sy0">=</span> scale_and_randomize<span class="br0">(</span>glyph<span class="sy0">,</span> scale_factor<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> width <span class="sy0">=</span> randomized_glyph<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> outline <span class="sy0">=</span> randomized_glyph<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> outline <span class="sy0">~=</span> <span class="kw4">nil</span> <span class="kw1">then</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="st0">"<span class="es1">\\</span>filldraw[glyph outline] svg "</span><span class="st0">" .. outline .. "</span><span class="st0">";"</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">else</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="st0">""</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> draw_sample_glyphs<span class="br0">(</span>glyphs<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>begin{tikzpicture}"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, anchor=south west] (a1) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"a"</span><span class="br0">]</span><span class="sy0">,</span> <span class="nu0">0.05</span><span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, anchor=south west, right=7.5mm of a1] (a2) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"a"</span><span class="br0">]</span><span class="sy0">,</span> <span class="nu0">0.05</span><span class="sy0">,</span> <span class="nu0">0.8</span><span class="sy0">,</span> <span class="nu0">1.2</span><span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>end{tikzpicture}"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> draw_sample_text<span class="br0">(</span>glyphs<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> horizontal_space <span class="sy0">=</span> <span class="st0">"0.5mm"</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> vertical_space <span class="sy0">=</span> <span class="st0">"1.25mm"</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> scale <span class="sy0">=</span> <span class="nu0">0.05</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> lower_boundary <span class="sy0">=</span> <span class="nu0">0.9</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> upper_boundary <span class="sy0">=</span> <span class="nu0">1.1</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>begin{tikzpicture}"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix] (m1) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"m"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of m1] (a1) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"a"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of a1] (t1) {"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span>raisebox{"</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">"}{"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"t"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"}"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of t1] (h1) {"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span>raisebox{"</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">"}{"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"h"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"}"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of h1] (e1) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"e"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of e1] (m2) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"m"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of m2] (a2) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"a"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of a2] (t2) {"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span>raisebox{"</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">"}{"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"t"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"}"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of t2] (i1) {"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span>raisebox{"</span> <span class="sy0">..</span> vertical_space <span class="sy0">..</span> <span class="st0">"}{"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"i"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"}"</span> <span class="sy0">..</span> <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of i1] (c1) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"c"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>node[glyph node, matrix, right="</span> <span class="sy0">..</span> horizontal_space <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">" of c1] (s1) {"</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"s"</span><span class="br0">]</span><span class="sy0">,</span> scale<span class="sy0">,</span> lower_boundary<span class="sy0">,</span> upper_boundary<span class="br0">)</span> <span class="sy0">..</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>};"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>end{tikzpicture}"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> draw_sample_glyph<span class="br0">(</span>glyphs<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>begin{tikzpicture}"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; print_glyph<span class="br0">(</span>glyphs<span class="br0">[</span><span class="st0">"&amp;#x3a9;"</span><span class="br0">]</span><span class="sy0">,</span> <span class="nu0">0.05</span><span class="sy0">,</span> <span class="nu0">0.95</span><span class="sy0">,</span> <span class="nu0">1.05</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>end{tikzpicture}"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; <span class="kw1">function</span> main<span class="br0">(</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">local</span> cmr10_glyphs <span class="sy0">=</span> <span class="br0">{</span><span class="br0">}</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">math.randomseed</span><span class="br0">(</span><span class="kw3">os.time</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; cmr10_glyphs <span class="sy0">=</span> read_font_data<span class="br0">(</span><span class="st0">"cmr10.svg"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp;<br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span>noindent"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; draw_sample_glyphs<span class="br0">(</span>cmr10_glyphs<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>[2cm]"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; draw_sample_text<span class="br0">(</span>cmr10_glyphs<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; tex<span class="sy0">.</span>sprint<span class="br0">(</span><span class="st0">"<span class="es1">\\</span><span class="es1">\\</span>[2cm]"</span><span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; &nbsp; &nbsp; draw_sample_glyph<span class="br0">(</span>cmr10_glyphs<span class="br0">)</span><br>
+                                                        &nbsp; &nbsp; <span class="kw1">end</span><br>
+                                                        \<span class="kw1">end</span><span class="br0">{</span>luacode<span class="sy0">*</span><span class="br0">}</span><br>
+                                                        <br>
+                                                        \begin<span class="br0">{</span>document<span class="br0">}</span><br>
+                                                        \luadirect<span class="br0">{</span>main<span class="br0">(</span><span class="br0">)</span><span class="br0">}</span><br>
+                                                        \<span class="kw1">end</span><span class="br0">{</span>document<span class="br0">}</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </blockquote>
+                            <p>
+                                Nice, isn’t it?
+                            </p>
+                            <p>
+                                I’ve created an animation in LaTeX (clarification later) using this code, which makes the letter “a” wibbly-wobbly. There is also a video which shows the same letter but only the outline is drawn, but in my opinion it doesn’t look that good: <a href="https://www.youtube.com/watch?v=ysNP5T-SeJE">Glyph distortion – YouTube</a>.
+                            </p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=qd7i83b6DjI">https://www.youtube.com/watch?v=qd7i83b6DjI</a>
+                            </p>
+                            <p>
+                                These videos are also available on Vimeo: <a href="#" title="Glyph distortion on Vimeo">Glyph distortion on Vimeo</a>, <a href="#" title="Glyph distortion #2 on Vimeo">Glyph distortion #2 on Vimeo</a>.
+                            </p>
+                            <p>
+                                The second animation (also made in LaTeX) draws a big letter “a” stacking only outlines of it on top of each other which it gives a hollow like look.
+                            </p>
+                            <p>
+                                <a href="https://www.youtube.com/watch?v=eTM3fKI5W6Y">https://www.youtube.com/watch?v=eTM3fKI5W6Y</a>
+                            </p>
+                            <p>
+                                This video is also available on Vimeo: <a href="#" title="Font outline animation #2 on Vimeo">Font outline animation #2 on Vimeo</a>.
+                            </p>
+                            <p>
+                                Only one question remains, how did I made these animations in LaTeX? I just built upon the code above, and rendered a long PDF which’s each page is a frame of the animation. After that I only followed some steps <a href="index.html%3Fp=8571.html" title="Font outline animation / sidenote">I’ve described before</a>.
+                            </p>
+                            <div class="post_tags clear">
+                                <ul>
+                                    <li>
+                                        <a href="tag/tex-latex/index.html" rel="tag">TeX/LaTeX</a>
+                                    </li>
+                                    <li>
+                                        <a href="tag/tipografia/index.html" rel="tag">tipográfia</a>
+                                    </li>
+                                    <li>
+                                        <a href="tag/video/index.html" rel="tag">videó</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="widget">
+                        <h3>
+                            Mit olvasunk?
+                        </h3>
+                        <div class="widget_body">
+                            <ul>
+                                <li>
+                                    <a href="#">Boing Boing</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Canonical Design">Canonical Design</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Culture Japan – Your portal to Japan">Culture Japan</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Engadget">Engadget</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Fat-Pie.com :: Animation and stuff by David Firth">Fat-Pie.com</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Free Gamer – Open Source Games">Free Gamer</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Handras">Handras</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Hungarian Unix Portal">Hungarian Unix Portal</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="IKEA Hackers">IKEA Hackers</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Jupiter Broadcasting">Jupiter Broadcasting</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Keleti Szél">Keleti Szél</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Napirajz – Súlyosbítva azt, ami amúgy is.">Napirajz</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="plastik media">Plastik média</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="PROHARDVER! – Az Online PC Magazin">PROHARDVER!</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tokyo Times – Photographs from a small group of islands">Tokyo Times</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitch">Twitch</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <h3>
+                            Kategóriák
+                        </h3>
+                        <div class="widget_body">
+                            <ul>
+                                <li class="cat-item cat-item-3">
+                                    <a href="category/a-blog/index.html">a blog</a> (10)
+                                </li>
+                                <li class="cat-item cat-item-4">
+                                    <a href="category/alkotunk/index.html">alkotunk</a> (37)
+                                </li>
+                                <li class="cat-item cat-item-6">
+                                    <a href="category/animacio/index.html">animáció</a> (16)
+                                </li>
+                                <li class="cat-item cat-item-7">
+                                    <a href="category/anime/index.html">anime</a> (9)
+                                </li>
+                                <li class="cat-item cat-item-8">
+                                    <a href="category/apple/index.html">Apple</a> (2)
+                                </li>
+                                <li class="cat-item cat-item-15">
+                                    <a href="category/film/index.html">film</a> (36)
+                                </li>
+                                <li class="cat-item cat-item-17">
+                                    <a href="category/foto/index.html">fotó</a> (18)
+                                </li>
+                                <li class="cat-item cat-item-18">
+                                    <a href="category/gizmo/index.html">gizmó</a> (48)
+                                </li>
+                                <li class="cat-item cat-item-20">
+                                    <a href="category/hardver/index.html">hardver</a> (16)
+                                </li>
+                                <li class="cat-item cat-item-21">
+                                    <a href="category/holiday/index.html">holiday</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-36">
+                                    <a href="category/humor/index.html">humor</a> (14)
+                                </li>
+                                <li class="cat-item cat-item-26">
+                                    <a href="category/ismeretterjeszto/index.html">ismeretterjesztő</a> (31)
+                                </li>
+                                <li class="cat-item cat-item-28">
+                                    <a href="category/japan/index.html">Japán</a> (22)
+                                </li>
+                                <li class="cat-item cat-item-29">
+                                    <a href="category/jatek/index.html">játék</a> (35)
+                                </li>
+                                <li class="cat-item cat-item-34">
+                                    <a href="category/konyv/index.html">könyv</a> (15)
+                                </li>
+                                <li class="cat-item cat-item-35">
+                                    <a href="category/linux/index.html">Linux</a> (38)
+                                </li>
+                                <li class="cat-item cat-item-43">
+                                    <a href="category/munka/index.html">munka</a> (8)
+                                </li>
+                                <li class="cat-item cat-item-44">
+                                    <a href="category/muveszet-dizajn/index.html">művészet, dizájn</a> (34)
+                                </li>
+                                <li class="cat-item cat-item-46">
+                                    <a href="category/para/index.html">para</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-52">
+                                    <a href="category/sport/index.html">sport</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-54">
+                                    <a href="category/szoftver/index.html">szoftver</a> (88)
+                                </li>
+                                <li class="cat-item cat-item-99">
+                                    <a href="category/tv/index.html">TV</a> (1)
+                                </li>
+                                <li class="cat-item cat-item-67">
+                                    <a href="category/void/index.html">void *</a> (22)
+                                </li>
+                                <li class="cat-item cat-item-68">
+                                    <a href="category/web2/index.html">web2</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-70">
+                                    <a href="category/zene/index.html">zene</a> (25)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
-                        <p class="copy">Minden itt található tartalomra a <a title="Creative Commons &mdash; Attribution-NonCommercial-ShareAlike 2.5 Hungary" href="http://creativecommons.org/licenses/by-nc-sa/2.5/hu/" rel="copyright">Creative<br />Commons 2.5</a> licencfeltételek érvényesek.</p>
-            <p class="credits">Dizájn: <a href="http://wpshower.com/" title="WPSHOWER - Free wordpress themes">Wpshower</a> &amp; <a href="http://www.google.com/recaptcha/mailhide/d?k=01-eS1OVupYM1Ym0ghoHG98w==&amp;c=uIaPdoIEI5zPDUMR-YI8hSgN4JHjcYZBqtigR7VOzcQ=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501-eS1OVupYM1Ym0ghoHG98w\75\75\46c\75uIaPdoIEI5zPDUMR-YI8hSgN4JHjcYZBqtigR7VOzcQ\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">szantaii</a>.</p>
+            <p class="copy">
+                Minden itt található tartalomra a <a title="Creative Commons — Attribution-NonCommercial-ShareAlike 2.5 Hungary" href="#" rel="copyright">Creative<br>
+                Commons 2.5</a> licencfeltételek érvényesek.
+            </p>
+            <p class="credits">
+                Dizájn: <a href="#" title="WPSHOWER - Free wordpress themes">Wpshower</a> & <a href="#" title="Reveal this e-mail address">szantaii</a>.
+            </p>
         </div>
-
-        <!-- Page generated: 0,238 s, 42 queries -->
-<script type='text/javascript' src='wp-includes/js/wp-embed.min.js%3Fver=4.8.15'></script>
-		<script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
-	</body>
+    </body>
 </html>
